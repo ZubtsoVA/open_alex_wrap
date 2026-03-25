@@ -4,6 +4,18 @@
 
 module OpenAlexWrap
   module Works
-    nil
+    def work(id)
+      response = @conn.get("/works/#{id}")
+      if response.status == 200
+        parse_work(response.body)
+      else
+        # нужно будет прописать ошибки 404 и 429
+        nil
+      end
+    end
+    private
+    def works(params = {})
+      @conn.get("/works", params)
+    end
   end
 end
