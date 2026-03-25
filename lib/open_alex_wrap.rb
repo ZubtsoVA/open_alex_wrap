@@ -55,13 +55,33 @@ module OpenAlexWrap
         sort.to_s
       end
     end
+
+    def format_select(select)
+      case select
+      when Hash
+        # Если нужно поддержить и хэш (например, для вложенных полей)
+        # Пример: { work: [:id, :title], author: [:name] }
+        # Результат: "work.id,work.title,author.name"
+        select.map do |key, fields|
+          Array(fields).map { |field| "#{key}.#{field}" }.join(",")
+        end.join(",")
+      when String
+        # Если уже строка - возвращаем как есть
+        select
+      when nil
+        nil
+      else
+        select.to_s
+      end
+    end
+
     def query(type, filter: nil, sort: nil, group_by: nil, search: nil, sample: nil, select: nil, page: nil, per_page: nil, cursor: nil)
       params = {}
       params[:filter] = format_filter(filter) if filter
       params[:sort] = format_sort(sort) if sort
       params[:group_by] = group_by if group_by
       params[:search] = search if search
-      params[:select] = select if select
+      params[:select] = format_select(select) if select
       params[:sample] = sample if sample
       params[:page] = page if page
       params[:per_page] = per_page if per_page
