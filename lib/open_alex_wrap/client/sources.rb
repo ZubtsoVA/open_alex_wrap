@@ -4,6 +4,7 @@
 
 module OpenAlexWrap
   module Sources
+    require Base
     # Получить источники с наибольшим количеством цитирований
     # @param limit [Integer] количество источников
     # @return [Hash] ответ от API

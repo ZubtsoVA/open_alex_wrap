@@ -4,6 +4,7 @@
 
 module OpenAlexWrap
   module Authors
+    require Base
     # Получить авторов с наибольшим числом цитирований
     # @param limit [Integer] количество авторов (по умолчанию 100)
     # @param per_page [Integer] количество на странице (макс 200)

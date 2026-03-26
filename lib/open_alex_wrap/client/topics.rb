@@ -4,6 +4,7 @@
 
 module OpenAlexWrap
   module Topics
+    require Base
     # Получить информацию о теме по ID
     # @param topic_id [String] ID темы (например, "T11636")
     # @return [Hash] ответ от API
@@ -80,14 +81,14 @@ module OpenAlexWrap
     # @param subfield_id [String] ID субполя
     # @param limit [Integer] количество тем
     # @return [Hash] ответ от API
-    #def topics_by_subfield(subfield_id, limit: 100)
-    #query(:topic,
-    #filter: { "subfield.id": subfield_id },
-    #sort: { works_count: :desc },
-    #per_page: limit,
-    #select: "display_name,works_count,cited_by_count"
-    #)
-    #end
+    def topics_by_subfield(subfield_id, limit: 100)
+      query(:topic,
+            filter: { "subfield.id": subfield_id },
+            sort: { works_count: :desc },
+            per_page: limit,
+            select: "display_name,works_count,cited_by_count"
+            )
+    end
 
     # Получить иерархию темы (предки)
     # @param topic_id [String] ID темы

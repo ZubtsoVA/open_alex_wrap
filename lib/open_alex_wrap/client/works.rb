@@ -4,6 +4,7 @@
 
 module OpenAlexWrap
   module Works
+    require Base
     # Получить работу по ID (используя прямой эндпоинт)
     # @param id [String] ID работы (например, "W123456789")
     # @return [Hash] ответ от API
@@ -32,11 +33,15 @@ module OpenAlexWrap
     # @param limit [Integer] количество работ
     # @return [Hash] ответ от API
     def latest_works(limit: 100)
+      filter = {}
+      filter[:publication_year] = "<#{Time.now.year + 1}"
+      filter[:cited_by_count] = ">0"
       query(:work,
             sort: { publication_date: :desc },
             per_page: limit,
-            select: "title,publication_year,publication_date,cited_by_count,doi,authorships"
-      )
+            select: "title,publication_year,publication_date,cited_by_count,doi,authorships",
+            filter: filter
+            )
     end
 
     # Поиск работ по ключевым словам
@@ -77,7 +82,7 @@ module OpenAlexWrap
     # @param limit [Integer] количество работ
     # @return [Hash] ответ от API
     def works_by_source(source_id, year: nil, limit: 50)
-      filter = { "primary_location.source.id": source_id }
+      filter = { "locations.source.id": source_id }
       filter[:publication_year] = year if year
 
       query(:work,
