@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 # TODO: Методы поиска по источникам
-
+require_relative "base"
 module OpenAlexWrap
   module Sources
-    require Base
+    include Base
     # Получить источники с наибольшим количеством цитирований
     # @param limit [Integer] количество источников
     # @return [Hash] ответ от API

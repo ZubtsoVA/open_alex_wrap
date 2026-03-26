@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
 # TODO: Методы для поиска по авторам
+require_relative "base"
 
 module OpenAlexWrap
   module Authors
-    require Base
+    include Base
     # Получить авторов с наибольшим числом цитирований
     # @param limit [Integer] количество авторов (по умолчанию 100)
     # @param per_page [Integer] количество на странице (макс 200)

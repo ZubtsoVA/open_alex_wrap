@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 # TODO: Методы для поиска конкретных работ (works)
-
+require_relative "base"
 module OpenAlexWrap
   module Works
-    require Base
+    include Base
     # Получить работу по ID (используя прямой эндпоинт)
     # @param id [String] ID работы (например, "W123456789")
     # @return [Hash] ответ от API

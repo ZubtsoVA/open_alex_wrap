@@ -34,10 +34,11 @@ module OpenAlexWrap
 
     def format_select(select)
       case select
+      when Array
+        # Для массива: ["id", "title", "doi"] => "id,title,doi"
+        select.map(&:to_s).join(",")
       when Hash
-        # Если нужно поддержить и хэш (например, для вложенных полей)
-        # Пример: { work: [:id, :title], author: [:name] }
-        # Результат: "work.id,work.title,author.name"
+        # Для хэша: { work: [:id, :title], author: [:name] } => "work.id,work.title,author.name"
         select.map do |key, fields|
           Array(fields).map { |field| "#{key}.#{field}" }.join(",")
         end.join(",")

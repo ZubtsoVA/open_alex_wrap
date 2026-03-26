@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 # TODO: Методы поиска по темам
-
+require_relative "base"
 module OpenAlexWrap
   module Topics
-    require Base
+    include Base
     # Получить информацию о теме по ID
     # @param topic_id [String] ID темы (например, "T11636")
     # @return [Hash] ответ от API
