@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=is_oa:true,publication_year:2023&per_page=5&select=title,publication_year,cited_by_count,doi,open_access&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:53:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a127e5b545cc8-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=KoSDoLtdvJUiINGNDgEOf%2FXh7S%2FxF%2BBzej2ESPHGWcY%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569180"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=KoSDoLtdvJUiINGNDgEOf%2FXh7S%2FxF%2BBzej2ESPHGWcY%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569180"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9864'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9864'
+      X-Ratelimit-Reset:
+      - '420'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 6553492, "db_response_time_ms": 57, "page": null,
+        "per_page": 5, "next_cursor": "IlsxMjkzMCwgMTAwLjAsIDEyOTMwLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQzODEzMDQ2NzInXSI=",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "MizAR 60
+        for Mizar 50", "publication_year": 2023, "cited_by_count": 74325, "doi": "https://doi.org/10.4230/lipics.itp.2023.19",
+        "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol268-itp2023/LIPIcs.ITP.2023.19/LIPIcs.ITP.2023.19.pdf",
+        "any_repository_has_fulltext": true}}, {"title": "Official Methods of Analysis",
+        "publication_year": 2023, "cited_by_count": 28054, "doi": "https://doi.org/10.1093/9780197610145.002.001",
+        "open_access": {"is_oa": true, "oa_status": "gold", "oa_url": "https://academic.oup.com/aoac-publications/book/45491/chapter/392327022/chapter-ag-pdf/56719633/book_45491_section_392327022.ag.pdf",
+        "any_repository_has_fulltext": null}}, {"title": "Cancer statistics, 2023",
+        "publication_year": 2023, "cited_by_count": 16262, "doi": "https://doi.org/10.3322/caac.21763",
+        "open_access": {"is_oa": true, "oa_status": "diamond", "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.3322/caac.21763",
+        "any_repository_has_fulltext": false}}, {"title": "Aion Framework: Dimensional
+        Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological
+        Portal Dynamics", "publication_year": 2023, "cited_by_count": 14136, "doi":
+        "https://doi.org/10.4230/lipics.giscience.2023.43", "open_access": {"is_oa":
+        true, "oa_status": "green", "oa_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol277-giscience2023/LIPIcs.GIScience.2023.43/LIPIcs.GIScience.2023.43.pdf",
+        "any_repository_has_fulltext": true}}, {"title": "Suspending OpenMP Tasks
+        on\u00a0Asynchronous Events: Extending the\u00a0Taskwait Construct", "publication_year":
+        2023, "cited_by_count": 12930, "doi": "https://doi.org/10.1007/978-3-031-40744-4_5",
+        "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://inria.hal.science/hal-04135481v2/document",
+        "any_repository_has_fulltext": true}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:53:01 GMT
+recorded_with: VCR 6.4.0

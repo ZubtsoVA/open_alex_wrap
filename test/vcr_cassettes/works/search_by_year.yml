@@ -1,0 +1,353 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=publication_year:2022&per_page=5&search=artificial%20intelligence&select=title,publication_year,cited_by_count,doi,authorships,open_access
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:52:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a12498fda0cf7-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Ebjho5yDlanwTUmPWaxT3Thju8B3EfXes39ZlvswxNk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774569171"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=Ebjho5yDlanwTUmPWaxT3Thju8B3EfXes39ZlvswxNk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774569171"
+      X-Ratelimit-Cost-Usd:
+      - '0.001'
+      X-Ratelimit-Credits-Used:
+      - '10'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9884'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9884'
+      X-Ratelimit-Reset:
+      - '429'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 190935, "db_response_time_ms": 197, "page": null,
+        "per_page": 5, "next_cursor": "IlsyMjI3LjQ2MDcsIDE2NTE2MjI0MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XMzE4MzE5ODg5NiddIg==",
+        "groups_count": null, "cost_usd": 0.001}, "results": [{"title": "BNAI, NO-TOKEN,
+        and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence",
+        "publication_year": 2022, "cited_by_count": 4209, "doi": "https://doi.org/10.48550/arxiv.2201.11903",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5100657725",
+        "display_name": "Jason Lee", "orcid": "https://orcid.org/0000-0003-4042-795X"},
+        "institutions": [], "countries": [], "is_corresponding": true, "raw_author_name":
+        "Wei, Jason", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5024842018", "display_name":
+        "Xuezhi Wang", "orcid": "https://orcid.org/0000-0001-7592-2358"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Wang,
+        Xuezhi", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5010575626", "display_name":
+        "Dale Schuurmans", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Schuurmans, Dale", "raw_affiliation_strings": [],
+        "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5074322007",
+        "display_name": "Maarten Bosma", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Bosma, Maarten", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "middle", "author": {"id": null,
+        "display_name": "Ichter, Brian", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Ichter, Brian", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "middle", "author": {"id": null,
+        "display_name": "Xia, Fei", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Xia, Fei", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5028125399",
+        "display_name": "Ed H.", "orcid": "https://orcid.org/0000-0003-3230-5338"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Chi, Ed", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5088551093", "display_name":
+        "Quoc V. Le", "orcid": "https://orcid.org/0000-0002-1087-2844"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Le, Quoc",
+        "raw_affiliation_strings": [], "affiliations": []}, {"author_position": "last",
+        "author": {"id": "https://openalex.org/A5061512999", "display_name": "Denny
+        Zhou", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Zhou, Denny", "raw_affiliation_strings": [], "affiliations":
+        []}], "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://arxiv.org/pdf/2201.11903",
+        "any_repository_has_fulltext": true}}, {"title": "Ethical principles for artificial
+        intelligence in education", "publication_year": 2022, "cited_by_count": 913,
+        "doi": "https://doi.org/10.1007/s10639-022-11316-w", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5091570362", "display_name":
+        "Andy Nguyen", "orcid": "https://orcid.org/0000-0002-0759-9656"}, "institutions":
+        [{"id": "https://openalex.org/I98381234", "display_name": "University of Oulu",
+        "ror": "https://ror.org/03yj89h83", "country_code": "FI", "type": "education",
+        "lineage": ["https://openalex.org/I98381234"]}], "countries": ["FI"], "is_corresponding":
+        true, "raw_author_name": "Andy Nguyen", "raw_affiliation_strings": ["Learning
+        & Educational Technology Research Unit (LET), University of Oulu, Oulu, Finland"],
+        "affiliations": [{"raw_affiliation_string": "Learning & Educational Technology
+        Research Unit (LET), University of Oulu, Oulu, Finland", "institution_ids":
+        ["https://openalex.org/I98381234"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5031594602", "display_name": "Ha Ngan Ngo",
+        "orcid": "https://orcid.org/0000-0002-4275-3620"}, "institutions": [{"id":
+        "https://openalex.org/I41156924", "display_name": "Victoria University of
+        Wellington", "ror": "https://ror.org/0040r6f76", "country_code": "NZ", "type":
+        "education", "lineage": ["https://openalex.org/I41156924"]}], "countries":
+        ["NZ"], "is_corresponding": false, "raw_author_name": "Ha Ngan Ngo", "raw_affiliation_strings":
+        ["Faculty of Education, Victoria University of Wellington, Wellington, New
+        Zealand"], "affiliations": [{"raw_affiliation_string": "Faculty of Education,
+        Victoria University of Wellington, Wellington, New Zealand", "institution_ids":
+        ["https://openalex.org/I41156924"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5084270282", "display_name": "Yvonne Hong",
+        "orcid": "https://orcid.org/0000-0002-0046-3983"}, "institutions": [{"id":
+        "https://openalex.org/I41156924", "display_name": "Victoria University of
+        Wellington", "ror": "https://ror.org/0040r6f76", "country_code": "NZ", "type":
+        "education", "lineage": ["https://openalex.org/I41156924"]}], "countries":
+        ["NZ"], "is_corresponding": false, "raw_author_name": "Yvonne Hong", "raw_affiliation_strings":
+        ["School of Information Management, Victoria University of Wellington, Wellington,
+        New Zealand"], "affiliations": [{"raw_affiliation_string": "School of Information
+        Management, Victoria University of Wellington, Wellington, New Zealand", "institution_ids":
+        ["https://openalex.org/I41156924"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5052061009", "display_name": "Belle Dang", "orcid":
+        "https://orcid.org/0009-0006-8734-6697"}, "institutions": [{"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Belle
+        Dang", "raw_affiliation_strings": ["Learning & Educational Technology Research
+        Unit (LET), University of Oulu, Oulu, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Learning & Educational Technology Research Unit (LET), University of Oulu,
+        Oulu, Finland", "institution_ids": ["https://openalex.org/I98381234"]}]},
+        {"author_position": "last", "author": {"id": "https://openalex.org/A5032059076",
+        "display_name": "Bich\u2010Phuong Thi Nguyen", "orcid": "https://orcid.org/0000-0003-1836-4403"},
+        "institutions": [{"id": "https://openalex.org/I153904384", "display_name":
+        "University of Languages and International Studies", "ror": "https://ror.org/01z1bn264",
+        "country_code": "VN", "type": "education", "lineage": ["https://openalex.org/I153904384"]}],
+        "countries": ["VN"], "is_corresponding": false, "raw_author_name": "Bich-Phuong
+        Thi Nguyen", "raw_affiliation_strings": ["Faculty of English Language Teacher
+        Education, VNU University of Languages and International Studies, Hanoi, Vietnam"],
+        "affiliations": [{"raw_affiliation_string": "Faculty of English Language Teacher
+        Education, VNU University of Languages and International Studies, Hanoi, Vietnam",
+        "institution_ids": ["https://openalex.org/I153904384"]}]}], "open_access":
+        {"is_oa": true, "oa_status": "hybrid", "oa_url": "https://link.springer.com/content/pdf/10.1007/s10639-022-11316-w.pdf",
+        "any_repository_has_fulltext": true}}, {"title": "Frontiers in Artificial
+        Intelligence and Applications", "publication_year": 2022, "cited_by_count":
+        660, "doi": "https://doi.org/10.1109/iccakm54721.2022.9990098", "authorships":
+        [{"author_position": "first", "author": {"id": "https://openalex.org/A5022139510",
+        "display_name": "Jaya Yadav", "orcid": null}, "institutions": [{"id": "https://openalex.org/I143247161",
+        "display_name": "Babasaheb Bhimrao Ambedkar University", "ror": "https://ror.org/04x7ccp17",
+        "country_code": "IN", "type": "education", "lineage": ["https://openalex.org/I143247161"]}],
+        "countries": ["IN"], "is_corresponding": true, "raw_author_name": "Jaya Yadav",
+        "raw_affiliation_strings": ["Babasaheb Bhimrao Ambedkar University,Department
+        of Information Technology,Lucknow,India", "Department of Information Technology,
+        Babasaheb Bhimrao Ambedkar University, Lucknow, India"], "affiliations": [{"raw_affiliation_string":
+        "Babasaheb Bhimrao Ambedkar University,Department of Information Technology,Lucknow,India",
+        "institution_ids": ["https://openalex.org/I143247161"]}, {"raw_affiliation_string":
+        "Department of Information Technology, Babasaheb Bhimrao Ambedkar University,
+        Lucknow, India", "institution_ids": ["https://openalex.org/I143247161"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5090903271",
+        "display_name": "Shruti Shukla", "orcid": "https://orcid.org/0009-0002-4091-1274"},
+        "institutions": [{"id": "https://openalex.org/I276256525", "display_name":
+        "Babu Banarasi Das University", "ror": "https://ror.org/001ekgz09", "country_code":
+        "IN", "type": "education", "lineage": ["https://openalex.org/I276256525"]}],
+        "countries": ["IN"], "is_corresponding": false, "raw_author_name": "Shruti
+        Shukla", "raw_affiliation_strings": ["Babu Banarasi Das University,Department
+        of Computer Application,Lucknow,India", "Department of Computer Application,
+        Babu Banarasi Das University, Lucknow, India"], "affiliations": [{"raw_affiliation_string":
+        "Babu Banarasi Das University,Department of Computer Application,Lucknow,India",
+        "institution_ids": ["https://openalex.org/I276256525"]}, {"raw_affiliation_string":
+        "Department of Computer Application, Babu Banarasi Das University, Lucknow,
+        India", "institution_ids": ["https://openalex.org/I276256525"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5027611161", "display_name":
+        "Kanika Sharma", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4388482725",
+        "display_name": "Mangalmay Institute of Management and Technology", "ror":
+        "https://ror.org/051twmj48", "country_code": null, "type": "education", "lineage":
+        ["https://openalex.org/I4388482725"]}, {"id": "https://openalex.org/I11880225",
+        "display_name": "National Institute of Technology Karnataka", "ror": "https://ror.org/01hz4v948",
+        "country_code": "IN", "type": "education", "lineage": ["https://openalex.org/I11880225"]}],
+        "countries": ["IN"], "is_corresponding": false, "raw_author_name": "Kanika
+        Sharma", "raw_affiliation_strings": ["Mangalmay Institute of Management and
+        Technology,Department of Computer Application,Greater Noida,India", "Department
+        of Computer Application, Mangalmay Institute of Management and Technology,
+        Greater Noida, India"], "affiliations": [{"raw_affiliation_string": "Mangalmay
+        Institute of Management and Technology,Department of Computer Application,Greater
+        Noida,India", "institution_ids": ["https://openalex.org/I11880225"]}, {"raw_affiliation_string":
+        "Department of Computer Application, Mangalmay Institute of Management and
+        Technology, Greater Noida, India", "institution_ids": ["https://openalex.org/I4388482725"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5089408343",
+        "display_name": "Nupur Soni", "orcid": null}, "institutions": [{"id": "https://openalex.org/I276256525",
+        "display_name": "Babu Banarasi Das University", "ror": "https://ror.org/001ekgz09",
+        "country_code": "IN", "type": "education", "lineage": ["https://openalex.org/I276256525"]}],
+        "countries": ["IN"], "is_corresponding": false, "raw_author_name": "Nupur
+        Soni", "raw_affiliation_strings": ["Babu Banarasi Das University,Department
+        of Computer Application,Lucknow,India", "Department of Computer Application,
+        Babu Banarasi Das University, Lucknow, India"], "affiliations": [{"raw_affiliation_string":
+        "Babu Banarasi Das University,Department of Computer Application,Lucknow,India",
+        "institution_ids": ["https://openalex.org/I276256525"]}, {"raw_affiliation_string":
+        "Department of Computer Application, Babu Banarasi Das University, Lucknow,
+        India", "institution_ids": ["https://openalex.org/I276256525"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5042230409", "display_name":
+        "Shruti Agarwal", "orcid": null}, "institutions": [{"id": "https://openalex.org/I162030827",
+        "display_name": "Thapar Institute of Engineering & Technology", "ror": "https://ror.org/00wdq3744",
+        "country_code": "IN", "type": "education", "lineage": ["https://openalex.org/I162030827"]}],
+        "countries": ["IN"], "is_corresponding": false, "raw_author_name": "Shruti
+        Agarwal", "raw_affiliation_strings": ["Thapar Institute of Engineering and
+        Technology,Department of Computer Science and Engineering,Lucknow,India",
+        "Department of Computer Science and Engineering, Thapar Institute of Engineering
+        and Technology, Lucknow, India"], "affiliations": [{"raw_affiliation_string":
+        "Thapar Institute of Engineering and Technology,Department of Computer Science
+        and Engineering,Lucknow,India", "institution_ids": ["https://openalex.org/I162030827"]},
+        {"raw_affiliation_string": "Department of Computer Science and Engineering,
+        Thapar Institute of Engineering and Technology, Lucknow, India", "institution_ids":
+        ["https://openalex.org/I162030827"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5036043522", "display_name": "Prabhash Chandra
+        Pathak", "orcid": "https://orcid.org/0000-0001-5704-0028"}, "institutions":
+        [{"id": "https://openalex.org/I276256525", "display_name": "Babu Banarasi
+        Das University", "ror": "https://ror.org/001ekgz09", "country_code": "IN",
+        "type": "education", "lineage": ["https://openalex.org/I276256525"]}], "countries":
+        ["IN"], "is_corresponding": false, "raw_author_name": "Prabhash Chandra Pathak",
+        "raw_affiliation_strings": ["Babu Banarasi Das University,Department of Computer
+        Application,Lucknow,India", "Department of Computer Application, Babu Banarasi
+        Das University, Lucknow, India"], "affiliations": [{"raw_affiliation_string":
+        "Babu Banarasi Das University,Department of Computer Application,Lucknow,India",
+        "institution_ids": ["https://openalex.org/I276256525"]}, {"raw_affiliation_string":
+        "Department of Computer Application, Babu Banarasi Das University, Lucknow,
+        India", "institution_ids": ["https://openalex.org/I276256525"]}]}], "open_access":
+        {"is_oa": false, "oa_status": "closed", "oa_url": null, "any_repository_has_fulltext":
+        false}}, {"title": "From Artificial Intelligence to Explainable Artificial
+        Intelligence in Industry 4.0: A Survey on What, How, and Where", "publication_year":
+        2022, "cited_by_count": 734, "doi": "https://doi.org/10.1109/tii.2022.3146552",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5029628910",
+        "display_name": "Imran Ahmed", "orcid": "https://orcid.org/0000-0002-7751-286X"},
+        "institutions": [{"id": "https://openalex.org/I4210127363", "display_name":
+        "Institute of Management Sciences Peshawar", "ror": "https://ror.org/02m8e1r74",
+        "country_code": "PK", "type": "education", "lineage": ["https://openalex.org/I4210127363"]}],
+        "countries": ["PK"], "is_corresponding": true, "raw_author_name": "Imran Ahmed",
+        "raw_affiliation_strings": ["Center of Excellence in Information Technology,
+        Institute of Management Sciences, Hayatabad, Peshawar, Pakistan"], "affiliations":
+        [{"raw_affiliation_string": "Center of Excellence in Information Technology,
+        Institute of Management Sciences, Hayatabad, Peshawar, Pakistan", "institution_ids":
+        ["https://openalex.org/I4210127363"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5049449184", "display_name": "Gwanggil Jeon",
+        "orcid": "https://orcid.org/0000-0002-0651-4278"}, "institutions": [{"id":
+        "https://openalex.org/I146429904", "display_name": "Incheon National University",
+        "ror": "https://ror.org/02xf7p935", "country_code": "KR", "type": "education",
+        "lineage": ["https://openalex.org/I146429904"]}], "countries": ["KR"], "is_corresponding":
+        false, "raw_author_name": "Gwanggil Jeon", "raw_affiliation_strings": ["Department
+        of Embedded Systems Engineering, Incheon National University, Incheon, South
+        Korea"], "affiliations": [{"raw_affiliation_string": "Department of Embedded
+        Systems Engineering, Incheon National University, Incheon, South Korea", "institution_ids":
+        ["https://openalex.org/I146429904"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5016445191", "display_name": "Francesco Piccialli",
+        "orcid": "https://orcid.org/0000-0002-5179-2496"}, "institutions": [{"id":
+        "https://openalex.org/I71267560", "display_name": "University of Naples Federico
+        II", "ror": "https://ror.org/05290cv24", "country_code": "IT", "type": "education",
+        "lineage": ["https://openalex.org/I71267560"]}], "countries": ["IT"], "is_corresponding":
+        false, "raw_author_name": "Francesco Piccialli", "raw_affiliation_strings":
+        ["Department of Mathematics and Applications &#x201C;R.Caccioppoli,&#x201D;,
+        University of Naples Federico II, Naples, Italy"], "affiliations": [{"raw_affiliation_string":
+        "Department of Mathematics and Applications &#x201C;R.Caccioppoli,&#x201D;,
+        University of Naples Federico II, Naples, Italy", "institution_ids": ["https://openalex.org/I71267560"]}]}],
+        "open_access": {"is_oa": false, "oa_status": "closed", "oa_url": null, "any_repository_has_fulltext":
+        false}}, {"title": "Explainable artificial intelligence (XAI) in deep learning-based
+        medical image analysis", "publication_year": 2022, "cited_by_count": 1092,
+        "doi": "https://doi.org/10.1016/j.media.2022.102470", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5029655930", "display_name":
+        "Bas H. M. van der Velden", "orcid": "https://orcid.org/0000-0003-3750-2824"},
+        "institutions": [{"id": "https://openalex.org/I193662353", "display_name":
+        "Utrecht University", "ror": "https://ror.org/04pp8hn57", "country_code":
+        "NL", "type": "education", "lineage": ["https://openalex.org/I193662353"]},
+        {"id": "https://openalex.org/I3018483916", "display_name": "University Medical
+        Center Utrecht", "ror": "https://ror.org/0575yy874", "country_code": "NL",
+        "type": "funder", "lineage": ["https://openalex.org/I3018483916"]}], "countries":
+        ["NL"], "is_corresponding": true, "raw_author_name": "Bas H.M. van der Velden",
+        "raw_affiliation_strings": ["Image Sciences Institute, University Medical
+        Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands.
+        Electronic address: bvelden2@umcutrecht.nl", "Image Sciences Institute, University
+        Medical Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands"],
+        "affiliations": [{"raw_affiliation_string": "Image Sciences Institute, University
+        Medical Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands.
+        Electronic address: bvelden2@umcutrecht.nl", "institution_ids": []}, {"raw_affiliation_string":
+        "Image Sciences Institute, University Medical Center Utrecht, Q.02.4.45, P.O.
+        Box 85500, Utrecht, GA 3508, the Netherlands", "institution_ids": ["https://openalex.org/I193662353",
+        "https://openalex.org/I3018483916"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5078692612", "display_name": "Hugo J. Kuijf",
+        "orcid": "https://orcid.org/0000-0001-6997-9059"}, "institutions": [{"id":
+        "https://openalex.org/I193662353", "display_name": "Utrecht University", "ror":
+        "https://ror.org/04pp8hn57", "country_code": "NL", "type": "education", "lineage":
+        ["https://openalex.org/I193662353"]}, {"id": "https://openalex.org/I3018483916",
+        "display_name": "University Medical Center Utrecht", "ror": "https://ror.org/0575yy874",
+        "country_code": "NL", "type": "funder", "lineage": ["https://openalex.org/I3018483916"]}],
+        "countries": ["NL"], "is_corresponding": false, "raw_author_name": "Hugo J.
+        Kuijf", "raw_affiliation_strings": ["Image Sciences Institute, University
+        Medical Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands"],
+        "affiliations": [{"raw_affiliation_string": "Image Sciences Institute, University
+        Medical Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands",
+        "institution_ids": ["https://openalex.org/I193662353", "https://openalex.org/I3018483916"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5033195086",
+        "display_name": "Kenneth G. A. Gilhuijs", "orcid": "https://orcid.org/0000-0003-2087-8649"},
+        "institutions": [{"id": "https://openalex.org/I3018483916", "display_name":
+        "University Medical Center Utrecht", "ror": "https://ror.org/0575yy874", "country_code":
+        "NL", "type": "funder", "lineage": ["https://openalex.org/I3018483916"]},
+        {"id": "https://openalex.org/I193662353", "display_name": "Utrecht University",
+        "ror": "https://ror.org/04pp8hn57", "country_code": "NL", "type": "education",
+        "lineage": ["https://openalex.org/I193662353"]}], "countries": ["NL"], "is_corresponding":
+        false, "raw_author_name": "Kenneth G.A. Gilhuijs", "raw_affiliation_strings":
+        ["Image Sciences Institute, University Medical Center Utrecht, Q.02.4.45,
+        P.O. Box 85500, Utrecht, GA 3508, the Netherlands"], "affiliations": [{"raw_affiliation_string":
+        "Image Sciences Institute, University Medical Center Utrecht, Q.02.4.45, P.O.
+        Box 85500, Utrecht, GA 3508, the Netherlands", "institution_ids": ["https://openalex.org/I193662353",
+        "https://openalex.org/I3018483916"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5033933581", "display_name": "Max A. Viergever",
+        "orcid": "https://orcid.org/0000-0003-2582-042X"}, "institutions": [{"id":
+        "https://openalex.org/I3018483916", "display_name": "University Medical Center
+        Utrecht", "ror": "https://ror.org/0575yy874", "country_code": "NL", "type":
+        "funder", "lineage": ["https://openalex.org/I3018483916"]}, {"id": "https://openalex.org/I193662353",
+        "display_name": "Utrecht University", "ror": "https://ror.org/04pp8hn57",
+        "country_code": "NL", "type": "education", "lineage": ["https://openalex.org/I193662353"]}],
+        "countries": ["NL"], "is_corresponding": false, "raw_author_name": "Max A.
+        Viergever", "raw_affiliation_strings": ["Image Sciences Institute, University
+        Medical Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands"],
+        "affiliations": [{"raw_affiliation_string": "Image Sciences Institute, University
+        Medical Center Utrecht, Q.02.4.45, P.O. Box 85500, Utrecht, GA 3508, the Netherlands",
+        "institution_ids": ["https://openalex.org/I193662353", "https://openalex.org/I3018483916"]}]}],
+        "open_access": {"is_oa": true, "oa_status": "hybrid", "oa_url": "https://doi.org/10.1016/j.media.2022.102470",
+        "any_repository_has_fulltext": true}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:52:52 GMT
+recorded_with: VCR 6.4.0

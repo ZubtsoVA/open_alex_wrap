@@ -1,12 +1,35 @@
 # frozen_string_literal: true
 
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
-require "open_alex_wrap"
+require_relative "../lib/open_alex_wrap"
 
 require "minitest/autorun"
 require "minitest/unit"
 require "vcr"
 require "webmock/minitest"
+
+module TestHelpers
+  def setup_client
+    # Проверка, что гем загружен
+    puts "Creating client with email: #{ENV['OPENALEX_EMAIL'] || 'test@example.com'}"
+
+    client = OpenAlexWrap::Client.new(
+      email: ENV["OPENALEX_EMAIL"] || "test@example.com",
+      api_key: ENV["OPENALEX_API_KEY"]
+    )
+
+    # Проверка, что клиент создан
+    puts "Client created: #{client.inspect}"
+    puts "Client methods: #{client.methods.sort.grep(/most_cited/)}"
+
+    client
+  end
+end
+
+# Включаем хелперы в Minitest::Test
+class Minitest::Test
+  include TestHelpers
+end
 
 
 

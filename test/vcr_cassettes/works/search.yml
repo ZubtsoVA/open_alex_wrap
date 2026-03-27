@@ -1,0 +1,320 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=&per_page=5&search=machine%20learning&select=title,publication_year,cited_by_count,doi,authorships,open_access
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:53:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a12886f24d9c3-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=ImwS7m3mwuAwzc1G%2Bexm8by9D9OLw5IYroUL%2F12GCOc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774569181"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=ImwS7m3mwuAwzc1G%2Bexm8by9D9OLw5IYroUL%2F12GCOc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774569181"
+      X-Ratelimit-Cost-Usd:
+      - '0.001'
+      X-Ratelimit-Credits-Used:
+      - '10'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9853'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9853'
+      X-Ratelimit-Reset:
+      - '418'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 3758361, "db_response_time_ms": 514, "page": null,
+        "per_page": 5, "next_cursor": "Ils5NzcxLjg4NywgMTE2NzYwOTYwMDAwMCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1czMTIwNzQwNTMzJ10i",
+        "groups_count": null, "cost_usd": 0.001}, "results": [{"title": "Scikit-learn:
+        Machine Learning in Python", "publication_year": 2012, "cited_by_count": 63376,
+        "doi": "https://doi.org/10.48550/arxiv.1201.0490", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5105141183", "display_name":
+        "Fabi\u00e1n Pedregosa", "orcid": "https://orcid.org/0000-0003-4025-3953"},
+        "institutions": [{"id": "https://openalex.org/I2738703131", "display_name":
+        "Commissariat \u00e0 l''\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+        "ror": "https://ror.org/00jjx8s55", "country_code": "FR", "type": "government",
+        "lineage": ["https://openalex.org/I2738703131"]}, {"id": "https://openalex.org/I4210128565",
+        "display_name": "CEA Paris-Saclay", "ror": "https://ror.org/03n15ch10", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I2738703131",
+        "https://openalex.org/I277688954", "https://openalex.org/I4210128565"]}],
+        "countries": ["FR"], "is_corresponding": true, "raw_author_name": "Pedregosa,
+        Fabian", "raw_affiliation_strings": ["LNAO - Laboratoire de Neuroimagerie
+        Assist\u00e9e par Ordinateur (France)", "PARIETAL - Modelling brain structure,
+        function and variability based on high-field MRI data (Neurospin, CEA Saclay,
+        B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)"], "affiliations":
+        [{"raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e
+        par Ordinateur (France)", "institution_ids": []}, {"raw_affiliation_string":
+        "PARIETAL - Modelling brain structure, function and variability based on high-field
+        MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex
+        - France)", "institution_ids": ["https://openalex.org/I2738703131", "https://openalex.org/I4210128565"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5074733625",
+        "display_name": "Ga\u00ebl Varoquaux", "orcid": "https://orcid.org/0000-0003-1076-5122"},
+        "institutions": [{"id": "https://openalex.org/I2738703131", "display_name":
+        "Commissariat \u00e0 l''\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+        "ror": "https://ror.org/00jjx8s55", "country_code": "FR", "type": "government",
+        "lineage": ["https://openalex.org/I2738703131"]}, {"id": "https://openalex.org/I4210128565",
+        "display_name": "CEA Paris-Saclay", "ror": "https://ror.org/03n15ch10", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I2738703131",
+        "https://openalex.org/I277688954", "https://openalex.org/I4210128565"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Varoquaux,
+        Ga\u00ebl", "raw_affiliation_strings": ["LNAO - Laboratoire de Neuroimagerie
+        Assist\u00e9e par Ordinateur (France)", "PARIETAL - Modelling brain structure,
+        function and variability based on high-field MRI data (Neurospin, CEA Saclay,
+        B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)"], "affiliations":
+        [{"raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e
+        par Ordinateur (France)", "institution_ids": []}, {"raw_affiliation_string":
+        "PARIETAL - Modelling brain structure, function and variability based on high-field
+        MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex
+        - France)", "institution_ids": ["https://openalex.org/I2738703131", "https://openalex.org/I4210128565"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5018256474",
+        "display_name": "Alexandre Gramfort", "orcid": "https://orcid.org/0000-0001-9791-4404"},
+        "institutions": [{"id": "https://openalex.org/I2738703131", "display_name":
+        "Commissariat \u00e0 l''\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+        "ror": "https://ror.org/00jjx8s55", "country_code": "FR", "type": "government",
+        "lineage": ["https://openalex.org/I2738703131"]}, {"id": "https://openalex.org/I4210128565",
+        "display_name": "CEA Paris-Saclay", "ror": "https://ror.org/03n15ch10", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I2738703131",
+        "https://openalex.org/I277688954", "https://openalex.org/I4210128565"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Gramfort,
+        Alexandre", "raw_affiliation_strings": ["LNAO - Laboratoire de Neuroimagerie
+        Assist\u00e9e par Ordinateur (France)", "PARIETAL - Modelling brain structure,
+        function and variability based on high-field MRI data (Neurospin, CEA Saclay,
+        B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)"], "affiliations":
+        [{"raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e
+        par Ordinateur (France)", "institution_ids": []}, {"raw_affiliation_string":
+        "PARIETAL - Modelling brain structure, function and variability based on high-field
+        MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex
+        - France)", "institution_ids": ["https://openalex.org/I2738703131", "https://openalex.org/I4210128565"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5027430303",
+        "display_name": "Vincent Michel", "orcid": "https://orcid.org/0000-0002-7025-4343"},
+        "institutions": [{"id": "https://openalex.org/I2738703131", "display_name":
+        "Commissariat \u00e0 l''\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+        "ror": "https://ror.org/00jjx8s55", "country_code": "FR", "type": "government",
+        "lineage": ["https://openalex.org/I2738703131"]}, {"id": "https://openalex.org/I4210128565",
+        "display_name": "CEA Paris-Saclay", "ror": "https://ror.org/03n15ch10", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I2738703131",
+        "https://openalex.org/I277688954", "https://openalex.org/I4210128565"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Michel,
+        Vincent", "raw_affiliation_strings": ["LNAO - Laboratoire de Neuroimagerie
+        Assist\u00e9e par Ordinateur (France)", "PARIETAL - Modelling brain structure,
+        function and variability based on high-field MRI data (Neurospin, CEA Saclay,
+        B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)"], "affiliations":
+        [{"raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e
+        par Ordinateur (France)", "institution_ids": []}, {"raw_affiliation_string":
+        "PARIETAL - Modelling brain structure, function and variability based on high-field
+        MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex
+        - France)", "institution_ids": ["https://openalex.org/I2738703131", "https://openalex.org/I4210128565"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5026762833",
+        "display_name": "Bertrand Thirion", "orcid": "https://orcid.org/0000-0001-5018-7895"},
+        "institutions": [{"id": "https://openalex.org/I2738703131", "display_name":
+        "Commissariat \u00e0 l''\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+        "ror": "https://ror.org/00jjx8s55", "country_code": "FR", "type": "government",
+        "lineage": ["https://openalex.org/I2738703131"]}, {"id": "https://openalex.org/I4210128565",
+        "display_name": "CEA Paris-Saclay", "ror": "https://ror.org/03n15ch10", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I2738703131",
+        "https://openalex.org/I277688954", "https://openalex.org/I4210128565"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Thirion,
+        Bertrand", "raw_affiliation_strings": ["PARIETAL - Modelling brain structure,
+        function and variability based on high-field MRI data (Neurospin, CEA Saclay,
+        B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)", "LNAO - Laboratoire
+        de Neuroimagerie Assist\u00e9e par Ordinateur (France)"], "affiliations":
+        [{"raw_affiliation_string": "PARIETAL - Modelling brain structure, function
+        and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent
+        145, 91191 Gif-sur-Yvette Cedex - France)", "institution_ids": ["https://openalex.org/I2738703131",
+        "https://openalex.org/I4210128565"]}, {"raw_affiliation_string": "LNAO - Laboratoire
+        de Neuroimagerie Assist\u00e9e par Ordinateur (France)", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5112700874",
+        "display_name": "Olivier Grisel", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I4210131947", "display_name": "Nuxe (France)", "ror":
+        "https://ror.org/02m7qby09", "country_code": "FR", "type": "company", "lineage":
+        ["https://openalex.org/I4210131947"]}], "countries": ["FR"], "is_corresponding":
+        false, "raw_author_name": "Grisel, Olivier", "raw_affiliation_strings": ["Nuxeo
+        (18-20 rue Soleillet 75020 Paris - France)"], "affiliations": [{"raw_affiliation_string":
+        "Nuxeo (18-20 rue Soleillet 75020 Paris - France)", "institution_ids": ["https://openalex.org/I4210131947"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5049123454",
+        "display_name": "Mathieu Blondel", "orcid": "https://orcid.org/0000-0002-2366-2993"},
+        "institutions": [{"id": "https://openalex.org/I65837984", "display_name":
+        "Kobe University", "ror": "https://ror.org/03tgsfw79", "country_code": "JP",
+        "type": "education", "lineage": ["https://openalex.org/I65837984"]}], "countries":
+        ["JP"], "is_corresponding": false, "raw_author_name": "Blondel, Mathieu",
+        "raw_affiliation_strings": ["Kobe University (Japan)"], "affiliations": [{"raw_affiliation_string":
+        "Kobe University (Japan)", "institution_ids": ["https://openalex.org/I65837984"]}]},
+        {"author_position": "middle", "author": {"id": null, "display_name": "M\u00fcller,
+        Andreas", "orcid": null}, "institutions": [{"id": "https://openalex.org/I51441396",
+        "display_name": "Bauhaus-Universit\u00e4t Weimar", "ror": "https://ror.org/033bb5z47",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I51441396"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "M\u00fcller,
+        Andreas", "raw_affiliation_strings": ["Bauhaus-Universit\u00e4t Weimar (Geschwister-Scholl-Stra\u00dfe
+        8 99423 Weimar - Germany)"], "affiliations": [{"raw_affiliation_string": "Bauhaus-Universit\u00e4t
+        Weimar (Geschwister-Scholl-Stra\u00dfe 8 99423 Weimar - Germany)", "institution_ids":
+        ["https://openalex.org/I51441396"]}]}, {"author_position": "middle", "author":
+        {"id": null, "display_name": "Nothman, Joel", "orcid": null}, "institutions":
+        [{"id": "https://openalex.org/I4210148186", "display_name": "Google (Canada)",
+        "ror": "https://ror.org/04d06q394", "country_code": "CA", "type": "company",
+        "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969",
+        "https://openalex.org/I4210148186"]}], "countries": ["CA"], "is_corresponding":
+        false, "raw_author_name": "Nothman, Joel", "raw_affiliation_strings": ["Google
+        Inc (Toronto - Canada)"], "affiliations": [{"raw_affiliation_string": "Google
+        Inc (Toronto - Canada)", "institution_ids": ["https://openalex.org/I4210148186"]}]},
+        {"author_position": "middle", "author": {"id": null, "display_name": "Louppe,
+        Gilles", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Louppe, Gilles", "raw_affiliation_strings": ["LAMI
+        - Laboratoire de M\u00e9canique et Ing\u00e9nieries (IFMA. Campus des C\u00e9zeaux
+        BP 265 63175 Aubi\u00e8re Cedex - France)"], "affiliations": [{"raw_affiliation_string":
+        "LAMI - Laboratoire de M\u00e9canique et Ing\u00e9nieries (IFMA. Campus des
+        C\u00e9zeaux BP 265 63175 Aubi\u00e8re Cedex - France)", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5088660184",
+        "display_name": "Peter Prettenhofer", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I201448701", "display_name": "University of Washington",
+        "ror": "https://ror.org/00cvxb145", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I201448701"]}], "countries": ["US"], "is_corresponding":
+        false, "raw_author_name": "Prettenhofer, Peter", "raw_affiliation_strings":
+        ["University of Washington [Seattle] (Seattle, Washington 98105 - United States)"],
+        "affiliations": [{"raw_affiliation_string": "University of Washington [Seattle]
+        (Seattle, Washington 98105 - United States)", "institution_ids": ["https://openalex.org/I201448701"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5103273436",
+        "display_name": "Ron J. Weiss", "orcid": "https://orcid.org/0000-0003-2010-4053"},
+        "institutions": [{"id": "https://openalex.org/I177605424", "display_name":
+        "Amherst College", "ror": "https://ror.org/028vqfs63", "country_code": "US",
+        "type": "education", "lineage": ["https://openalex.org/I177605424"]}, {"id":
+        "https://openalex.org/I24603500", "display_name": "University of Massachusetts
+        Amherst", "ror": "https://ror.org/0072zz521", "country_code": "US", "type":
+        "education", "lineage": ["https://openalex.org/I24603500"]}], "countries":
+        ["US"], "is_corresponding": false, "raw_author_name": "Weiss, Ron", "raw_affiliation_strings":
+        ["Department of Mechanical and Industrial Engineering [UMass] (UMass Amherst
+        College of Engineering Department of Mechanical and Industrial Engineering,
+        220 ELAB, University of Massachusetts Amherst, MA 01003-2210 - United States)"],
+        "affiliations": [{"raw_affiliation_string": "Department of Mechanical and
+        Industrial Engineering [UMass] (UMass Amherst College of Engineering Department
+        of Mechanical and Industrial Engineering, 220 ELAB, University of Massachusetts
+        Amherst, MA 01003-2210 - United States)", "institution_ids": ["https://openalex.org/I177605424",
+        "https://openalex.org/I24603500"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5087957070", "display_name": "Vincent Dubourg",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210121859",
+        "display_name": "Enthought (United States)", "ror": "https://ror.org/02xfc1977",
+        "country_code": "US", "type": "company", "lineage": ["https://openalex.org/I4210121859"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Dubourg,
+        Vincent", "raw_affiliation_strings": ["Enthought Inc (515 Congress Avenue
+        Suite 2100 Austin, TX 78701 - United States)"], "affiliations": [{"raw_affiliation_string":
+        "Enthought Inc (515 Congress Avenue Suite 2100 Austin, TX 78701 - United States)",
+        "institution_ids": ["https://openalex.org/I4210121859"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5038304150", "display_name":
+        "Jake Vanderplas", "orcid": "https://orcid.org/0000-0002-9623-3401"}, "institutions":
+        [{"id": "https://openalex.org/I103084370", "display_name": "Total (France)",
+        "ror": "https://ror.org/04sk34n56", "country_code": "FR", "type": "company",
+        "lineage": ["https://openalex.org/I103084370"]}], "countries": ["FR"], "is_corresponding":
+        false, "raw_author_name": "Vanderplas, Jake", "raw_affiliation_strings": ["TOTAL
+        S.A. (France)"], "affiliations": [{"raw_affiliation_string": "TOTAL S.A. (France)",
+        "institution_ids": ["https://openalex.org/I103084370"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5034029772", "display_name":
+        "Alexandre Passos", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Passos, Alexandre", "raw_affiliation_strings":
+        ["LNAO (France)"], "affiliations": [{"raw_affiliation_string": "LNAO (France)",
+        "institution_ids": []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5023051838",
+        "display_name": "David Cournapeau", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Cournapeau, David", "raw_affiliation_strings":
+        ["LNAO - Laboratoire de Neuroimagerie Assist\u00e9e par Ordinateur (France)"],
+        "affiliations": [{"raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie
+        Assist\u00e9e par Ordinateur (France)", "institution_ids": []}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5050910015", "display_name":
+        "Matthieu Brucher", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Brucher, Matthieu", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5107933380",
+        "display_name": "Matthieu Perrot", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Perrot, Matthieu", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "last", "author": {"id": "https://openalex.org/A5007095962",
+        "display_name": "\u00c9douard Duchesnay", "orcid": "https://orcid.org/0000-0002-4073-3490"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Duchesnay, \u00c9douard", "raw_affiliation_strings": [], "affiliations":
+        []}], "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "https://arxiv.org/pdf/1201.0490",
+        "any_repository_has_fulltext": true}}, {"title": "Genetic algorithms in search,
+        optimization, and machine learning", "publication_year": 1989, "cited_by_count":
+        49283, "doi": "https://doi.org/10.5860/choice.27-0936", "authorships": [],
+        "open_access": {"is_oa": false, "oa_status": "closed", "oa_url": null, "any_repository_has_fulltext":
+        false}}, {"title": "C4.5: Programs for Machine Learning", "publication_year":
+        1992, "cited_by_count": 23665, "doi": null, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5110271944", "display_name":
+        "J. R. Quinlan", "orcid": null}, "institutions": [{"id": "https://openalex.org/I129604602",
+        "display_name": "University of Sydney", "ror": "https://ror.org/0384j8v12",
+        "country_code": "AU", "type": "education", "lineage": ["https://openalex.org/I129604602"]}],
+        "countries": ["AU"], "is_corresponding": true, "raw_author_name": "J. R. Quinlan",
+        "raw_affiliation_strings": ["Univ. of Sydney, Sydney, NSW, Australia#TAB#"],
+        "affiliations": [{"raw_affiliation_string": "Univ. of Sydney, Sydney, NSW,
+        Australia#TAB#", "institution_ids": ["https://openalex.org/I129604602"]}]}],
+        "open_access": {"is_oa": false, "oa_status": "closed", "oa_url": null, "any_repository_has_fulltext":
+        false}}, {"title": "Data Mining: Practical Machine Learning Tools and Techniques",
+        "publication_year": 2011, "cited_by_count": 25671, "doi": "https://doi.org/10.1016/c2009-0-19715-5",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5045934263",
+        "display_name": "Ian H. Witten", "orcid": "https://orcid.org/0000-0001-6428-8988"},
+        "institutions": [], "countries": [], "is_corresponding": true, "raw_author_name":
+        "Witten, Ian H. 1947-", "raw_affiliation_strings": [], "affiliations": []},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5059992863",
+        "display_name": "Eibe Frank", "orcid": "https://orcid.org/0000-0001-6152-7111"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Frank, Eibe", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5065290010", "display_name":
+        "Mark A. Hall", "orcid": "https://orcid.org/0000-0001-6277-144X"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Hall,
+        Mark A.", "raw_affiliation_strings": [], "affiliations": []}], "open_access":
+        {"is_oa": true, "oa_status": "gold", "oa_url": "http://www.gbv.de/dms/bowker/toc/9780123748560.pdf",
+        "any_repository_has_fulltext": null}}, {"title": "UCI Machine Learning Repository",
+        "publication_year": 2007, "cited_by_count": 24290, "doi": null, "authorships":
+        [{"author_position": "first", "author": {"id": "https://openalex.org/A5011959718",
+        "display_name": "Arthur Asuncion", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": true, "raw_author_name": "Arthur Asuncion", "raw_affiliation_strings":
+        [], "affiliations": []}], "open_access": {"is_oa": false, "oa_status": "closed",
+        "oa_url": null, "any_repository_has_fulltext": false}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:53:02 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,547 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=author.id:A5002100987%7CA5012345678&per_page=10&select=title,publication_year,cited_by_count,doi,authorships&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:52:53 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a1253989a2d96-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=CX1RrpT24BCi%2Be5MpW86cPucEWS5p0VqQZgkQRgzAHA%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569173"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=CX1RrpT24BCi%2Be5MpW86cPucEWS5p0VqQZgkQRgzAHA%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569173"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9881'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9881'
+      X-Ratelimit-Reset:
+      - '427'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 2, "db_response_time_ms": 20, "page": null, "per_page":
+        10, "next_cursor": "IlszLCA5Ni4wLCAzLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzQzODcwNzk3MTYnXSI=",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "Neurocognitive
+        impairment, employment, and social status in radiotherapy-treated adult survivors
+        of childhood brain tumors", "publication_year": 2021, "cited_by_count": 27,
+        "doi": "https://doi.org/10.1093/nop/npab004", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5029468756", "display_name":
+        "Tiina Remes", "orcid": "https://orcid.org/0000-0003-4318-5343"}, "institutions":
+        [{"id": "https://openalex.org/I133731052", "display_name": "University of
+        Helsinki", "ror": "https://ror.org/040af2s02", "country_code": "FI", "type":
+        "education", "lineage": ["https://openalex.org/I133731052"]}, {"id": "https://openalex.org/I2800394112",
+        "display_name": "Helsinki University Hospital", "ror": "https://ror.org/02e8hzf44",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I4210166427"]}, {"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]},
+        {"id": "https://openalex.org/I2799272722", "display_name": "Oulu University
+        Hospital", "ror": "https://ror.org/045ney286", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2799272722"]}], "countries":
+        ["FI"], "is_corresponding": true, "raw_author_name": "Tiina M Remes", "raw_affiliation_strings":
+        ["Department of Child Neurology, Children\u2019s Hospital, University of Helsinki
+        and Helsinki University Hospital, Helsinki, Finland", "Department of Pediatrics
+        and Adolescence, PEDEGO Research Unit and Medical Research Center, Oulu University
+        Hospital and University of Oulu, Oulu, Finland", "Department of Child Neurology,
+        Children''s Hospital, University of Helsinki and Helsinki University Hospital,
+        Helsinki, Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Child Neurology, Children\u2019s Hospital, University of Helsinki and Helsinki
+        University Hospital, Helsinki, Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}, {"raw_affiliation_string": "Department
+        of Pediatrics and Adolescence, PEDEGO Research Unit and Medical Research Center,
+        Oulu University Hospital and University of Oulu, Oulu, Finland", "institution_ids":
+        ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}, {"raw_affiliation_string":
+        "Department of Child Neurology, Children''s Hospital, University of Helsinki
+        and Helsinki University Hospital, Helsinki, Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5024894631", "display_name": "Emma Hov\u00e9n",
+        "orcid": "https://orcid.org/0000-0001-9335-9714"}, "institutions": [{"id":
+        "https://openalex.org/I28166907", "display_name": "Karolinska Institutet",
+        "ror": "https://ror.org/056d84691", "country_code": "SE", "type": "education",
+        "lineage": ["https://openalex.org/I28166907"]}], "countries": ["SE"], "is_corresponding":
+        false, "raw_author_name": "Emma Hov\u00e9n", "raw_affiliation_strings": ["Department
+        of Women\u2019s and Children\u2019s Health, Karolinska Institute, Stockholm,
+        Sweden", "Department of Women''s and Children''s Health, Karolinska Institute,
+        Stockholm, Sweden"], "affiliations": [{"raw_affiliation_string": "Department
+        of Women\u2019s and Children\u2019s Health, Karolinska Institute, Stockholm,
+        Sweden", "institution_ids": ["https://openalex.org/I28166907"]}, {"raw_affiliation_string":
+        "Department of Women''s and Children''s Health, Karolinska Institute, Stockholm,
+        Sweden", "institution_ids": ["https://openalex.org/I28166907"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5034924856", "display_name":
+        "Niina Ritari", "orcid": null}, "institutions": [{"id": "https://openalex.org/I2800394112",
+        "display_name": "Helsinki University Hospital", "ror": "https://ror.org/02e8hzf44",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I4210166427"]}, {"id": "https://openalex.org/I133731052",
+        "display_name": "University of Helsinki", "ror": "https://ror.org/040af2s02",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Niina
+        Ritari", "raw_affiliation_strings": ["Department of Child Neurology, Children\u2019s
+        Hospital, University of Helsinki and Helsinki University Hospital, Helsinki,
+        Finland", "Department of Child Neurology, Children''s Hospital, University
+        of Helsinki and Helsinki University Hospital, Helsinki, Finland"], "affiliations":
+        [{"raw_affiliation_string": "Department of Child Neurology, Children\u2019s
+        Hospital, University of Helsinki and Helsinki University Hospital, Helsinki,
+        Finland", "institution_ids": ["https://openalex.org/I2800394112", "https://openalex.org/I133731052"]},
+        {"raw_affiliation_string": "Department of Child Neurology, Children''s Hospital,
+        University of Helsinki and Helsinki University Hospital, Helsinki, Finland",
+        "institution_ids": ["https://openalex.org/I2800394112", "https://openalex.org/I133731052"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5012345678",
+        "display_name": "Heli Pohjasniemi", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I2799272722", "display_name": "Oulu University Hospital",
+        "ror": "https://ror.org/045ney286", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799272722"]}, {"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Heli Pohjasniemi",
+        "raw_affiliation_strings": ["Department of Pediatrics and Adolescence, PEDEGO
+        Research Unit and Medical Research Center, Oulu University Hospital and University
+        of Oulu, Oulu, Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Pediatrics and Adolescence, PEDEGO Research Unit and Medical Research Center,
+        Oulu University Hospital and University of Oulu, Oulu, Finland", "institution_ids":
+        ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5022608518",
+        "display_name": "Riina Puosi", "orcid": null}, "institutions": [{"id": "https://openalex.org/I2800394112",
+        "display_name": "Helsinki University Hospital", "ror": "https://ror.org/02e8hzf44",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I4210166427"]}, {"id": "https://openalex.org/I133731052",
+        "display_name": "University of Helsinki", "ror": "https://ror.org/040af2s02",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Riina
+        Puosi", "raw_affiliation_strings": ["Department of Child Neurology, Children\u2019s
+        Hospital, University of Helsinki and Helsinki University Hospital, Helsinki,
+        Finland", "Department of Child Neurology, Children''s Hospital, University
+        of Helsinki and Helsinki University Hospital, Helsinki, Finland"], "affiliations":
+        [{"raw_affiliation_string": "Department of Child Neurology, Children\u2019s
+        Hospital, University of Helsinki and Helsinki University Hospital, Helsinki,
+        Finland", "institution_ids": ["https://openalex.org/I2800394112", "https://openalex.org/I133731052"]},
+        {"raw_affiliation_string": "Department of Child Neurology, Children''s Hospital,
+        University of Helsinki and Helsinki University Hospital, Helsinki, Finland",
+        "institution_ids": ["https://openalex.org/I2800394112", "https://openalex.org/I133731052"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5072659431",
+        "display_name": "Pekka Arikoski", "orcid": "https://orcid.org/0000-0003-2712-2203"},
+        "institutions": [{"id": "https://openalex.org/I4210092991", "display_name":
+        "Kuopio University Hospital", "ror": "https://ror.org/00fqdfs68", "country_code":
+        "FI", "type": "healthcare", "lineage": ["https://openalex.org/I4210092991"]},
+        {"id": "https://openalex.org/I175532246", "display_name": "University of Eastern
+        Finland", "ror": "https://ror.org/00cyydd11", "country_code": "FI", "type":
+        "education", "lineage": ["https://openalex.org/I175532246"]}], "countries":
+        ["FI"], "is_corresponding": false, "raw_author_name": "Pekka M Arikoski",
+        "raw_affiliation_strings": ["Department of Pediatrics and Adolescence, Kuopio
+        University Hospital, University of Eastern Finland, Kuopio, Finland"], "affiliations":
+        [{"raw_affiliation_string": "Department of Pediatrics and Adolescence, Kuopio
+        University Hospital, University of Eastern Finland, Kuopio, Finland", "institution_ids":
+        ["https://openalex.org/I175532246", "https://openalex.org/I4210092991"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5006033918",
+        "display_name": "Mikko Arola", "orcid": "https://orcid.org/0000-0003-2443-7840"},
+        "institutions": [{"id": "https://openalex.org/I4210133110", "display_name":
+        "Tampere University", "ror": null, "country_code": "FI", "type": null, "lineage":
+        ["https://openalex.org/I4210133110"]}, {"id": "https://openalex.org/I4210126318",
+        "display_name": "Tampere University Hospital", "ror": "https://ror.org/02hvt5f17",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I4210126318"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Mikko
+        O Arola", "raw_affiliation_strings": ["Department of Pediatrics, Tampere University
+        Hospital and University of Tampere, Tampere, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics, Tampere University Hospital and University of Tampere,
+        Tampere, Finland", "institution_ids": ["https://openalex.org/I4210133110",
+        "https://openalex.org/I4210126318"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5078889687", "display_name": "P\u00e4ivi M.
+        L\u00e4hteenm\u00e4ki", "orcid": "https://orcid.org/0000-0002-5500-9606"},
+        "institutions": [{"id": "https://openalex.org/I2801970007", "display_name":
+        "Turku University Hospital", "ror": "https://ror.org/05dbzj528", "country_code":
+        "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2801970007",
+        "https://openalex.org/I4210127022"]}], "countries": ["FI"], "is_corresponding":
+        false, "raw_author_name": "P\u00e4ivi M L\u00e4hteenm\u00e4ki", "raw_affiliation_strings":
+        ["Department of Pediatrics and Adolescent Medicine, Turku University Hospital,
+        and Turku University, Turku, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics and Adolescent Medicine, Turku University Hospital,
+        and Turku University, Turku, Finland", "institution_ids": ["https://openalex.org/I2801970007"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5055881297",
+        "display_name": "Tuula L\u00f6nnqvist", "orcid": "https://orcid.org/0000-0001-9737-7020"},
+        "institutions": [{"id": "https://openalex.org/I133731052", "display_name":
+        "University of Helsinki", "ror": "https://ror.org/040af2s02", "country_code":
+        "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]},
+        {"id": "https://openalex.org/I2800394112", "display_name": "Helsinki University
+        Hospital", "ror": "https://ror.org/02e8hzf44", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2800394112", "https://openalex.org/I4210166427"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Tuula
+        R I L\u00f6nnqvist", "raw_affiliation_strings": ["Department of Child Neurology,
+        Children\u2019s Hospital, University of Helsinki and Helsinki University Hospital,
+        Helsinki, Finland", "Department of Child Neurology, Children''s Hospital,
+        University of Helsinki and Helsinki University Hospital, Helsinki, Finland"],
+        "affiliations": [{"raw_affiliation_string": "Department of Child Neurology,
+        Children\u2019s Hospital, University of Helsinki and Helsinki University Hospital,
+        Helsinki, Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}, {"raw_affiliation_string": "Department
+        of Child Neurology, Children''s Hospital, University of Helsinki and Helsinki
+        University Hospital, Helsinki, Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5090890668", "display_name": "Marja Ojaniemi",
+        "orcid": "https://orcid.org/0000-0002-2660-1758"}, "institutions": [{"id":
+        "https://openalex.org/I2799272722", "display_name": "Oulu University Hospital",
+        "ror": "https://ror.org/045ney286", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799272722"]}, {"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Marja
+        K Ojaniemi", "raw_affiliation_strings": ["Department of Pediatrics and Adolescence,
+        PEDEGO Research Unit and Medical Research Center, Oulu University Hospital
+        and University of Oulu, Oulu, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics and Adolescence, PEDEGO Research Unit and Medical
+        Research Center, Oulu University Hospital and University of Oulu, Oulu, Finland",
+        "institution_ids": ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5056460534",
+        "display_name": "V. Pekka Riikonen", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I4210092991", "display_name": "Kuopio University Hospital",
+        "ror": "https://ror.org/00fqdfs68", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I4210092991"]}, {"id": "https://openalex.org/I175532246",
+        "display_name": "University of Eastern Finland", "ror": "https://ror.org/00cyydd11",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I175532246"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "V Pekka
+        Riikonen", "raw_affiliation_strings": ["Department of Pediatrics and Adolescence,
+        Kuopio University Hospital, University of Eastern Finland, Kuopio, Finland"],
+        "affiliations": [{"raw_affiliation_string": "Department of Pediatrics and
+        Adolescence, Kuopio University Hospital, University of Eastern Finland, Kuopio,
+        Finland", "institution_ids": ["https://openalex.org/I175532246", "https://openalex.org/I4210092991"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5002695709",
+        "display_name": "Kirsti Sirki\u00e4", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I133731052", "display_name": "University of Helsinki",
+        "ror": "https://ror.org/040af2s02", "country_code": "FI", "type": "education",
+        "lineage": ["https://openalex.org/I133731052"]}, {"id": "https://openalex.org/I2800394112",
+        "display_name": "Helsinki University Hospital", "ror": "https://ror.org/02e8hzf44",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I4210166427"]}], "countries": ["FI"], "is_corresponding":
+        false, "raw_author_name": "Kirsti H Sirki\u00e4", "raw_affiliation_strings":
+        ["Department of Pediatrics and Adolescence, Helsinki University, and Helsinki
+        University Hospital, Helsinki, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics and Adolescence, Helsinki University, and Helsinki
+        University Hospital, Helsinki, Finland", "institution_ids": ["https://openalex.org/I133731052",
+        "https://openalex.org/I2800394112"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5031800117", "display_name": "Satu Winqvist",
+        "orcid": "https://orcid.org/0000-0002-0443-1612"}, "institutions": [{"id":
+        "https://openalex.org/I2799272722", "display_name": "Oulu University Hospital",
+        "ror": "https://ror.org/045ney286", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799272722"]}], "countries": ["FI"], "is_corresponding":
+        false, "raw_author_name": "Satu Winqvist", "raw_affiliation_strings": ["Department
+        of Neurology, Oulu University Hospital, Oulu, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Neurology, Oulu University Hospital, Oulu, Finland", "institution_ids":
+        ["https://openalex.org/I2799272722"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5013666222", "display_name": "Heikki Rantala",
+        "orcid": "https://orcid.org/0000-0002-4716-6564"}, "institutions": [{"id":
+        "https://openalex.org/I2799272722", "display_name": "Oulu University Hospital",
+        "ror": "https://ror.org/045ney286", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799272722"]}, {"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Heikki
+        M J Rantala", "raw_affiliation_strings": ["Department of Pediatrics and Adolescence,
+        PEDEGO Research Unit and Medical Research Center, Oulu University Hospital
+        and University of Oulu, Oulu, Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics and Adolescence, PEDEGO Research Unit and Medical
+        Research Center, Oulu University Hospital and University of Oulu, Oulu, Finland",
+        "institution_ids": ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5112274369",
+        "display_name": "Marika Harila", "orcid": null}, "institutions": [{"id": "https://openalex.org/I2799272722",
+        "display_name": "Oulu University Hospital", "ror": "https://ror.org/045ney286",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2799272722"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Marika
+        Harila", "raw_affiliation_strings": ["Department of Neurology, Oulu University
+        Hospital, Oulu, Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Neurology, Oulu University Hospital, Oulu, Finland", "institution_ids":
+        ["https://openalex.org/I2799272722"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5012706428", "display_name": "Arja Harila\u2010Saari",
+        "orcid": "https://orcid.org/0000-0003-2767-5828"}, "institutions": [{"id":
+        "https://openalex.org/I123387679", "display_name": "Uppsala University", "ror":
+        "https://ror.org/048a87296", "country_code": "SE", "type": "education", "lineage":
+        ["https://openalex.org/I123387679"]}], "countries": ["SE"], "is_corresponding":
+        false, "raw_author_name": "Arja H Harila-Saari", "raw_affiliation_strings":
+        ["Department of Women\u2019s and Children\u2019s Health, Uppsala University,
+        Uppsala, Sweden", "Department of Women''s and Children''s Health, Uppsala
+        University, Uppsala, Sweden"], "affiliations": [{"raw_affiliation_string":
+        "Department of Women\u2019s and Children\u2019s Health, Uppsala University,
+        Uppsala, Sweden", "institution_ids": ["https://openalex.org/I123387679"]},
+        {"raw_affiliation_string": "Department of Women''s and Children''s Health,
+        Uppsala University, Uppsala, Sweden", "institution_ids": ["https://openalex.org/I123387679"]}]}]},
+        {"title": "Radiotherapy-induced vascular cognitive impairment 20 years after
+        childhood brain tumor", "publication_year": 2023, "cited_by_count": 3, "doi":
+        "https://doi.org/10.1093/neuonc/noad186", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5029468756", "display_name":
+        "Tiina Remes", "orcid": "https://orcid.org/0000-0003-4318-5343"}, "institutions":
+        [{"id": "https://openalex.org/I2800394112", "display_name": "Helsinki University
+        Hospital", "ror": "https://ror.org/02e8hzf44", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2800394112", "https://openalex.org/I4210166427"]},
+        {"id": "https://openalex.org/I98381234", "display_name": "University of Oulu",
+        "ror": "https://ror.org/03yj89h83", "country_code": "FI", "type": "education",
+        "lineage": ["https://openalex.org/I98381234"]}, {"id": "https://openalex.org/I2799272722",
+        "display_name": "Oulu University Hospital", "ror": "https://ror.org/045ney286",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2799272722"]},
+        {"id": "https://openalex.org/I133731052", "display_name": "University of Helsinki",
+        "ror": "https://ror.org/040af2s02", "country_code": "FI", "type": "education",
+        "lineage": ["https://openalex.org/I133731052"]}], "countries": ["FI"], "is_corresponding":
+        true, "raw_author_name": "Tiina Maria Remes", "raw_affiliation_strings": ["Department
+        of Child Neurology, New Children\u2019s Hospital, University of Helsinki,
+        Helsinki University Hospital , Helsinki , Finland", "Department of Pediatrics
+        and Adolescence Medicine, Oulu University Hospital, and Research Unit of Clinical
+        Medicine, University of Oulu , Oulu , Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Child Neurology, New Children\u2019s Hospital, University of
+        Helsinki, Helsinki University Hospital , Helsinki , Finland", "institution_ids":
+        ["https://openalex.org/I2800394112", "https://openalex.org/I133731052"]},
+        {"raw_affiliation_string": "Department of Pediatrics and Adolescence Medicine,
+        Oulu University Hospital, and Research Unit of Clinical Medicine, University
+        of Oulu , Oulu , Finland", "institution_ids": ["https://openalex.org/I2799272722",
+        "https://openalex.org/I98381234"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5069268958", "display_name": "Maria Suo\u2010Palosaari",
+        "orcid": "https://orcid.org/0000-0002-5500-7168"}, "institutions": [{"id":
+        "https://openalex.org/I2799272722", "display_name": "Oulu University Hospital",
+        "ror": "https://ror.org/045ney286", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799272722"]}, {"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Maria
+        Helena Suo-Palosaari", "raw_affiliation_strings": ["Department of Diagnostic
+        Radiology, Oulu University Hospital, University of Oulu, Research Unit of
+        Medical Imaging, Physics, and Technology, Faculty of Medicine, University
+        of Oulu, Medical Research Center Oulu, University of Oulu , Oulu , Finland"],
+        "affiliations": [{"raw_affiliation_string": "Department of Diagnostic Radiology,
+        Oulu University Hospital, University of Oulu, Research Unit of Medical Imaging,
+        Physics, and Technology, Faculty of Medicine, University of Oulu, Medical
+        Research Center Oulu, University of Oulu , Oulu , Finland", "institution_ids":
+        ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5072659431",
+        "display_name": "Pekka Arikoski", "orcid": "https://orcid.org/0000-0003-2712-2203"},
+        "institutions": [{"id": "https://openalex.org/I4210092991", "display_name":
+        "Kuopio University Hospital", "ror": "https://ror.org/00fqdfs68", "country_code":
+        "FI", "type": "healthcare", "lineage": ["https://openalex.org/I4210092991"]},
+        {"id": "https://openalex.org/I175532246", "display_name": "University of Eastern
+        Finland", "ror": "https://ror.org/00cyydd11", "country_code": "FI", "type":
+        "education", "lineage": ["https://openalex.org/I175532246"]}], "countries":
+        ["FI"], "is_corresponding": false, "raw_author_name": "Pekka Matti Arikoski",
+        "raw_affiliation_strings": ["Kuopio Pediatric Research Unit, University of
+        Eastern Finland, Kuopio University Hospital , Kuopio , Finland"], "affiliations":
+        [{"raw_affiliation_string": "Kuopio Pediatric Research Unit, University of
+        Eastern Finland, Kuopio University Hospital , Kuopio , Finland", "institution_ids":
+        ["https://openalex.org/I175532246", "https://openalex.org/I4210092991"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5112274369",
+        "display_name": "Marika Harila", "orcid": null}, "institutions": [{"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]},
+        {"id": "https://openalex.org/I2799272722", "display_name": "Oulu University
+        Hospital", "ror": "https://ror.org/045ney286", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2799272722"]}], "countries":
+        ["FI"], "is_corresponding": false, "raw_author_name": "Marika Harila", "raw_affiliation_strings":
+        ["Department of Neurology, Oulu University Hospital, University of Oulu ,
+        Oulu , Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Neurology, Oulu University Hospital, University of Oulu , Oulu , Finland",
+        "institution_ids": ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5029127894",
+        "display_name": "P\u00e4ivi Koskenkorva", "orcid": null}, "institutions":
+        [{"id": "https://openalex.org/I4210092991", "display_name": "Kuopio University
+        Hospital", "ror": "https://ror.org/00fqdfs68", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I4210092991"]}], "countries":
+        ["FI"], "is_corresponding": false, "raw_author_name": "P\u00e4ivi Katri Tuulikki
+        Koskenkorva", "raw_affiliation_strings": ["Department of Clinical Radiology,
+        Kuopio University Hospital , Kuopio , Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Clinical Radiology, Kuopio University Hospital , Kuopio , Finland",
+        "institution_ids": ["https://openalex.org/I4210092991"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5078889687", "display_name":
+        "P\u00e4ivi M. L\u00e4hteenm\u00e4ki", "orcid": "https://orcid.org/0000-0002-5500-9606"},
+        "institutions": [{"id": "https://openalex.org/I2801970007", "display_name":
+        "Turku University Hospital", "ror": "https://ror.org/05dbzj528", "country_code":
+        "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2801970007",
+        "https://openalex.org/I4210127022"]}], "countries": ["FI"], "is_corresponding":
+        false, "raw_author_name": "P\u00e4ivi Maria L\u00e4hteenm\u00e4ki", "raw_affiliation_strings":
+        ["Department of Pediatrics and Adolescent Medicine, Turku University Hospital,
+        Turku University , Turku , Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics and Adolescent Medicine, Turku University Hospital,
+        Turku University , Turku , Finland", "institution_ids": ["https://openalex.org/I2801970007"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5055881297",
+        "display_name": "Tuula L\u00f6nnqvist", "orcid": "https://orcid.org/0000-0001-9737-7020"},
+        "institutions": [{"id": "https://openalex.org/I133731052", "display_name":
+        "University of Helsinki", "ror": "https://ror.org/040af2s02", "country_code":
+        "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]},
+        {"id": "https://openalex.org/I2800394112", "display_name": "Helsinki University
+        Hospital", "ror": "https://ror.org/02e8hzf44", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2800394112", "https://openalex.org/I4210166427"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Tuula
+        Riitta Irmeli L\u00f6nnqvist", "raw_affiliation_strings": ["Department of
+        Child Neurology, New Children\u2019s Hospital, University of Helsinki, Helsinki
+        University Hospital , Helsinki , Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Child Neurology, New Children\u2019s Hospital, University of
+        Helsinki, Helsinki University Hospital , Helsinki , Finland", "institution_ids":
+        ["https://openalex.org/I2800394112", "https://openalex.org/I133731052"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5090890668",
+        "display_name": "Marja Ojaniemi", "orcid": "https://orcid.org/0000-0002-2660-1758"},
+        "institutions": [{"id": "https://openalex.org/I98381234", "display_name":
+        "University of Oulu", "ror": "https://ror.org/03yj89h83", "country_code":
+        "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]},
+        {"id": "https://openalex.org/I2799272722", "display_name": "Oulu University
+        Hospital", "ror": "https://ror.org/045ney286", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2799272722"]}], "countries":
+        ["FI"], "is_corresponding": false, "raw_author_name": "Marja Katariina Ojaniemi",
+        "raw_affiliation_strings": ["Department of Pediatrics and Adolescence Medicine,
+        Oulu University Hospital, and Research Unit of Clinical Medicine, University
+        of Oulu , Oulu , Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Pediatrics and Adolescence Medicine, Oulu University Hospital, and Research
+        Unit of Clinical Medicine, University of Oulu , Oulu , Finland", "institution_ids":
+        ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5012345678",
+        "display_name": "Heli Pohjasniemi", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I2799272722", "display_name": "Oulu University Hospital",
+        "ror": "https://ror.org/045ney286", "country_code": "FI", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799272722"]}, {"id": "https://openalex.org/I98381234",
+        "display_name": "University of Oulu", "ror": "https://ror.org/03yj89h83",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I98381234"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Heli Pohjasniemi",
+        "raw_affiliation_strings": ["Department of Pediatrics and Adolescence Medicine,
+        Oulu University Hospital, and Research Unit of Clinical Medicine, University
+        of Oulu , Oulu , Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Pediatrics and Adolescence Medicine, Oulu University Hospital, and Research
+        Unit of Clinical Medicine, University of Oulu , Oulu , Finland", "institution_ids":
+        ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5022608518",
+        "display_name": "Riina Puosi", "orcid": null}, "institutions": [{"id": "https://openalex.org/I133731052",
+        "display_name": "University of Helsinki", "ror": "https://ror.org/040af2s02",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]},
+        {"id": "https://openalex.org/I2800394112", "display_name": "Helsinki University
+        Hospital", "ror": "https://ror.org/02e8hzf44", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2800394112", "https://openalex.org/I4210166427"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Riina
+        Puosi", "raw_affiliation_strings": ["Department of Child Neurology, New Children\u2019s
+        Hospital, University of Helsinki, Helsinki University Hospital , Helsinki
+        , Finland"], "affiliations": [{"raw_affiliation_string": "Department of Child
+        Neurology, New Children\u2019s Hospital, University of Helsinki, Helsinki
+        University Hospital , Helsinki , Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5034924856", "display_name": "Niina Ritari",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I2800394112",
+        "display_name": "Helsinki University Hospital", "ror": "https://ror.org/02e8hzf44",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I4210166427"]}, {"id": "https://openalex.org/I133731052",
+        "display_name": "University of Helsinki", "ror": "https://ror.org/040af2s02",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Niina
+        Ritari", "raw_affiliation_strings": ["Department of Child Neurology, New Children\u2019s
+        Hospital, University of Helsinki, Helsinki University Hospital , Helsinki
+        , Finland"], "affiliations": [{"raw_affiliation_string": "Department of Child
+        Neurology, New Children\u2019s Hospital, University of Helsinki, Helsinki
+        University Hospital , Helsinki , Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5002695709", "display_name": "Kirsti Sirki\u00e4",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I133731052",
+        "display_name": "University of Helsinki", "ror": "https://ror.org/040af2s02",
+        "country_code": "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]},
+        {"id": "https://openalex.org/I2800394112", "display_name": "Helsinki University
+        Hospital", "ror": "https://ror.org/02e8hzf44", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2800394112", "https://openalex.org/I4210166427"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Kirsti
+        Helena Sirki\u00e4", "raw_affiliation_strings": ["Department of Pediatrics
+        and Adolescence, Helsinki University, Helsinki University Hospital , Helsinki
+        , Finland"], "affiliations": [{"raw_affiliation_string": "Department of Pediatrics
+        and Adolescence, Helsinki University, Helsinki University Hospital , Helsinki
+        , Finland", "institution_ids": ["https://openalex.org/I133731052", "https://openalex.org/I2800394112"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5043677202",
+        "display_name": "Anna Sutela", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210092991",
+        "display_name": "Kuopio University Hospital", "ror": "https://ror.org/00fqdfs68",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I4210092991"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Anna Kaarina
+        Sutela", "raw_affiliation_strings": ["Department of Clinical Radiology, Kuopio
+        University Hospital , Kuopio , Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Clinical Radiology, Kuopio University Hospital , Kuopio , Finland",
+        "institution_ids": ["https://openalex.org/I4210092991"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5064722106", "display_name":
+        "Sanna Toiviainen\u2010Salo", "orcid": "https://orcid.org/0000-0003-1176-8165"},
+        "institutions": [{"id": "https://openalex.org/I133731052", "display_name":
+        "University of Helsinki", "ror": "https://ror.org/040af2s02", "country_code":
+        "FI", "type": "education", "lineage": ["https://openalex.org/I133731052"]},
+        {"id": "https://openalex.org/I2800394112", "display_name": "Helsinki University
+        Hospital", "ror": "https://ror.org/02e8hzf44", "country_code": "FI", "type":
+        "healthcare", "lineage": ["https://openalex.org/I2800394112", "https://openalex.org/I4210166427"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Sanna-Maria
+        Toiviainen-Salo", "raw_affiliation_strings": ["Department of Pediatric Radiology,
+        HUS Medical Imaging Center, Radiology, University of Helsinki, Helsinki University
+        Hospital , Finland"], "affiliations": [{"raw_affiliation_string": "Department
+        of Pediatric Radiology, HUS Medical Imaging Center, Radiology, University
+        of Helsinki, Helsinki University Hospital , Finland", "institution_ids": ["https://openalex.org/I2800394112",
+        "https://openalex.org/I133731052"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5013666222", "display_name": "Heikki Rantala",
+        "orcid": "https://orcid.org/0000-0002-4716-6564"}, "institutions": [{"id":
+        "https://openalex.org/I98381234", "display_name": "University of Oulu", "ror":
+        "https://ror.org/03yj89h83", "country_code": "FI", "type": "education", "lineage":
+        ["https://openalex.org/I98381234"]}, {"id": "https://openalex.org/I2799272722",
+        "display_name": "Oulu University Hospital", "ror": "https://ror.org/045ney286",
+        "country_code": "FI", "type": "healthcare", "lineage": ["https://openalex.org/I2799272722"]}],
+        "countries": ["FI"], "is_corresponding": false, "raw_author_name": "Heikki
+        Markku Johannes Rantala", "raw_affiliation_strings": ["Department of Pediatrics
+        and Adolescence Medicine, Oulu University Hospital, and Research Unit of Clinical
+        Medicine, University of Oulu , Oulu , Finland"], "affiliations": [{"raw_affiliation_string":
+        "Department of Pediatrics and Adolescence Medicine, Oulu University Hospital,
+        and Research Unit of Clinical Medicine, University of Oulu , Oulu , Finland",
+        "institution_ids": ["https://openalex.org/I2799272722", "https://openalex.org/I98381234"]}]},
+        {"author_position": "last", "author": {"id": "https://openalex.org/A5012706428",
+        "display_name": "Arja Harila\u2010Saari", "orcid": "https://orcid.org/0000-0003-2767-5828"},
+        "institutions": [{"id": "https://openalex.org/I123387679", "display_name":
+        "Uppsala University", "ror": "https://ror.org/048a87296", "country_code":
+        "SE", "type": "education", "lineage": ["https://openalex.org/I123387679"]}],
+        "countries": ["SE"], "is_corresponding": false, "raw_author_name": "Arja Helena
+        Harila", "raw_affiliation_strings": ["Department of Women\u2019s and Children\u2019s
+        Health, Uppsala University , Uppsala , Sweden"], "affiliations": [{"raw_affiliation_string":
+        "Department of Women\u2019s and Children\u2019s Health, Uppsala University
+        , Uppsala , Sweden", "institution_ids": ["https://openalex.org/I123387679"]}]}]}],
+        "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:52:53 GMT
+recorded_with: VCR 6.4.0

@@ -22,7 +22,6 @@
     <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v3.4.2, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashdiff (v1.2.1, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.8.2, ruby-4.0.1-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="irb (v1.17.0, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.19.2, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.5, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, ruby-4.0.1-p0) [gem]" level="application" />
@@ -39,7 +38,6 @@
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.3.1, ruby-4.0.1-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v7.2.0, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.11.3, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.6.3, ruby-4.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.4.4, ruby-4.0.1-p0) [gem]" level="application" />

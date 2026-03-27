@@ -31,6 +31,14 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+
+  spec.add_dependency "faraday", "~> 2.0"
+  spec.add_development_dependency "minitest", "~> 5.16"
+  spec.add_development_dependency "vcr", "~> 6.4"
+  spec.add_development_dependency "webmock", "~> 3.26"
+  spec.add_development_dependency "rubocop", "~> 1.21"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "irb"
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
 
