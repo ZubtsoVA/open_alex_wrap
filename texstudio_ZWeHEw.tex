@@ -1,0 +1,272 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyvrb}
+
+\definecolor{codebg}{rgb}{0.95,0.95,0.95}
+\lstset{
+	backgroundcolor=\color{codebg},
+	basicstyle=\ttfamily\small,
+	breaklines=true,
+	language=Ruby,
+	showstringspaces=false,
+	tabsize=2
+}
+
+\title{OpenAlexWrap\\\large{Ruby-обёртка для OpenAlex API}}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Введение}
+	
+	OpenAlexWrap — это Ruby-обёртка для \href{https://openalex.org/}{OpenAlex API}, предоставляющая чистый и интуитивно понятный интерфейс для доступа к метаданным научных публикаций, включая работы, авторов, источники и темы.
+	
+	\section{Возможности}
+	
+	\begin{itemize}
+		\item \textbf{Поиск работ, авторов, источников и тем} с гибкой фильтрацией
+		\item \textbf{Получение наиболее цитируемых/продуктивных сущностей} с настраиваемыми лимитами
+		\item \textbf{Получение сущностей по идентификаторам} (DOI, ORCID, ISSN и т.д.)
+		\item \textbf{Простота использования} с Ruby-подобным синтаксисом
+	\end{itemize}
+	
+	\section{Установка}
+	
+	Добавьте эту строку в Gemfile вашего приложения:
+	
+	\begin{lstlisting}
+		gem 'open_alex_wrap'
+	\end{lstlisting}
+	
+	Затем выполните:
+	
+	\begin{lstlisting}[language=bash]
+		$ bundle install
+	\end{lstlisting}
+	
+	Или установите самостоятельно:
+	
+	\begin{lstlisting}[language=bash]
+		$ gem install open_alex_wrap
+	\end{lstlisting}
+	
+	\section{Использование}
+	
+	\subsection{Инициализация клиента}
+	
+	\begin{lstlisting}
+		require 'open_alex_wrap'
+		
+		client = OpenAlexWrap::Client.new(
+		email: 'your-email@example.com',  # Required
+		api_key: 'your-api-key',           # Optional, but recommended                                 for higher rate limits
+		timeout: 10                         # Optional, default is 10                                     seconds
+		)
+	\end{lstlisting}
+	
+	\subsection{Работа с работами (Works)}
+	
+	\begin{lstlisting}
+		# Get most cited works of all time
+		most_cited = client.most_cited_works(limit: 10)
+		
+		# Get most cited works from 2023
+		most_cited_2023 = client.most_cited_works(year: 2023, limit: 20)
+		
+		# Search for works by keywords
+		ai_works = client.search_works('artificial intelligence', limit: 50)
+		
+		# Search with filters
+		open_access_ai = client.search_works('machine learning', open_access: true, limit: 30)
+		
+		# Get a work by DOI
+		work = client.work_by_doi('10.1038/s41586-020-2649-2')
+		
+		# Get works by author
+		author_works = client.works_by_author('A123456789', limit: 100)
+		
+		# Get works from a specific source (journal)
+		nature_works = client.works_by_source('S123456789', year: 2024, limit: 50)
+		
+		# Get open access works
+		oa_works = client.open_access_works(year: 2023, limit: 100)
+		
+		# Get highly cited works
+		highly_cited = client.highly_cited_works(min_citations: 500, year: 2022)
+		
+		# Iterate through all works matching criteria (cursor-based pagination)
+		count = 0
+		client.each_work(filter: { publication_year: 2023 }) do |work|
+		count += 1
+		puts work['title']
+		end
+		puts "Total works: #{count}"
+	\end{lstlisting}
+	
+	\subsection{Работа с авторами (Authors)}
+	
+	\begin{lstlisting}
+		# Get most cited authors
+		top_authors = client.most_cited_authors(limit: 50)
+		
+		# Get most prolific authors (by number of works)
+		prolific = client.most_prolific_authors(limit: 30)
+		
+		# Search authors by name
+		smith_authors = client.search_authors('John Smith', limit: 20)
+		
+		# Get authors from a specific institution
+		harvard_authors = client.authors_by_institution('I123456789', limit: 100)
+		
+		# Get author by ORCID
+		author = client.author_by_orcid('0000-0000-0000-0000')
+		
+		# Get authors by h-index (client-side sorting)
+		top_hindex = client.top_authors_by_hindex(limit: 100)
+	\end{lstlisting}
+	
+	\subsection{Работа с источниками (Sources)}
+	
+	\begin{lstlisting}
+		# Get most cited sources
+		top_journals = client.most_cited_sources(limit: 50)
+		
+		# Search sources by name
+		science_journals = client.search_sources('science', limit: 30)
+		
+		# Get open access sources (from DOAJ)
+		oa_journals = client.open_access_sources(limit: 50)
+		
+		# Get sources by publisher
+		elsevier_sources = client.sources_by_publisher_id('P4310320068', limit: 30)
+		
+		# Get sources by country
+		us_journals = client.sources_by_country('US', limit: 100)
+		
+		# Get source by ISSN
+		nature = client.source_by_issn('1476-4687')
+		
+		# Get most prolific sources
+		most_papers = client.most_prolific_sources(limit: 50)
+	\end{lstlisting}
+	
+	\subsection{Работа с темами (Topics)}
+	
+	\begin{lstlisting}
+		# Get a topic by ID
+		topic = client.topic('T11636')
+		
+		# Get most popular topics (by number of works)
+		popular = client.most_popular_topics(limit: 50)
+		
+		# Search topics by name
+		machine_learning = client.search_topics('machine learning', limit: 30)
+		
+		# Get works by topic
+		topic_works = client.works_by_topic('T11636', limit: 100)
+		
+		# Get topics by domain (Physical Sciences, Life Sciences, etc.)
+		physical_sciences = client.topics_by_domain('D1', limit: 50)
+		
+		# Get topic hierarchy (domain  field  subfield  topic)
+		hierarchy = client.topic_hierarchy('T11636')
+		hierarchy.each do |level|
+		puts "#{level[:level]}: #{level[:name]}"
+		end
+		
+		# Get topic statistics
+		stats = client.topic_stats('T11636')
+		puts "Works: #{stats[:works_count]}"
+		puts "Citations: #{stats[:cited_by_count]}"
+		puts "Domain: #{stats[:domain]}"
+		
+		# Iterate through all topics matching criteria
+		client.each_topic(filter: { works_count: '>1000' }) do |topic|
+		puts "#{topic['display_name']}: #{topic['works_count']} works"
+		end
+	\end{lstlisting}
+	
+	\subsection{Расширенная фильтрация}
+	
+	Метод \texttt{query} поддерживает различные форматы фильтров:
+	
+	\begin{lstlisting}
+		# Hash format (recommended)
+		client.query(:work, filter: { publication_year: 2023, open_access: true })
+		
+		# String format
+		client.query(:work, filter: 'publication_year:2023,open_access:true')
+	\end{lstlisting}
+	
+	\subsection{Сортировка}
+	
+	\begin{lstlisting}
+		# Hash format
+		client.query(:work, sort: { cited_by_count: :desc, publication_date: :asc })
+		
+		# String format
+		client.query(:work, sort: 'cited_by_count:desc,publication_date:asc')
+	\end{lstlisting}
+	
+	\subsection{Выбор конкретных полей}
+	
+	Повысьте производительность, выбирая только необходимые поля:
+	
+	\begin{lstlisting}
+		# Array format
+		client.query(:work, select: ['title', 'doi', 'publication_year'])
+		
+		# String format
+		client.query(:work, select: 'title,doi,publication_year')
+	\end{lstlisting}
+	
+	\subsection{Пагинация с курсорами}
+	
+	\begin{lstlisting}
+		# Use the each_work method for automatic cursor pagination
+		client.each_work(filter: { publication_year: 2023 }) do |work|
+		# Process each work
+		end
+		
+		# Or handle cursor manually
+		response = client.query(:work, filter: { publication_year: 2023 }, cursor: '*')
+		while response['results']&.any?
+		response['results'].each { |work| puts work['title'] }
+		response = client.query(:work, cursor: response['meta']['next_cursor'])
+		break if response['meta']['next_cursor'].nil?
+		end
+	\end{lstlisting}
+	
+	\section{Доступные типы сущностей}
+	
+	\begin{itemize}
+		\item \textbf{Works} (\texttt{:work}) — научные статьи, публикации, книги и т.д.
+		\item \textbf{Authors} (\texttt{:author}) — исследователи и ученые
+		\item \textbf{Sources} (\texttt{:source}) — журналы
+		\item \textbf{Topics} (\texttt{:topic}) — исследовательские темы и концепции
+	\end{itemize}
+	
+	
+	\section{Лимитирование запросов}
+	
+	OpenAlex API имеет лимиты на количество запросов.
+	
+	
+	\section{Ссылки}
+	
+	\begin{itemize}
+		\item \href{https://docs.openalex.org/}{OpenAlex API Documentation}
+		\item \href{https://github.com/ZubtsoVA/open_alex_wrap}{GitHub Repository}
+	\end{itemize}
+	
+\end{document}
