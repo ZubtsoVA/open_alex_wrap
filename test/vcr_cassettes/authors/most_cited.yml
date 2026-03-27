@@ -1,0 +1,370 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&per_page=10&select=display_name,cited_by_count,works_count,summary_stats,ids,last_known_institutions&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:27:04 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e29949eaf0e0cf7-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=kwkf1pXoAwVz%2Bkavdmh32quvWa7FoRvqLkecuAsT1mY%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774564024"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=kwkf1pXoAwVz%2Bkavdmh32quvWa7FoRvqLkecuAsT1mY%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774564024"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9946'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9946'
+      X-Ratelimit-Reset:
+      - '5576'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 114486269, "db_response_time_ms": 117, "page": null,
+        "per_page": 10, "next_cursor": "Ils1MjEwMzEsIDg5NywgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL0E1MDIwNzQ4NTkyJ10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "David
+        Moher", "cited_by_count": 843369, "works_count": 1534, "summary_stats": {"2yr_mean_citedness":
+        15.5, "h_index": 214, "i10_index": 803}, "ids": {"openalex": "https://openalex.org/A5068353058",
+        "orcid": "https://orcid.org/0000-0003-2434-4206"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I1291425158", "ror": "https://ror.org/00njsd438",
+        "display_name": "Google (United States)", "country_code": "US", "type": "company",
+        "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]},
+        {"id": "https://openalex.org/I1295876152", "ror": "https://ror.org/027zt9171",
+        "display_name": "Houston Methodist", "country_code": "US", "type": "healthcare",
+        "lineage": ["https://openalex.org/I1295876152"]}, {"id": "https://openalex.org/I153718931",
+        "ror": "https://ror.org/03c4mmv16", "display_name": "University of Ottawa",
+        "country_code": "CA", "type": "education", "lineage": ["https://openalex.org/I153718931"]},
+        {"id": "https://openalex.org/I185261750", "ror": "https://ror.org/03dbr7087",
+        "display_name": "University of Toronto", "country_code": "CA", "type": "education",
+        "lineage": ["https://openalex.org/I185261750"]}, {"id": "https://openalex.org/I2800722420",
+        "ror": "https://ror.org/03c62dg59", "display_name": "Ottawa Hospital", "country_code":
+        "CA", "type": "funder", "lineage": ["https://openalex.org/I2800722420"]},
+        {"id": "https://openalex.org/I2800722420", "ror": "https://ror.org/03c62dg59",
+        "display_name": "Ottawa Hospital", "country_code": "CA", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2800722420"]}, {"id": "https://openalex.org/I4210136254",
+        "ror": "https://ror.org/038pa9k74", "display_name": "Children\u2019s Health
+        Research Institute", "country_code": "CA", "type": "funder", "lineage": ["https://openalex.org/I2800925808",
+        "https://openalex.org/I4210136254", "https://openalex.org/I4406742388"]},
+        {"id": "https://openalex.org/I4210143003", "ror": "https://ror.org/03q29n119",
+        "display_name": "Ottawa Public Health", "country_code": "CA", "type": "healthcare",
+        "lineage": ["https://openalex.org/I4210143003"]}, {"id": "https://openalex.org/I4388482656",
+        "ror": "https://ror.org/05jtef216", "display_name": "Ottawa Hospital Research
+        Institute", "country_code": null, "type": "healthcare", "lineage": ["https://openalex.org/I153718931",
+        "https://openalex.org/I2800722420", "https://openalex.org/I4388482656"]},
+        {"id": "https://openalex.org/I9374425", "ror": "https://ror.org/04jscf286",
+        "display_name": "Ottawa University", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I9374425"]}]}, {"display_name": "Douglas
+        G. Altman", "cited_by_count": 828719, "works_count": 961, "summary_stats":
+        {"2yr_mean_citedness": 1.5, "h_index": 257, "i10_index": 673}, "ids": {"openalex":
+        "https://openalex.org/A5042962646", "orcid": "https://orcid.org/0000-0002-7183-4083"},
+        "last_known_institutions": null}, {"display_name": "M. Shoji", "cited_by_count":
+        806286, "works_count": 100007, "summary_stats": {"2yr_mean_citedness": 0.00015047399307819632,
+        "h_index": 38, "i10_index": 136}, "ids": {"openalex": "https://openalex.org/A5039600762",
+        "orcid": "https://orcid.org/0000-0003-0655-7347"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I199525922", "ror": "https://ror.org/055n47h92",
+        "display_name": "National Institutes of Natural Sciences", "country_code":
+        "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922"]}, {"id": "https://openalex.org/I200475212",
+        "ror": "https://ror.org/0516ah480", "display_name": "The Graduate University
+        for Advanced Studies, SOKENDAI", "country_code": "JP", "type": "education",
+        "lineage": ["https://openalex.org/I200475212"]}, {"id": "https://openalex.org/I4210108322",
+        "ror": "https://ror.org/01t3wyv61", "display_name": "National Institute for
+        Fusion Science", "country_code": "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922", "https://openalex.org/I4210108322"]}]},
+        {"display_name": "Ahmedin Jemal", "cited_by_count": 742666, "works_count":
+        1061, "summary_stats": {"2yr_mean_citedness": 187.4943181818182, "h_index":
+        167, "i10_index": 509}, "ids": {"openalex": "https://openalex.org/A5009198168",
+        "orcid": "https://orcid.org/0000-0002-0000-4111"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I1288198617", "ror": "https://ror.org/02e463172",
+        "display_name": "American Cancer Society", "country_code": "US", "type": "nonprofit",
+        "lineage": ["https://openalex.org/I1288198617"]}]}, {"display_name": "Rebecca
+        L. Siegel", "cited_by_count": 556944, "works_count": 250, "summary_stats":
+        {"2yr_mean_citedness": 1534.3333333333333, "h_index": 88, "i10_index": 135},
+        "ids": {"openalex": "https://openalex.org/A5047300895", "orcid": "https://orcid.org/0000-0001-5247-8522"},
+        "last_known_institutions": [{"id": "https://openalex.org/I1288198617", "ror":
+        "https://ror.org/02e463172", "display_name": "American Cancer Society", "country_code":
+        "US", "type": "nonprofit", "lineage": ["https://openalex.org/I1288198617"]}]},
+        {"display_name": "Christopher J L Murray", "cited_by_count": 549364, "works_count":
+        1006, "summary_stats": {"2yr_mean_citedness": 220.20212765957447, "h_index":
+        256, "i10_index": 706}, "ids": {"openalex": "https://openalex.org/A5102733391",
+        "orcid": "https://orcid.org/0000-0002-4930-9450"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I1282927834", "ror": "https://ror.org/02pammg90",
+        "display_name": "Cedars-Sinai Medical Center", "country_code": "US", "type":
+        "healthcare", "lineage": ["https://openalex.org/I1282927834"]}, {"id": "https://openalex.org/I1339963072",
+        "ror": "https://ror.org/055mfza47", "display_name": "Saint Peter''s University
+        Hospital", "country_code": "US", "type": "healthcare", "lineage": ["https://openalex.org/I1339963072"]},
+        {"id": "https://openalex.org/I145311948", "ror": "https://ror.org/00za53h95",
+        "display_name": "Johns Hopkins University", "country_code": "US", "type":
+        "education", "lineage": ["https://openalex.org/I145311948"]}, {"id": "https://openalex.org/I201448701",
+        "ror": "https://ror.org/00cvxb145", "display_name": "University of Washington",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I201448701"]},
+        {"id": "https://openalex.org/I27804330", "ror": "https://ror.org/05gq02987",
+        "display_name": "Brown University", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I27804330"]}, {"id": "https://openalex.org/I2803071314",
+        "ror": "https://ror.org/040hqpc16", "display_name": "Mater Misericordiae University
+        Hospital", "country_code": "IE", "type": "healthcare", "lineage": ["https://openalex.org/I2803071314"]},
+        {"id": "https://openalex.org/I3143470655", "ror": "https://ror.org/02684h094",
+        "display_name": "Institute for Health Metrics and Evaluation", "country_code":
+        "US", "type": "facility", "lineage": ["https://openalex.org/I3143470655"]},
+        {"id": "https://openalex.org/I32389192", "ror": "https://ror.org/008s83205",
+        "display_name": "University of Alabama at Birmingham", "country_code": "US",
+        "type": "education", "lineage": ["https://openalex.org/I32389192"]}, {"id":
+        "https://openalex.org/I4210098865", "ror": "https://ror.org/013x5cp73", "display_name":
+        "Johns Hopkins All Children''s Hospital", "country_code": "US", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2799853436", "https://openalex.org/I4210098865"]},
+        {"id": "https://openalex.org/I66958751", "ror": "https://ror.org/03zbnzt98",
+        "display_name": "Woods Hole Oceanographic Institution", "country_code": "US",
+        "type": "funder", "lineage": ["https://openalex.org/I66958751"]}]}, {"display_name":
+        "Dan J. Stein", "cited_by_count": 548622, "works_count": 4210, "summary_stats":
+        {"2yr_mean_citedness": 71.535, "h_index": 249, "i10_index": 2150}, "ids":
+        {"openalex": "https://openalex.org/A5073216705", "orcid": "https://orcid.org/0000-0001-7218-7810"},
+        "last_known_institutions": [{"id": "https://openalex.org/I10947320", "ror":
+        "https://ror.org/05q60vz69", "display_name": "South African Medical Research
+        Council", "country_code": "ZA", "type": "other", "lineage": ["https://openalex.org/I10947320"]},
+        {"id": "https://openalex.org/I157614274", "ror": "https://ror.org/03p74gp79",
+        "display_name": "University of Cape Town", "country_code": "ZA", "type": "education",
+        "lineage": ["https://openalex.org/I157614274"]}]}, {"display_name": "Kaiming
+        He", "cited_by_count": 544062, "works_count": 159, "summary_stats": {"2yr_mean_citedness":
+        4.384615384615385, "h_index": 84, "i10_index": 120}, "ids": {"openalex": "https://openalex.org/A5100700361",
+        "orcid": "https://orcid.org/0000-0001-7318-9658"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I4210145693", "ror": "https://ror.org/0432p8t34",
+        "display_name": "Guangdong Academy of Medical Sciences", "country_code": "CN",
+        "type": "healthcare", "lineage": ["https://openalex.org/I4210145693"]}]},
+        {"display_name": "Freddie Bray", "cited_by_count": 533089, "works_count":
+        704, "summary_stats": {"2yr_mean_citedness": 273.2409638554217, "h_index":
+        157, "i10_index": 435}, "ids": {"openalex": "https://openalex.org/A5064215217",
+        "orcid": "https://orcid.org/0000-0002-3248-7787"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I1294671590", "ror": "https://ror.org/02feahw73",
+        "display_name": "Centre National de la Recherche Scientifique", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I1294671590"]},
+        {"id": "https://openalex.org/I2279609970", "ror": "https://ror.org/02kzqn938",
+        "display_name": "Universit\u00e9 de Lille", "country_code": "FR", "type":
+        "education", "lineage": ["https://openalex.org/I2279609970"]}, {"id": "https://openalex.org/I4210123347",
+        "ror": "https://ror.org/02s4dmd79", "display_name": "Miniaturisation pour
+        la Synth\u00e8se, l''Analyse et la Prot\u00e9omique", "country_code": "FR",
+        "type": "facility", "lineage": ["https://openalex.org/I1294671590", "https://openalex.org/I2279609970",
+        "https://openalex.org/I4210123347", "https://openalex.org/I4210128300"]},
+        {"id": "https://openalex.org/I42237331", "ror": "https://ror.org/00v452281",
+        "display_name": "Centre international de recherche sur le cancer", "country_code":
+        "FR", "type": "government", "lineage": ["https://openalex.org/I4210105654",
+        "https://openalex.org/I42237331"]}, {"id": "https://openalex.org/I42237331",
+        "ror": "https://ror.org/00v452281", "display_name": "Centre International
+        de Recherche sur le Cancer", "country_code": "FR", "type": "funder", "lineage":
+        ["https://openalex.org/I4210105654", "https://openalex.org/I42237331"]}]},
+        {"display_name": "Eric S. Lander", "cited_by_count": 521031, "works_count":
+        897, "summary_stats": {"2yr_mean_citedness": 16.22222222222222, "h_index":
+        271, "i10_index": 552}, "ids": {"openalex": "https://openalex.org/A5020748592",
+        "orcid": "https://orcid.org/0000-0003-2662-4631"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I107606265", "ror": "https://ror.org/05a0ya142",
+        "display_name": "Broad Institute", "country_code": "US", "type": "funder",
+        "lineage": ["https://openalex.org/I107606265"]}, {"id": "https://openalex.org/I136199984",
+        "ror": "https://ror.org/03vek6s52", "display_name": "Harvard University",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I136199984"]},
+        {"id": "https://openalex.org/I2802515784", "ror": "https://ror.org/04x85at27",
+        "display_name": "Pacific Environment", "country_code": "US", "type": "other",
+        "lineage": ["https://openalex.org/I2802515784"]}, {"id": "https://openalex.org/I4210155419",
+        "ror": "https://ror.org/05r3dyn47", "display_name": "Center for Systems Biology",
+        "country_code": "US", "type": "facility", "lineage": ["https://openalex.org/I136199984",
+        "https://openalex.org/I4210087915", "https://openalex.org/I4210155419", "https://openalex.org/I48633490"]},
+        {"id": "https://openalex.org/I63966007", "ror": "https://ror.org/042nb2s44",
+        "display_name": "Massachusetts Institute of Technology", "country_code": "US",
+        "type": "education", "lineage": ["https://openalex.org/I63966007"]}]}], "group_by":
+        []}'
+  recorded_at: Thu, 26 Mar 2026 22:27:04 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&per_page=5&select=display_name,cited_by_count,works_count,summary_stats,ids,last_known_institutions&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:33:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e299e421cd4a3f8-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=402P67YlMZw7dCwSDh6Fv5jXRgU6yL6lyuSHqA8Db0s%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774564418"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=402P67YlMZw7dCwSDh6Fv5jXRgU6yL6lyuSHqA8Db0s%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774564418"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9915'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9915'
+      X-Ratelimit-Reset:
+      - '5181'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 114486269, "db_response_time_ms": 41, "page": null,
+        "per_page": 5, "next_cursor": "Ils1NTY5NDQsIDI1MCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL0E1MDQ3MzAwODk1J10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "David
+        Moher", "cited_by_count": 843369, "works_count": 1534, "summary_stats": {"2yr_mean_citedness":
+        15.5, "h_index": 214, "i10_index": 803}, "ids": {"openalex": "https://openalex.org/A5068353058",
+        "orcid": "https://orcid.org/0000-0003-2434-4206"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I1291425158", "ror": "https://ror.org/00njsd438",
+        "display_name": "Google (United States)", "country_code": "US", "type": "company",
+        "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]},
+        {"id": "https://openalex.org/I1295876152", "ror": "https://ror.org/027zt9171",
+        "display_name": "Houston Methodist", "country_code": "US", "type": "healthcare",
+        "lineage": ["https://openalex.org/I1295876152"]}, {"id": "https://openalex.org/I153718931",
+        "ror": "https://ror.org/03c4mmv16", "display_name": "University of Ottawa",
+        "country_code": "CA", "type": "education", "lineage": ["https://openalex.org/I153718931"]},
+        {"id": "https://openalex.org/I185261750", "ror": "https://ror.org/03dbr7087",
+        "display_name": "University of Toronto", "country_code": "CA", "type": "education",
+        "lineage": ["https://openalex.org/I185261750"]}, {"id": "https://openalex.org/I2800722420",
+        "ror": "https://ror.org/03c62dg59", "display_name": "Ottawa Hospital", "country_code":
+        "CA", "type": "funder", "lineage": ["https://openalex.org/I2800722420"]},
+        {"id": "https://openalex.org/I2800722420", "ror": "https://ror.org/03c62dg59",
+        "display_name": "Ottawa Hospital", "country_code": "CA", "type": "healthcare",
+        "lineage": ["https://openalex.org/I2800722420"]}, {"id": "https://openalex.org/I4210136254",
+        "ror": "https://ror.org/038pa9k74", "display_name": "Children\u2019s Health
+        Research Institute", "country_code": "CA", "type": "funder", "lineage": ["https://openalex.org/I2800925808",
+        "https://openalex.org/I4210136254", "https://openalex.org/I4406742388"]},
+        {"id": "https://openalex.org/I4210143003", "ror": "https://ror.org/03q29n119",
+        "display_name": "Ottawa Public Health", "country_code": "CA", "type": "healthcare",
+        "lineage": ["https://openalex.org/I4210143003"]}, {"id": "https://openalex.org/I4388482656",
+        "ror": "https://ror.org/05jtef216", "display_name": "Ottawa Hospital Research
+        Institute", "country_code": null, "type": "healthcare", "lineage": ["https://openalex.org/I153718931",
+        "https://openalex.org/I2800722420", "https://openalex.org/I4388482656"]},
+        {"id": "https://openalex.org/I9374425", "ror": "https://ror.org/04jscf286",
+        "display_name": "Ottawa University", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I9374425"]}]}, {"display_name": "Douglas
+        G. Altman", "cited_by_count": 828719, "works_count": 961, "summary_stats":
+        {"2yr_mean_citedness": 1.5, "h_index": 257, "i10_index": 673}, "ids": {"openalex":
+        "https://openalex.org/A5042962646", "orcid": "https://orcid.org/0000-0002-7183-4083"},
+        "last_known_institutions": null}, {"display_name": "M. Shoji", "cited_by_count":
+        806286, "works_count": 100007, "summary_stats": {"2yr_mean_citedness": 0.00015047399307819632,
+        "h_index": 38, "i10_index": 136}, "ids": {"openalex": "https://openalex.org/A5039600762",
+        "orcid": "https://orcid.org/0000-0003-0655-7347"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I199525922", "ror": "https://ror.org/055n47h92",
+        "display_name": "National Institutes of Natural Sciences", "country_code":
+        "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922"]}, {"id": "https://openalex.org/I200475212",
+        "ror": "https://ror.org/0516ah480", "display_name": "The Graduate University
+        for Advanced Studies, SOKENDAI", "country_code": "JP", "type": "education",
+        "lineage": ["https://openalex.org/I200475212"]}, {"id": "https://openalex.org/I4210108322",
+        "ror": "https://ror.org/01t3wyv61", "display_name": "National Institute for
+        Fusion Science", "country_code": "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922", "https://openalex.org/I4210108322"]}]},
+        {"display_name": "Ahmedin Jemal", "cited_by_count": 742666, "works_count":
+        1061, "summary_stats": {"2yr_mean_citedness": 187.4943181818182, "h_index":
+        167, "i10_index": 509}, "ids": {"openalex": "https://openalex.org/A5009198168",
+        "orcid": "https://orcid.org/0000-0002-0000-4111"}, "last_known_institutions":
+        [{"id": "https://openalex.org/I1288198617", "ror": "https://ror.org/02e463172",
+        "display_name": "American Cancer Society", "country_code": "US", "type": "nonprofit",
+        "lineage": ["https://openalex.org/I1288198617"]}]}, {"display_name": "Rebecca
+        L. Siegel", "cited_by_count": 556944, "works_count": 250, "summary_stats":
+        {"2yr_mean_citedness": 1534.3333333333333, "h_index": 88, "i10_index": 135},
+        "ids": {"openalex": "https://openalex.org/A5047300895", "orcid": "https://orcid.org/0000-0001-5247-8522"},
+        "last_known_institutions": [{"id": "https://openalex.org/I1288198617", "ror":
+        "https://ror.org/02e463172", "display_name": "American Cancer Society", "country_code":
+        "US", "type": "nonprofit", "lineage": ["https://openalex.org/I1288198617"]}]}],
+        "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:33:39 GMT
+recorded_with: VCR 6.4.0

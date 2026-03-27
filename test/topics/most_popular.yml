@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/topics?cursor=*&per_page=10&select=display_name,works_count,cited_by_count,keywords&sort=works_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2026 00:17:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a364d48168bde-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=pjlm4XQ0FwkHQrxZJsyL5HuN1MePa88KCMpS3VfGE%2B4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774570646"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=pjlm4XQ0FwkHQrxZJsyL5HuN1MePa88KCMpS3VfGE%2B4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774570646"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9953'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9953'
+      X-Ratelimit-Reset:
+      - '85354'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 4516, "db_response_time_ms": 2, "page": null, "per_page":
+        10, "next_cursor": "IlsxMDE3NDU1LCAxMDE3NDU1LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVDEyNjkyJ10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "Military
+        Technology and Strategies", "works_count": 21015789, "cited_by_count": 809166,
+        "keywords": ["Air Force", "Modernization", "Warfare", "Unmanned Aerial Vehicles",
+        "Radar Systems", "Military Communication", "Electronic Components", "Strategic
+        Planning", "Foresight", "Design"]}, {"display_name": "Magnetic confinement
+        fusion research", "works_count": 9276559, "cited_by_count": 2547263, "keywords":
+        ["Turbulence", "Tokamak", "Transport", "MHD Stability", "Edge Localized Modes",
+        "Zonal Flows", "Confinement", "Neoclassical Tearing Modes", "Energetic Particles",
+        "Diagnostics"]}, {"display_name": "Diverse Scientific and Economic Studies",
+        "works_count": 5008424, "cited_by_count": 636940, "keywords": ["Financial
+        Analysis", "Monetary Policy", "Asset Pricing", "Panel Data Models", "Economic
+        Evaluation", "Stock Prices", "Market Competition", "Investment Contracts",
+        "Macroeconomic Time Series", "Fiscal Stabilizations"]}, {"display_name": "Geochemistry
+        and Geologic Mapping", "works_count": 3955594, "cited_by_count": 1659965,
+        "keywords": ["Machine Learning", "Mineral Prospectivity", "Remote Sensing",
+        "Compositional Data Analysis", "Geological Mapping", "Hyperspectral Imaging",
+        "Support Vector Machines", "Fractal Modeling", "Geochemical Anomalies", "Lithological
+        Mapping"]}, {"display_name": "Mycorrhizal Fungi and Plant Interactions", "works_count":
+        3217907, "cited_by_count": 1973157, "keywords": ["Mycorrhizal Fungi", "Fungal
+        Diversity", "Plant Interactions", "Soil Biota", "Symbiotic Relationships",
+        "Ecosystem Functioning", "DNA Barcoding", "Community Structure", "Nutrient
+        Cycling", "Environmental Sequencing"]}, {"display_name": "Prenatal Screening
+        and Diagnostics", "works_count": 1676087, "cited_by_count": 1178600, "keywords":
+        ["Prenatal Diagnosis", "Aneuploidy Screening", "Maternal Plasma DNA Sequencing",
+        "Noninvasive Prenatal Testing", "Chromosomal Abnormalities", "Preimplantation
+        Genetic Diagnosis", "Fetal DNA Analysis", "Cell-Free DNA", "Trisomy Detection",
+        "Genomic Sequencing"]}, {"display_name": "Particle accelerators and beam dynamics",
+        "works_count": 1473012, "cited_by_count": 402686, "keywords": ["Superconducting
+        Cavities", "Negative Ion Sources", "Neutral Beam Injection", "RF Source Development",
+        "Particle-in-Cell Simulations", "High Energy Density Physics", "Plasma Diagnostics",
+        "Magnetic Fusion", "Ion Beam Dynamics", "Accelerator Design"]}, {"display_name":
+        "Species Distribution and Climate Change", "works_count": 1385137, "cited_by_count":
+        2453056, "keywords": ["Species Distribution Modeling", "Climate Change", "Ecological
+        Niche", "MaxEnt", "Biodiversity", "Citizen Science", "Habitat Suitability",
+        "Model Evaluation", "Range Shifts", "Conservation Biology"]}, {"display_name":
+        "Cell Image Analysis Techniques", "works_count": 1176746, "cited_by_count":
+        905106, "keywords": ["Bioimage Analysis", "High-Content Screening", "Microscopy",
+        "Machine Learning", "Cellular Imaging", "Neuronal Morphology", "Automated
+        Analysis", "Deep Learning", "Image Processing", "Phenotypic Profiling"]},
+        {"display_name": "Magnetic Field Sensors Techniques", "works_count": 1017455,
+        "cited_by_count": 154014, "keywords": ["Magnetic Sensors", "Fluxgate Sensors",
+        "Hall-effect Sensors", "Rogowski Coils", "Current Sensing", "Micro-fluxgate
+        Sensors", "Giant Magnetoresistance Effect", "Space-based Magnetometers", "Integrated
+        Sensor Technologies", "High-frequency Performance"]}], "group_by": []}'
+  recorded_at: Fri, 27 Mar 2026 00:17:27 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/topics?cursor=*&filter=&per_page=3&select=display_name,works_count,cited_by_count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2026 00:17:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a365fdabc0b9c-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=93bkaued3VUIFA3YDK%2FHkb5HrurmKbAvHl%2BoJC0SZpk%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774570649"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=93bkaued3VUIFA3YDK%2FHkb5HrurmKbAvHl%2BoJC0SZpk%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774570649"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9938'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9938'
+      X-Ratelimit-Reset:
+      - '85351'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 4516, "db_response_time_ms": 3, "page": null, "per_page":
+        3, "next_cursor": "Ils1MDA4NDI0LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVDEzMzcwJ10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "Military
+        Technology and Strategies", "works_count": 21015789, "cited_by_count": 809166},
+        {"display_name": "Magnetic confinement fusion research", "works_count": 9276559,
+        "cited_by_count": 2547263}, {"display_name": "Diverse Scientific and Economic
+        Studies", "works_count": 5008424, "cited_by_count": 636940}], "group_by":
+        []}'
+  recorded_at: Fri, 27 Mar 2026 00:17:30 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/topics?cursor=Ils1MDA4NDI0LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVDEzMzcwJ10i&filter=&per_page=3&select=display_name,works_count,cited_by_count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2026 00:17:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a36621d2795bd-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=93bkaued3VUIFA3YDK%2FHkb5HrurmKbAvHl%2BoJC0SZpk%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774570649"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=93bkaued3VUIFA3YDK%2FHkb5HrurmKbAvHl%2BoJC0SZpk%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774570649"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9937'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9937'
+      X-Ratelimit-Reset:
+      - '85350'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 4516, "db_response_time_ms": 1, "page": null, "per_page":
+        3, "next_cursor": "IlsxNjc2MDg3LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVDEwOTc4J10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "Geochemistry
+        and Geologic Mapping", "works_count": 3955594, "cited_by_count": 1659965},
+        {"display_name": "Mycorrhizal Fungi and Plant Interactions", "works_count":
+        3217907, "cited_by_count": 1973157}, {"display_name": "Prenatal Screening
+        and Diagnostics", "works_count": 1676087, "cited_by_count": 1178600}], "group_by":
+        []}'
+  recorded_at: Fri, 27 Mar 2026 00:17:30 GMT
+recorded_with: VCR 6.4.0

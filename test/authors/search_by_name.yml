@@ -1,0 +1,315 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&per_page=3&search=Jane%20Smith&select=display_name,works_count,cited_by_count,ids,last_known_institutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:27:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e29948c6a9ea3f8-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=6Hh5JLGGGw%2FNUsHL5A1GyyvrNefyaUEl7MapMQSDf3M%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774564021"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=6Hh5JLGGGw%2FNUsHL5A1GyyvrNefyaUEl7MapMQSDf3M%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774564021"
+      X-Ratelimit-Cost-Usd:
+      - '0.001'
+      X-Ratelimit-Credits-Used:
+      - '10'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9950'
+      X-Ratelimit-Remaining-Usd:
+      - '0.995'
+      X-Ratelimit-Reset:
+      - '5579'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 360, "db_response_time_ms": 55, "page": null, "per_page":
+        3, "next_cursor": "Ils5ODcyLjU3OCwgMjI0LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvQTUwMTE5OTY0NDAnXSI=",
+        "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name": "John
+        Maynard Smith", "works_count": 411, "cited_by_count": 70397, "ids": {"openalex":
+        "https://openalex.org/A5108453556", "orcid": null}, "last_known_institutions":
+        null}, {"display_name": "Joseph M. Smith", "works_count": 184, "cited_by_count":
+        16485, "ids": {"openalex": "https://openalex.org/A5014670172", "orcid": "https://orcid.org/0000-0002-2423-8043"},
+        "last_known_institutions": [{"id": "https://openalex.org/I1308126019", "ror":
+        "https://ror.org/02z5nhe81", "display_name": "National Oceanic and Atmospheric
+        Administration", "country_code": "US", "type": "government", "lineage": ["https://openalex.org/I1308126019",
+        "https://openalex.org/I1343035065"]}, {"id": "https://openalex.org/I4210166920",
+        "ror": "https://ror.org/05r7z1k40", "display_name": "NOAA National Marine
+        Fisheries Service Northwest Fisheries Science Center", "country_code": "US",
+        "type": "funder", "lineage": ["https://openalex.org/I106745318", "https://openalex.org/I1308126019",
+        "https://openalex.org/I1343035065", "https://openalex.org/I4210166920"]}]},
+        {"display_name": "Jodi M. Smith", "works_count": 224, "cited_by_count": 14878,
+        "ids": {"openalex": "https://openalex.org/A5011996440", "orcid": "https://orcid.org/0000-0002-0365-4267"},
+        "last_known_institutions": [{"id": "https://openalex.org/I1295499534", "ror":
+        "https://ror.org/01njes783", "display_name": "Seattle Children''s Hospital",
+        "country_code": "US", "type": "healthcare", "lineage": ["https://openalex.org/I1295499534"]},
+        {"id": "https://openalex.org/I201448701", "ror": "https://ror.org/00cvxb145",
+        "display_name": "University of Washington", "country_code": "US", "type":
+        "education", "lineage": ["https://openalex.org/I201448701"]}, {"id": "https://openalex.org/I4210106724",
+        "ror": "https://ror.org/01cp21a44", "display_name": "Institute of Translational
+        Health Sciences", "country_code": "US", "type": "other", "lineage": ["https://openalex.org/I4210106724"]},
+        {"id": "https://openalex.org/I4210109034", "ror": null, "display_name": "Seattle
+        Children''s Hospital", "country_code": "US", "type": null, "lineage": ["https://openalex.org/I4210109034"]},
+        {"id": "https://openalex.org/I4210138199", "ror": "https://ror.org/03d17d270",
+        "display_name": "University of Washington Applied Physics Laboratory", "country_code":
+        "US", "type": "facility", "lineage": ["https://openalex.org/I201448701", "https://openalex.org/I4210138199"]},
+        {"id": "https://openalex.org/I4210152469", "ror": "https://ror.org/05v1amx46",
+        "display_name": "Hennepin Healthcare Research Institute", "country_code":
+        "US", "type": "facility", "lineage": ["https://openalex.org/I4210152469"]}]}],
+        "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:27:02 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&per_page=5&search=Yoshua%20Bengio&select=display_name,works_count,cited_by_count,ids,last_known_institutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:33:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e299e2c88a19082-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=t0TpOjQNC7dOuXNRIIJYE%2FDcFLFvfgZh9OmS9uhu308%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774564415"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=t0TpOjQNC7dOuXNRIIJYE%2FDcFLFvfgZh9OmS9uhu308%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774564415"
+      X-Ratelimit-Cost-Usd:
+      - '0.001'
+      X-Ratelimit-Credits-Used:
+      - '10'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9920'
+      X-Ratelimit-Remaining-Usd:
+      - '0.992'
+      X-Ratelimit-Reset:
+      - '5184'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 40, "db_response_time_ms": 55, "page": null, "per_page":
+        5, "next_cursor": "IlsxMjIwLjEwNjQsIDIsICdodHRwczovL29wZW5hbGV4Lm9yZy9BNTA5MjkxNjM3MiddIg==",
+        "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name": "Yoshua
+        Bengio", "works_count": 1279, "cited_by_count": 446831, "ids": {"openalex":
+        "https://openalex.org/A5086198262", "orcid": "https://orcid.org/0000-0002-9322-3515"},
+        "last_known_institutions": [{"id": "https://openalex.org/I1290206253", "ror":
+        "https://ror.org/00d0nc645", "display_name": "Microsoft (United States)",
+        "country_code": "US", "type": "company", "lineage": ["https://openalex.org/I1290206253"]}]},
+        {"display_name": "Yoshua Bengio", "works_count": 81, "cited_by_count": 1274,
+        "ids": {"openalex": "https://openalex.org/A5028826050", "orcid": null}, "last_known_institutions":
+        [{"id": "https://openalex.org/I109736498", "ror": "https://ror.org/01sdtdd95",
+        "display_name": "Canadian Institute for Advanced Research", "country_code":
+        "CA", "type": "facility", "lineage": ["https://openalex.org/I109736498"]},
+        {"id": "https://openalex.org/I4210164802", "ror": "https://ror.org/05c22rx21",
+        "display_name": "Mila - Quebec Artificial Intelligence Institute", "country_code":
+        "CA", "type": "facility", "lineage": ["https://openalex.org/I4210164802"]},
+        {"id": "https://openalex.org/I70931966", "ror": "https://ror.org/0161xgx34",
+        "display_name": "Universit\u00e9 de Montr\u00e9al", "country_code": "CA",
+        "type": "education", "lineage": ["https://openalex.org/I70931966"]}]}, {"display_name":
+        "Tianle Yuan", "works_count": 129, "cited_by_count": 3656, "ids": {"openalex":
+        "https://openalex.org/A5038754458", "orcid": "https://orcid.org/0000-0002-2187-3017"},
+        "last_known_institutions": [{"id": "https://openalex.org/I126744593", "ror":
+        "https://ror.org/04rq5mt64", "display_name": "University of Maryland, Baltimore",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I126744593"]},
+        {"id": "https://openalex.org/I1306266525", "ror": "https://ror.org/0171mag52",
+        "display_name": "Goddard Space Flight Center", "country_code": "US", "type":
+        "facility", "lineage": ["https://openalex.org/I1306266525", "https://openalex.org/I4210124779"]},
+        {"id": "https://openalex.org/I2800713631", "ror": "https://ror.org/04hccab49",
+        "display_name": "NASA Research Park", "country_code": "US", "type": "facility",
+        "lineage": ["https://openalex.org/I1280536761", "https://openalex.org/I2800713631",
+        "https://openalex.org/I4210124779"]}, {"id": "https://openalex.org/I4210158899",
+        "ror": "https://ror.org/05j0ypg59", "display_name": "Gansu Great Wall Electrical
+        and Electronics Engineering Research Institute", "country_code": "CN", "type":
+        "facility", "lineage": ["https://openalex.org/I4210158899"]}, {"id": "https://openalex.org/I66946132",
+        "ror": "https://ror.org/047s2c258", "display_name": "University of Maryland,
+        College Park", "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I66946132"]},
+        {"id": "https://openalex.org/I79272384", "ror": "https://ror.org/02qskvh78",
+        "display_name": "University of Maryland, Baltimore County", "country_code":
+        "US", "type": "education", "lineage": ["https://openalex.org/I79272384"]}]},
+        {"display_name": "Cesar Laurent Yoshua Bengio", "works_count": 1, "cited_by_count":
+        72, "ids": {"openalex": "https://openalex.org/A5061525983", "orcid": null},
+        "last_known_institutions": null}, {"display_name": "Yoshua Bengio", "works_count":
+        2, "cited_by_count": 25, "ids": {"openalex": "https://openalex.org/A5092916372",
+        "orcid": null}, "last_known_institutions": null}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:33:36 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&per_page=1&search=Geoffrey%20Hinton&select=display_name,works_count,cited_by_count,ids,last_known_institutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:33:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e299e44db5938b7-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=lf5yzyM1Kfe0ACOyiqUGOVLTD5jdHFulK4mtMXT%2FQHo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774564419"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=lf5yzyM1Kfe0ACOyiqUGOVLTD5jdHFulK4mtMXT%2FQHo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774564419"
+      X-Ratelimit-Cost-Usd:
+      - '0.001'
+      X-Ratelimit-Credits-Used:
+      - '10'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9905'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9905'
+      X-Ratelimit-Reset:
+      - '5181'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 11, "db_response_time_ms": 78, "page": null, "per_page":
+        1, "next_cursor": "IlsxMDUzMTMuMjY2LCAzODQsICdodHRwczovL29wZW5hbGV4Lm9yZy9BNTEwODA5Mzk2MyddIg==",
+        "groups_count": null, "cost_usd": 0.001}, "results": [{"display_name": "Geoffrey
+        E. Hinton", "works_count": 384, "cited_by_count": 444245, "ids": {"openalex":
+        "https://openalex.org/A5108093963", "orcid": null}, "last_known_institutions":
+        null}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:33:40 GMT
+recorded_with: VCR 6.4.0

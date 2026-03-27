@@ -1,0 +1,360 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&filter=affiliations.institution.id:I63934009&per_page=3&select=display_name,works_count,cited_by_count,ids,summary_stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:27:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2994917cf470d4-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=g5kJ8rHDa8yyYK0JFlLEtrqiLcvfhAtwrowZm7KtrtQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774564022"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=g5kJ8rHDa8yyYK0JFlLEtrqiLcvfhAtwrowZm7KtrtQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774564022"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9949'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9949'
+      X-Ratelimit-Reset:
+      - '5578'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 0, "db_response_time_ms": 48, "page": null, "per_page":
+        3, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:27:02 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&filter=affiliations.institution.id:I63934009&per_page=10&select=display_name,works_count,cited_by_count,ids,summary_stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:33:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e299e3aa8002e0f-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=iygYsjEAke4%2FNd0XQe7PJthaFvlC5bREUxprSCTc%2F2I%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774564417"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=iygYsjEAke4%2FNd0XQe7PJthaFvlC5bREUxprSCTc%2F2I%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774564417"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9917'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9917'
+      X-Ratelimit-Reset:
+      - '5183'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 0, "db_response_time_ms": 38, "page": null, "per_page":
+        10, "next_cursor": null, "groups_count": null, "cost_usd": 0.0001}, "results":
+        [], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:33:38 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&filter=affiliations.institution.id:I19820366&per_page=10&select=display_name,works_count,cited_by_count,ids,summary_stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:44:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e29ad87ada882c5-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=DmtR2GuXqWZRoOHxqVsG%2FbY94GXyvmkBkLOYX48ovcw%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774565044"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=DmtR2GuXqWZRoOHxqVsG%2FbY94GXyvmkBkLOYX48ovcw%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774565044"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9897'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9897'
+      X-Ratelimit-Reset:
+      - '4555'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 454356, "db_response_time_ms": 84, "page": null,
+        "per_page": 10, "next_cursor": "IlsxMzgyMSwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL0E1MDIwNjA4NDA1J10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "Tao
+        Liu", "works_count": 65360, "cited_by_count": 16757, "ids": {"openalex": "https://openalex.org/A5043928018",
+        "orcid": "https://orcid.org/0000-0001-9529-6550"}, "summary_stats": {"2yr_mean_citedness":
+        4.0777777777777775, "h_index": 60, "i10_index": 144}}, {"display_name": "Yi-Ting
+        Wang", "works_count": 52238, "cited_by_count": 692, "ids": {"openalex": "https://openalex.org/A5100389959",
+        "orcid": "https://orcid.org/0000-0001-7509-2016"}, "summary_stats": {"2yr_mean_citedness":
+        2.8, "h_index": 10, "i10_index": 12}}, {"display_name": "Rui Zhao", "works_count":
+        40103, "cited_by_count": 4206, "ids": {"openalex": "https://openalex.org/A5100684042",
+        "orcid": "https://orcid.org/0000-0003-0206-2670"}, "summary_stats": {"2yr_mean_citedness":
+        0.09560723514211886, "h_index": 32, "i10_index": 48}}, {"display_name": "Weijun
+        Qian", "works_count": 31831, "cited_by_count": 23250, "ids": {"openalex":
+        "https://openalex.org/A5075235007", "orcid": "https://orcid.org/0000-0002-5393-2827"},
+        "summary_stats": {"2yr_mean_citedness": 0.13960504662643994, "h_index": 78,
+        "i10_index": 260}}, {"display_name": "Yi\u2010Ting Wang", "works_count": 19180,
+        "cited_by_count": 27745, "ids": {"openalex": "https://openalex.org/A5102810576",
+        "orcid": "https://orcid.org/0000-0003-2008-4435"}, "summary_stats": {"2yr_mean_citedness":
+        4.560283687943262, "h_index": 78, "i10_index": 531}}, {"display_name": "Xiaohong
+        Chen", "works_count": 19059, "cited_by_count": 494343, "ids": {"openalex":
+        "https://openalex.org/A5100373745", "orcid": "https://orcid.org/0000-0002-9797-8384"},
+        "summary_stats": {"2yr_mean_citedness": 4.27608587119321, "h_index": 258,
+        "i10_index": 7412}}, {"display_name": "Kezhi Li", "works_count": 16223, "cited_by_count":
+        3564, "ids": {"openalex": "https://openalex.org/A5056703958", "orcid": "https://orcid.org/0000-0002-7783-0673"},
+        "summary_stats": {"2yr_mean_citedness": 4.722222222222222, "h_index": 33,
+        "i10_index": 43}}, {"display_name": "M Kellis", "works_count": 15767, "cited_by_count":
+        6185, "ids": {"openalex": "https://openalex.org/A5108044601", "orcid": "https://orcid.org/0000-0002-9383-5757"},
+        "summary_stats": {"2yr_mean_citedness": 5.76595744680851, "h_index": 25, "i10_index":
+        35}}, {"display_name": "Ying Zhu", "works_count": 13989, "cited_by_count":
+        9655, "ids": {"openalex": "https://openalex.org/A5006092446", "orcid": "https://orcid.org/0000-0002-5416-0566"},
+        "summary_stats": {"2yr_mean_citedness": 0.22747747747747749, "h_index": 48,
+        "i10_index": 146}}, {"display_name": "Jason McDermott", "works_count": 13821,
+        "cited_by_count": 14828, "ids": {"openalex": "https://openalex.org/A5020608405",
+        "orcid": "https://orcid.org/0000-0003-2961-2572"}, "summary_stats": {"2yr_mean_citedness":
+        2.1578947368421053, "h_index": 54, "i10_index": 127}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:44:05 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&filter=affiliations.institution.id:I19820366&per_page=3&select=display_name,works_count,cited_by_count,ids,summary_stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:46:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e29b0a62caa9a3e-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Hp5q7N2pV0doy8MmLO7G%2BF%2FKkfKW9cozskdAzGltPW4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774565172"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=Hp5q7N2pV0doy8MmLO7G%2BF%2FKkfKW9cozskdAzGltPW4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774565172"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9896'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9896'
+      X-Ratelimit-Reset:
+      - '4428'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 454356, "db_response_time_ms": 58, "page": null,
+        "per_page": 3, "next_cursor": "Ils0MDEwMywgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL0E1MTAwNjg0MDQyJ10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "Tao
+        Liu", "works_count": 65360, "cited_by_count": 16757, "ids": {"openalex": "https://openalex.org/A5043928018",
+        "orcid": "https://orcid.org/0000-0001-9529-6550"}, "summary_stats": {"2yr_mean_citedness":
+        4.0777777777777775, "h_index": 60, "i10_index": 144}}, {"display_name": "Yi-Ting
+        Wang", "works_count": 52238, "cited_by_count": 692, "ids": {"openalex": "https://openalex.org/A5100389959",
+        "orcid": "https://orcid.org/0000-0001-7509-2016"}, "summary_stats": {"2yr_mean_citedness":
+        2.8, "h_index": 10, "i10_index": 12}}, {"display_name": "Rui Zhao", "works_count":
+        40103, "cited_by_count": 4206, "ids": {"openalex": "https://openalex.org/A5100684042",
+        "orcid": "https://orcid.org/0000-0003-0206-2670"}, "summary_stats": {"2yr_mean_citedness":
+        0.09560723514211886, "h_index": 32, "i10_index": 48}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:46:13 GMT
+recorded_with: VCR 6.4.0

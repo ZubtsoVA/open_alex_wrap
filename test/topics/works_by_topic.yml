@@ -1,0 +1,824 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=topics.id:T11636&per_page=10&select=title,publication_year,cited_by_count,doi,authorships&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2026 00:17:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a364948dfc6a0-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=pjlm4XQ0FwkHQrxZJsyL5HuN1MePa88KCMpS3VfGE%2B4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774570646"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=pjlm4XQ0FwkHQrxZJsyL5HuN1MePa88KCMpS3VfGE%2B4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774570646"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9954'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9954'
+      X-Ratelimit-Reset:
+      - '85354'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 157079, "db_response_time_ms": 87, "page": null,
+        "per_page": 10, "next_cursor": "IlszNjMyLCAxMDAuMCwgMzYzMiwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1cyOTM0Mzk5MDEzJ10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "Explainable
+        Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges
+        toward responsible AI", "publication_year": 2019, "cited_by_count": 8316,
+        "doi": "https://doi.org/10.1016/j.inffus.2019.12.012", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5050115521", "display_name":
+        "Alejandro Barredo Arrieta", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210113430",
+        "display_name": "Tecnalia", "ror": "https://ror.org/02fv8hj62", "country_code":
+        "ES", "type": "other", "lineage": ["https://openalex.org/I4210113430"]}],
+        "countries": ["ES"], "is_corresponding": true, "raw_author_name": "Alejandro
+        Barredo Arrieta", "raw_affiliation_strings": ["Tecnalia [Derio] (Spain)"],
+        "affiliations": [{"raw_affiliation_string": "Tecnalia [Derio] (Spain)", "institution_ids":
+        ["https://openalex.org/I4210113430"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5058176171", "display_name": "Natalia D\u00edaz-Rodr\u00edguez",
+        "orcid": "https://orcid.org/0000-0003-3362-9326"}, "institutions": [{"id":
+        "https://openalex.org/I201181511", "display_name": "\u00c9cole Nationale Sup\u00e9rieure
+        de Techniques Avanc\u00e9es", "ror": "https://ror.org/0309cs235", "country_code":
+        "FR", "type": "education", "lineage": ["https://openalex.org/I201181511",
+        "https://openalex.org/I4210145102"]}, {"id": "https://openalex.org/I4405258625",
+        "display_name": "\u00c9cole Nationale Sup\u00e9rieure de Techniques Avanc\u00e9es
+        Paris", "ror": "https://ror.org/0106ccb15", "country_code": "FR", "type":
+        "education", "lineage": ["https://openalex.org/I201181511", "https://openalex.org/I4210145102",
+        "https://openalex.org/I4405258625"]}], "countries": ["FR"], "is_corresponding":
+        false, "raw_author_name": "Natalia D\u00edaz-Rodr\u00edguez", "raw_affiliation_strings":
+        ["U2IS - Unit\u00e9 d''Informatique et d''Ing\u00e9nierie des Syst\u00e8mes
+        (828, boulevard des Mar\u00e9chaux, 91762 Palaiseau CEDEX - France)", "ENSTA
+        Paris - \u00c9cole Nationale Sup\u00e9rieure de Techniques Avanc\u00e9es (828,
+        boulevard des Mar\u00e9chaux 91120 Palaiseau - France)", "Flowers - Flowing
+        Epigenetic Robots and Systems (200, avenue de la Vieille Tour \r\n33405 Talence
+        cedex - France)"], "affiliations": [{"raw_affiliation_string": "U2IS - Unit\u00e9
+        d''Informatique et d''Ing\u00e9nierie des Syst\u00e8mes (828, boulevard des
+        Mar\u00e9chaux, 91762 Palaiseau CEDEX - France)", "institution_ids": []},
+        {"raw_affiliation_string": "ENSTA Paris - \u00c9cole Nationale Sup\u00e9rieure
+        de Techniques Avanc\u00e9es (828, boulevard des Mar\u00e9chaux 91120 Palaiseau
+        - France)", "institution_ids": ["https://openalex.org/I201181511", "https://openalex.org/I4405258625"]},
+        {"raw_affiliation_string": "Flowers - Flowing Epigenetic Robots and Systems
+        (200, avenue de la Vieille Tour \r\n33405 Talence cedex - France)", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5017326471",
+        "display_name": "Javier Del Ser", "orcid": "https://orcid.org/0000-0002-1260-9775"},
+        "institutions": [{"id": "https://openalex.org/I4210113430", "display_name":
+        "Tecnalia", "ror": "https://ror.org/02fv8hj62", "country_code": "ES", "type":
+        "other", "lineage": ["https://openalex.org/I4210113430"]}], "countries": ["ES"],
+        "is_corresponding": false, "raw_author_name": "Javier Del Ser", "raw_affiliation_strings":
+        ["Tecnalia [Derio] (Spain)"], "affiliations": [{"raw_affiliation_string":
+        "Tecnalia [Derio] (Spain)", "institution_ids": ["https://openalex.org/I4210113430"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5023588408",
+        "display_name": "Adrien Bennetot", "orcid": "https://orcid.org/0000-0001-8232-8728"},
+        "institutions": [{"id": "https://openalex.org/I39804081", "display_name":
+        "Sorbonne Universit\u00e9", "ror": "https://ror.org/02en5vm52", "country_code":
+        "FR", "type": "education", "lineage": ["https://openalex.org/I39804081"]},
+        {"id": "https://openalex.org/I4210150358", "display_name": "Institut Syst\u00e8mes
+        Intelligents et de Robotique", "ror": "https://ror.org/05neq8668", "country_code":
+        "FR", "type": "facility", "lineage": ["https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I154526488", "https://openalex.org/I39804081",
+        "https://openalex.org/I4210150358", "https://openalex.org/I4210159245"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Adrien
+        Bennetot", "raw_affiliation_strings": ["U2IS - Unit\u00e9 d''Informatique
+        et d''Ing\u00e9nierie des Syst\u00e8mes (828, boulevard des Mar\u00e9chaux,
+        91762 Palaiseau CEDEX - France)", "ISIR - Institut des Syst\u00e8mes Intelligents
+        et de Robotique (Sorbonne-Universit\u00e9, Boite courrier 173 4 Place JUSSIEU
+        75252 Paris cedex 05 - France)", "Flowers - Flowing Epigenetic Robots and
+        Systems (200, avenue de la Vieille Tour \r\n33405 Talence cedex - France)",
+        "SEGULA Technologies [Trappes] (Zone d''activit\u00e9 Pissaloup, 8 Avenue
+        Jean d''Alembert, 78190 Trappes - France)"], "affiliations": [{"raw_affiliation_string":
+        "U2IS - Unit\u00e9 d''Informatique et d''Ing\u00e9nierie des Syst\u00e8mes
+        (828, boulevard des Mar\u00e9chaux, 91762 Palaiseau CEDEX - France)", "institution_ids":
+        []}, {"raw_affiliation_string": "ISIR - Institut des Syst\u00e8mes Intelligents
+        et de Robotique (Sorbonne-Universit\u00e9, Boite courrier 173 4 Place JUSSIEU
+        75252 Paris cedex 05 - France)", "institution_ids": ["https://openalex.org/I39804081",
+        "https://openalex.org/I4210150358"]}, {"raw_affiliation_string": "Flowers
+        - Flowing Epigenetic Robots and Systems (200, avenue de la Vieille Tour \r\n33405
+        Talence cedex - France)", "institution_ids": []}, {"raw_affiliation_string":
+        "SEGULA Technologies [Trappes] (Zone d''activit\u00e9 Pissaloup, 8 Avenue
+        Jean d''Alembert, 78190 Trappes - France)", "institution_ids": []}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5057876711", "display_name":
+        "Siham Tabik", "orcid": "https://orcid.org/0000-0003-4093-5356"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Siham
+        Tabik", "raw_affiliation_strings": ["DaSCI  - Instituto Andaluz Interuniversitario
+        en Data Science and Computational Intelligence (Spain)"], "affiliations":
+        [{"raw_affiliation_string": "DaSCI  - Instituto Andaluz Interuniversitario
+        en Data Science and Computational Intelligence (Spain)", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5064011907",
+        "display_name": "Alberto Barbado", "orcid": "https://orcid.org/0000-0002-5123-5243"},
+        "institutions": [{"id": "https://openalex.org/I4210134591", "display_name":
+        "Telefonica Research and Development", "ror": "https://ror.org/03qgzzb04",
+        "country_code": "ES", "type": "company", "lineage": ["https://openalex.org/I4210097190",
+        "https://openalex.org/I4210134591"]}], "countries": ["ES"], "is_corresponding":
+        false, "raw_author_name": "Alberto Barbado", "raw_affiliation_strings": ["Telefonica
+        Research and Development [Madrid] (West 1 Building \r\nRonda de la Comunicaci\u00f3n
+        S/N, 28050\r\nMadrid - Spain)"], "affiliations": [{"raw_affiliation_string":
+        "Telefonica Research and Development [Madrid] (West 1 Building \r\nRonda de
+        la Comunicaci\u00f3n S/N, 28050\r\nMadrid - Spain)", "institution_ids": ["https://openalex.org/I4210134591"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5078909305",
+        "display_name": "Salvador Garc\u00eda", "orcid": "https://orcid.org/0000-0003-4494-7565"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Salvador Garcia", "raw_affiliation_strings": ["DaSCI  - Instituto Andaluz
+        Interuniversitario en Data Science and Computational Intelligence (Spain)"],
+        "affiliations": [{"raw_affiliation_string": "DaSCI  - Instituto Andaluz Interuniversitario
+        en Data Science and Computational Intelligence (Spain)", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5019181050",
+        "display_name": "Sergio Gil-L\u00f3pez", "orcid": "https://orcid.org/0000-0002-3867-5439"},
+        "institutions": [{"id": "https://openalex.org/I4210113430", "display_name":
+        "Tecnalia", "ror": "https://ror.org/02fv8hj62", "country_code": "ES", "type":
+        "other", "lineage": ["https://openalex.org/I4210113430"]}], "countries": ["ES"],
+        "is_corresponding": false, "raw_author_name": "Sergio Gil-Lopez", "raw_affiliation_strings":
+        ["Tecnalia [Derio] (Spain)"], "affiliations": [{"raw_affiliation_string":
+        "Tecnalia [Derio] (Spain)", "institution_ids": ["https://openalex.org/I4210113430"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5070068995",
+        "display_name": "Daniel Molina", "orcid": "https://orcid.org/0000-0002-4175-2204"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Daniel Molina", "raw_affiliation_strings": ["DaSCI  - Instituto Andaluz Interuniversitario
+        en Data Science and Computational Intelligence (Spain)"], "affiliations":
+        [{"raw_affiliation_string": "DaSCI  - Instituto Andaluz Interuniversitario
+        en Data Science and Computational Intelligence (Spain)", "institution_ids":
+        []}]}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5083664336",
+        "display_name": "Richard Benjamins", "orcid": "https://orcid.org/0000-0002-9412-7082"},
+        "institutions": [{"id": "https://openalex.org/I4210134591", "display_name":
+        "Telefonica Research and Development", "ror": "https://ror.org/03qgzzb04",
+        "country_code": "ES", "type": "company", "lineage": ["https://openalex.org/I4210097190",
+        "https://openalex.org/I4210134591"]}], "countries": ["ES"], "is_corresponding":
+        false, "raw_author_name": "Richard Benjamins", "raw_affiliation_strings":
+        ["Telefonica Research and Development [Madrid] (West 1 Building \r\nRonda
+        de la Comunicaci\u00f3n S/N, 28050\r\nMadrid - Spain)"], "affiliations": [{"raw_affiliation_string":
+        "Telefonica Research and Development [Madrid] (West 1 Building \r\nRonda de
+        la Comunicaci\u00f3n S/N, 28050\r\nMadrid - Spain)", "institution_ids": ["https://openalex.org/I4210134591"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5114376610",
+        "display_name": "Raja Chatila", "orcid": "https://orcid.org/0000-0001-7822-0634"},
+        "institutions": [{"id": "https://openalex.org/I39804081", "display_name":
+        "Sorbonne Universit\u00e9", "ror": "https://ror.org/02en5vm52", "country_code":
+        "FR", "type": "education", "lineage": ["https://openalex.org/I39804081"]},
+        {"id": "https://openalex.org/I4210150358", "display_name": "Institut Syst\u00e8mes
+        Intelligents et de Robotique", "ror": "https://ror.org/05neq8668", "country_code":
+        "FR", "type": "facility", "lineage": ["https://openalex.org/I1294671590",
+        "https://openalex.org/I1294671590", "https://openalex.org/I154526488", "https://openalex.org/I39804081",
+        "https://openalex.org/I4210150358", "https://openalex.org/I4210159245"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Raja Chatila",
+        "raw_affiliation_strings": ["ISIR - Institut des Syst\u00e8mes Intelligents
+        et de Robotique (Sorbonne-Universit\u00e9, Boite courrier 173 4 Place JUSSIEU
+        75252 Paris cedex 05 - France)"], "affiliations": [{"raw_affiliation_string":
+        "ISIR - Institut des Syst\u00e8mes Intelligents et de Robotique (Sorbonne-Universit\u00e9,
+        Boite courrier 173 4 Place JUSSIEU 75252 Paris cedex 05 - France)", "institution_ids":
+        ["https://openalex.org/I39804081", "https://openalex.org/I4210150358"]}]},
+        {"author_position": "last", "author": {"id": "https://openalex.org/A5045016749",
+        "display_name": "Francisco Herrera", "orcid": "https://orcid.org/0000-0002-7283-312X"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Francisco Herrera", "raw_affiliation_strings": ["DaSCI  - Instituto Andaluz
+        Interuniversitario en Data Science and Computational Intelligence (Spain)"],
+        "affiliations": [{"raw_affiliation_string": "DaSCI  - Instituto Andaluz Interuniversitario
+        en Data Science and Computational Intelligence (Spain)", "institution_ids":
+        []}]}]}, {"title": "Stop explaining black box machine learning models for
+        high stakes decisions and use interpretable models instead", "publication_year":
+        2019, "cited_by_count": 8177, "doi": "https://doi.org/10.1038/s42256-019-0048-x",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5040468715",
+        "display_name": "Cynthia Rudin", "orcid": "https://orcid.org/0000-0003-4283-2780"},
+        "institutions": [{"id": "https://openalex.org/I170897317", "display_name":
+        "Duke University", "ror": "https://ror.org/00py81415", "country_code": "US",
+        "type": "education", "lineage": ["https://openalex.org/I170897317"]}], "countries":
+        ["US"], "is_corresponding": true, "raw_author_name": "Cynthia Rudin", "raw_affiliation_strings":
+        ["Duke University", "Duke University, Durham, NC, USA"], "affiliations": [{"raw_affiliation_string":
+        "Duke University", "institution_ids": ["https://openalex.org/I170897317"]},
+        {"raw_affiliation_string": "Duke University, Durham, NC, USA", "institution_ids":
+        ["https://openalex.org/I170897317"]}]}]}, {"title": "High-performance medicine:
+        the convergence of human and artificial intelligence", "publication_year":
+        2018, "cited_by_count": 7575, "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5084515381",
+        "display_name": "Eric J. Topol", "orcid": "https://orcid.org/0000-0002-1478-4729"},
+        "institutions": [{"id": "https://openalex.org/I150209017", "display_name":
+        "Scripps Institution of Oceanography", "ror": "https://ror.org/04v7hvq31",
+        "country_code": "US", "type": "facility", "lineage": ["https://openalex.org/I150209017",
+        "https://openalex.org/I36258959"]}, {"id": "https://openalex.org/I4210140114",
+        "display_name": "Scripps (United States)", "ror": "https://ror.org/04x9v7g36",
+        "country_code": "US", "type": "company", "lineage": ["https://openalex.org/I4210140114"]}],
+        "countries": ["US"], "is_corresponding": true, "raw_author_name": "Eric J.
+        Topol", "raw_affiliation_strings": ["Department of Molecular Medicine, Scripps
+        Research, La Jolla, CA, USA. etopol@scripps.edu", "Department of Molecular
+        Medicine, Scripps Research, La Jolla, CA, USA"], "affiliations": [{"raw_affiliation_string":
+        "Department of Molecular Medicine, Scripps Research, La Jolla, CA, USA. etopol@scripps.edu",
+        "institution_ids": []}, {"raw_affiliation_string": "Department of Molecular
+        Medicine, Scripps Research, La Jolla, CA, USA", "institution_ids": ["https://openalex.org/I4210140114",
+        "https://openalex.org/I150209017"]}]}]}, {"title": "Proceedings of the 19th
+        International Joint Conference on Artificial Intelligence", "publication_year":
+        2005, "cited_by_count": 5776, "doi": null, "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5077591903", "display_name":
+        "Josep M. Pujol", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        true, "raw_author_name": "Josep M. Pujol", "raw_affiliation_strings": [],
+        "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5017949214",
+        "display_name": "Jordi Delgado", "orcid": "https://orcid.org/0000-0003-4546-8355"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Jordi Delgado", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5013965040", "display_name":
+        "Ram\u00f3n Sang\u00fcesa", "orcid": "https://orcid.org/0000-0002-0998-4179"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Ram\u00f3n Sang\u00fcesa", "raw_affiliation_strings": [], "affiliations":
+        []}, {"author_position": "last", "author": {"id": "https://openalex.org/A5055990297",
+        "display_name": "Andreas Flache", "orcid": "https://orcid.org/0000-0002-8276-8819"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Andreas Flache", "raw_affiliation_strings": [], "affiliations": []}]}, {"title":
+        "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence
+        (XAI)", "publication_year": 2018, "cited_by_count": 5468, "doi": "https://doi.org/10.1109/access.2018.2870052",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5002938989",
+        "display_name": "Amina Adadi", "orcid": "https://orcid.org/0000-0002-9697-666X"},
+        "institutions": [{"id": "https://openalex.org/I81605866", "display_name":
+        "Sidi Mohamed Ben Abdellah University", "ror": "https://ror.org/04efg9a07",
+        "country_code": "MA", "type": "education", "lineage": ["https://openalex.org/I81605866"]}],
+        "countries": ["MA"], "is_corresponding": true, "raw_author_name": "Amina Adadi",
+        "raw_affiliation_strings": ["Computer and Interdisciplinary Physics Laboratory,
+        Sidi Mohammed Ben Abdellah University, Fez, Morocco", "ORCiD"], "affiliations":
+        [{"raw_affiliation_string": "Computer and Interdisciplinary Physics Laboratory,
+        Sidi Mohammed Ben Abdellah University, Fez, Morocco", "institution_ids": ["https://openalex.org/I81605866"]},
+        {"raw_affiliation_string": "ORCiD", "institution_ids": []}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5014403727", "display_name":
+        "Mohammed Berrada", "orcid": "https://orcid.org/0000-0003-4167-2324"}, "institutions":
+        [{"id": "https://openalex.org/I81605866", "display_name": "Sidi Mohamed Ben
+        Abdellah University", "ror": "https://ror.org/04efg9a07", "country_code":
+        "MA", "type": "education", "lineage": ["https://openalex.org/I81605866"]}],
+        "countries": ["MA"], "is_corresponding": false, "raw_author_name": "Mohammed
+        Berrada", "raw_affiliation_strings": ["Computer and Interdisciplinary Physics
+        Laboratory, Sidi Mohammed Ben Abdellah University, Fez, Morocco"], "affiliations":
+        [{"raw_affiliation_string": "Computer and Interdisciplinary Physics Laboratory,
+        Sidi Mohammed Ben Abdellah University, Fez, Morocco", "institution_ids": ["https://openalex.org/I81605866"]}]}]},
+        {"title": "Systematic review of research on artificial intelligence applications
+        in higher education \u2013 where are the educators?", "publication_year":
+        2019, "cited_by_count": 4523, "doi": "https://doi.org/10.1186/s41239-019-0171-0",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5062601414",
+        "display_name": "Olaf Zawacki\u2010Richter", "orcid": "https://orcid.org/0000-0003-1482-8303"},
+        "institutions": [{"id": "https://openalex.org/I129877168", "display_name":
+        "Carl von Ossietzky Universit\u00e4t Oldenburg", "ror": "https://ror.org/033n9gh91",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I129877168"]}],
+        "countries": ["DE"], "is_corresponding": true, "raw_author_name": "Olaf Zawacki-Richter",
+        "raw_affiliation_strings": ["Faculty of Education and Social Sciences, University
+        of Oldenburg, Ammerl\u00e4nder Heerstr. 138, 26129, Oldenburg, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Faculty of Education and Social
+        Sciences, University of Oldenburg, Ammerl\u00e4nder Heerstr. 138, 26129, Oldenburg,
+        Germany", "institution_ids": ["https://openalex.org/I129877168"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5081077793", "display_name":
+        "Victoria I. Mar\u00edn", "orcid": "https://orcid.org/0000-0002-4673-6190"},
+        "institutions": [{"id": "https://openalex.org/I129877168", "display_name":
+        "Carl von Ossietzky Universit\u00e4t Oldenburg", "ror": "https://ror.org/033n9gh91",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I129877168"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Victoria
+        I. Mar\u00edn", "raw_affiliation_strings": ["Faculty of Education and Social
+        Sciences, University of Oldenburg, Ammerl\u00e4nder Heerstr. 138, 26129, Oldenburg,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Faculty of Education
+        and Social Sciences, University of Oldenburg, Ammerl\u00e4nder Heerstr. 138,
+        26129, Oldenburg, Germany", "institution_ids": ["https://openalex.org/I129877168"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5086439158",
+        "display_name": "Melissa Bond", "orcid": "https://orcid.org/0000-0002-8267-031X"},
+        "institutions": [{"id": "https://openalex.org/I129877168", "display_name":
+        "Carl von Ossietzky Universit\u00e4t Oldenburg", "ror": "https://ror.org/033n9gh91",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I129877168"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Melissa
+        Bond", "raw_affiliation_strings": ["Faculty of Education and Social Sciences,
+        University of Oldenburg, Ammerl\u00e4nder Heerstr. 138, 26129, Oldenburg,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Faculty of Education
+        and Social Sciences, University of Oldenburg, Ammerl\u00e4nder Heerstr. 138,
+        26129, Oldenburg, Germany", "institution_ids": ["https://openalex.org/I129877168"]}]},
+        {"author_position": "last", "author": {"id": "https://openalex.org/A5058780933",
+        "display_name": "Franziska Gouverneur", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I129877168", "display_name": "Carl von Ossietzky Universit\u00e4t
+        Oldenburg", "ror": "https://ror.org/033n9gh91", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I129877168"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Franziska Gouverneur",
+        "raw_affiliation_strings": ["Faculty of Education and Social Sciences, University
+        of Oldenburg, Ammerl\u00e4nder Heerstr. 138, 26129, Oldenburg, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Faculty of Education and Social
+        Sciences, University of Oldenburg, Ammerl\u00e4nder Heerstr. 138, 26129, Oldenburg,
+        Germany", "institution_ids": ["https://openalex.org/I129877168"]}]}]}, {"title":
+        "Artificial intelligence in healthcare: past, present and future", "publication_year":
+        2017, "cited_by_count": 4404, "doi": "https://doi.org/10.1136/svn-2017-000101",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5101990774",
+        "display_name": "Fei Jiang", "orcid": "https://orcid.org/0000-0002-1315-280X"},
+        "institutions": [{"id": "https://openalex.org/I889458895", "display_name":
+        "University of Hong Kong", "ror": "https://ror.org/02zhqgq86", "country_code":
+        "HK", "type": "education", "lineage": ["https://openalex.org/I889458895"]}],
+        "countries": ["HK"], "is_corresponding": false, "raw_author_name": "Fei Jiang",
+        "raw_affiliation_strings": ["Department of Statistics and Actuarial Sciences,
+        University of Hong Kong, Hong Kong, China"], "affiliations": [{"raw_affiliation_string":
+        "Department of Statistics and Actuarial Sciences, University of Hong Kong,
+        Hong Kong, China", "institution_ids": ["https://openalex.org/I889458895"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5089804645",
+        "display_name": "Yong Jiang", "orcid": "https://orcid.org/0000-0001-7700-6054"},
+        "institutions": [{"id": "https://openalex.org/I183519381", "display_name":
+        "Capital Medical University", "ror": "https://ror.org/013xs5b60", "country_code":
+        "CN", "type": "education", "lineage": ["https://openalex.org/I183519381"]},
+        {"id": "https://openalex.org/I4210087691", "display_name": "Beijing Tian Tan
+        Hospital", "ror": "https://ror.org/003regz62", "country_code": "CN", "type":
+        "healthcare", "lineage": ["https://openalex.org/I4210087691"]}], "countries":
+        ["CN"], "is_corresponding": false, "raw_author_name": "Yong Jiang", "raw_affiliation_strings":
+        ["Department of Neurology, Beijing Tiantan Hospital, Capital Medical University,
+        Beijing, China"], "affiliations": [{"raw_affiliation_string": "Department
+        of Neurology, Beijing Tiantan Hospital, Capital Medical University, Beijing,
+        China", "institution_ids": ["https://openalex.org/I4210087691", "https://openalex.org/I183519381"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5073314811",
+        "display_name": "Hui Zhi", "orcid": null}, "institutions": [{"id": "https://openalex.org/I889458895",
+        "display_name": "University of Hong Kong", "ror": "https://ror.org/02zhqgq86",
+        "country_code": "HK", "type": "education", "lineage": ["https://openalex.org/I889458895"]}],
+        "countries": ["HK"], "is_corresponding": false, "raw_author_name": "Hui Zhi",
+        "raw_affiliation_strings": ["Biostatistics and Clinical Research Methodology
+        Unit, University of Hong Kong Li Ka Shing Faculty of Medicine, Hong Kong,
+        China"], "affiliations": [{"raw_affiliation_string": "Biostatistics and Clinical
+        Research Methodology Unit, University of Hong Kong Li Ka Shing Faculty of
+        Medicine, Hong Kong, China", "institution_ids": ["https://openalex.org/I889458895"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5089047237",
+        "display_name": "Yi Dong", "orcid": "https://orcid.org/0000-0001-6630-112X"},
+        "institutions": [{"id": "https://openalex.org/I24943067", "display_name":
+        "Fudan University", "ror": "https://ror.org/013q1eq08", "country_code": "CN",
+        "type": "education", "lineage": ["https://openalex.org/I24943067"]}, {"id":
+        "https://openalex.org/I4210159575", "display_name": "Huashan Hospital", "ror":
+        "https://ror.org/05201qm87", "country_code": "CN", "type": "healthcare", "lineage":
+        ["https://openalex.org/I4210159575"]}], "countries": ["CN"], "is_corresponding":
+        false, "raw_author_name": "Yi Dong", "raw_affiliation_strings": ["Department
+        of Neurology, Huashan Hospital, Fudan University, Shanghai, China"], "affiliations":
+        [{"raw_affiliation_string": "Department of Neurology, Huashan Hospital, Fudan
+        University, Shanghai, China", "institution_ids": ["https://openalex.org/I4210159575",
+        "https://openalex.org/I24943067"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5100348649", "display_name": "Hao Li", "orcid":
+        "https://orcid.org/0000-0002-8591-4105"}, "institutions": [{"id": "https://openalex.org/I4210089514",
+        "display_name": "National Clinical Research Center for Digestive Diseases",
+        "ror": "https://ror.org/00a2x9d51", "country_code": "CN", "type": "healthcare",
+        "lineage": ["https://openalex.org/I4210089514"]}], "countries": ["CN"], "is_corresponding":
+        false, "raw_author_name": "Hao Li", "raw_affiliation_strings": ["China National
+        Clinical Research Center for Neurological Diseases, Beijing, China"], "affiliations":
+        [{"raw_affiliation_string": "China National Clinical Research Center for Neurological
+        Diseases, Beijing, China", "institution_ids": ["https://openalex.org/I4210089514"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5039990441",
+        "display_name": "Sufeng Ma", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Sufeng Ma", "raw_affiliation_strings":
+        ["DotHealth, Shanghai, China"], "affiliations": [{"raw_affiliation_string":
+        "DotHealth, Shanghai, China", "institution_ids": []}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5108749325", "display_name":
+        "Yilong Wang", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210087691",
+        "display_name": "Beijing Tian Tan Hospital", "ror": "https://ror.org/003regz62",
+        "country_code": "CN", "type": "healthcare", "lineage": ["https://openalex.org/I4210087691"]}],
+        "countries": ["CN"], "is_corresponding": false, "raw_author_name": "Yilong
+        Wang", "raw_affiliation_strings": ["Department of Neurology, Beijing Tiantan
+        Hospital, Beijing, China", "Department of Neurology, Tiantan Clinical Trial
+        and Research Center for Stroke, Beijing, China"], "affiliations": [{"raw_affiliation_string":
+        "Department of Neurology, Beijing Tiantan Hospital, Beijing, China", "institution_ids":
+        ["https://openalex.org/I4210087691"]}, {"raw_affiliation_string": "Department
+        of Neurology, Tiantan Clinical Trial and Research Center for Stroke, Beijing,
+        China", "institution_ids": []}]}, {"author_position": "middle", "author":
+        {"id": null, "display_name": "Yilong Wang", "orcid": null}, "institutions":
+        [{"id": "https://openalex.org/I24943067", "display_name": "Fudan University",
+        "ror": "https://ror.org/013q1eq08", "country_code": "CN", "type": "education",
+        "lineage": ["https://openalex.org/I24943067"]}, {"id": "https://openalex.org/I4210087691",
+        "display_name": "Beijing Tian Tan Hospital", "ror": "https://ror.org/003regz62",
+        "country_code": "CN", "type": "healthcare", "lineage": ["https://openalex.org/I4210087691"]},
+        {"id": "https://openalex.org/I4210159575", "display_name": "Huashan Hospital",
+        "ror": "https://ror.org/05201qm87", "country_code": "CN", "type": "healthcare",
+        "lineage": ["https://openalex.org/I4210159575"]}], "countries": ["CN"], "is_corresponding":
+        true, "raw_author_name": "Yilong Wang", "raw_affiliation_strings": ["Department
+        of Neurology, Beijing Tiantan Hospital, Beijing, China", "Department of Neurology,
+        Tiantan Clinical Trial and Research Center for Stroke, Beijing, China", "Department
+        of Neurology, Huashan Hospital, Fudan University, Shanghai, China"], "affiliations":
+        [{"raw_affiliation_string": "Department of Neurology, Beijing Tiantan Hospital,
+        Beijing, China", "institution_ids": ["https://openalex.org/I4210087691"]},
+        {"raw_affiliation_string": "Department of Neurology, Tiantan Clinical Trial
+        and Research Center for Stroke, Beijing, China", "institution_ids": []}, {"raw_affiliation_string":
+        "Department of Neurology, Huashan Hospital, Fudan University, Shanghai, China",
+        "institution_ids": ["https://openalex.org/I4210159575", "https://openalex.org/I24943067"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5066750132",
+        "display_name": "Qiang Dong", "orcid": "https://orcid.org/0000-0002-3874-0130"},
+        "institutions": [{"id": "https://openalex.org/I24943067", "display_name":
+        "Fudan University", "ror": "https://ror.org/013q1eq08", "country_code": "CN",
+        "type": "education", "lineage": ["https://openalex.org/I24943067"]}, {"id":
+        "https://openalex.org/I4210159575", "display_name": "Huashan Hospital", "ror":
+        "https://ror.org/05201qm87", "country_code": "CN", "type": "healthcare", "lineage":
+        ["https://openalex.org/I4210159575"]}, {"id": "https://openalex.org/I889458895",
+        "display_name": "University of Hong Kong", "ror": "https://ror.org/02zhqgq86",
+        "country_code": "HK", "type": "education", "lineage": ["https://openalex.org/I889458895"]}],
+        "countries": ["CN", "HK"], "is_corresponding": false, "raw_author_name": "Qiang
+        Dong", "raw_affiliation_strings": ["Department of Neurology, Huashan Hospital,
+        Fudan University, Shanghai, China", "Faculty of Business and Economics, University
+        of Hong Kong, Hong Kong, China"], "affiliations": [{"raw_affiliation_string":
+        "Department of Neurology, Huashan Hospital, Fudan University, Shanghai, China",
+        "institution_ids": ["https://openalex.org/I4210159575", "https://openalex.org/I24943067"]},
+        {"raw_affiliation_string": "Faculty of Business and Economics, University
+        of Hong Kong, Hong Kong, China", "institution_ids": ["https://openalex.org/I889458895"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5102900838",
+        "display_name": "Haipeng Shen", "orcid": "https://orcid.org/0000-0002-0196-1992"},
+        "institutions": [{"id": "https://openalex.org/I4210087691", "display_name":
+        "Beijing Tian Tan Hospital", "ror": "https://ror.org/003regz62", "country_code":
+        "CN", "type": "healthcare", "lineage": ["https://openalex.org/I4210087691"]},
+        {"id": "https://openalex.org/I889458895", "display_name": "University of Hong
+        Kong", "ror": "https://ror.org/02zhqgq86", "country_code": "HK", "type": "education",
+        "lineage": ["https://openalex.org/I889458895"]}], "countries": ["CN", "HK"],
+        "is_corresponding": false, "raw_author_name": "Haipeng Shen", "raw_affiliation_strings":
+        ["Faculty of Business and Economics, University of Hong Kong, Hong Kong, China",
+        "Department of Neurology, Beijing Tiantan Hospital, Beijing, China"], "affiliations":
+        [{"raw_affiliation_string": "Faculty of Business and Economics, University
+        of Hong Kong, Hong Kong, China", "institution_ids": ["https://openalex.org/I889458895"]},
+        {"raw_affiliation_string": "Department of Neurology, Beijing Tiantan Hospital,
+        Beijing, China", "institution_ids": ["https://openalex.org/I4210087691"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5100424222",
+        "display_name": "Yongjun Wang", "orcid": "https://orcid.org/0000-0002-9976-2341"},
+        "institutions": [{"id": "https://openalex.org/I4210087691", "display_name":
+        "Beijing Tian Tan Hospital", "ror": "https://ror.org/003regz62", "country_code":
+        "CN", "type": "healthcare", "lineage": ["https://openalex.org/I4210087691"]}],
+        "countries": ["CN"], "is_corresponding": false, "raw_author_name": "Yongjun
+        Wang", "raw_affiliation_strings": ["Department of Neurology, Beijing Tiantan
+        Hospital, Beijing, China", "Department of Neurology, Tiantan Clinical Trial
+        and Research Center for Stroke, Beijing, China"], "affiliations": [{"raw_affiliation_string":
+        "Department of Neurology, Beijing Tiantan Hospital, Beijing, China", "institution_ids":
+        ["https://openalex.org/I4210087691"]}, {"raw_affiliation_string": "Department
+        of Neurology, Tiantan Clinical Trial and Research Center for Stroke, Beijing,
+        China", "institution_ids": []}]}, {"author_position": "last", "author": {"id":
+        "https://openalex.org/A5100424222", "display_name": "Yongjun Wang", "orcid":
+        "https://orcid.org/0000-0002-9976-2341"}, "institutions": [{"id": "https://openalex.org/I4210087691",
+        "display_name": "Beijing Tian Tan Hospital", "ror": "https://ror.org/003regz62",
+        "country_code": "CN", "type": "healthcare", "lineage": ["https://openalex.org/I4210087691"]}],
+        "countries": ["CN"], "is_corresponding": true, "raw_author_name": "Yongjun
+        Wang", "raw_affiliation_strings": ["Department of Neurology, Beijing Tiantan
+        Hospital, Beijing, China", "Department of Neurology, Tiantan Clinical Trial
+        and Research Center for Stroke, Beijing, China"], "affiliations": [{"raw_affiliation_string":
+        "Department of Neurology, Beijing Tiantan Hospital, Beijing, China", "institution_ids":
+        ["https://openalex.org/I4210087691"]}, {"raw_affiliation_string": "Department
+        of Neurology, Tiantan Clinical Trial and Research Center for Stroke, Beijing,
+        China", "institution_ids": []}]}]}, {"title": "ChatGPT for good? On opportunities
+        and challenges of large language models for education", "publication_year":
+        2023, "cited_by_count": 4331, "doi": "https://doi.org/10.1016/j.lindif.2023.102274",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5008809634",
+        "display_name": "Enkelejda Kasneci", "orcid": "https://orcid.org/0000-0003-3146-4484"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": true, "raw_author_name": "Enkelejda
+        Kasneci", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5013346660", "display_name":
+        "Kathrin Se\u00dfler", "orcid": "https://orcid.org/0000-0002-3380-4641"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Kathrin
+        Sessler", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5050063899", "display_name":
+        "Stefan K\u00fcchemann", "orcid": "https://orcid.org/0000-0003-2729-1592"},
+        "institutions": [{"id": "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Stefan K\u00fcchemann",
+        "raw_affiliation_strings": ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t
+        M\u0171nchen, Germany", "institution_ids": ["https://openalex.org/I8204097"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5052257833",
+        "display_name": "Maria Bannert", "orcid": "https://orcid.org/0000-0001-7045-2764"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Maria
+        Bannert", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5043273387", "display_name":
+        "Daryna Dementieva", "orcid": "https://orcid.org/0000-0003-0929-4140"}, "institutions":
+        [{"id": "https://openalex.org/I62916508", "display_name": "Technical University
+        of Munich", "ror": "https://ror.org/02kkvpp62", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I62916508"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Daryna Dementieva",
+        "raw_affiliation_strings": ["Technical University of Munich, Germany"], "affiliations":
+        [{"raw_affiliation_string": "Technical University of Munich, Germany", "institution_ids":
+        ["https://openalex.org/I62916508"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5005995116", "display_name": "Frank Fischer",
+        "orcid": "https://orcid.org/0000-0003-0253-659X"}, "institutions": [{"id":
+        "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Frank Fischer", "raw_affiliation_strings":
+        ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen, Germany"], "affiliations":
+        [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany", "institution_ids": ["https://openalex.org/I8204097"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5052258450", "display_name":
+        "Urs Gasser", "orcid": "https://orcid.org/0000-0001-6899-5647"}, "institutions":
+        [{"id": "https://openalex.org/I62916508", "display_name": "Technical University
+        of Munich", "ror": "https://ror.org/02kkvpp62", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I62916508"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Urs Gasser", "raw_affiliation_strings":
+        ["Technical University of Munich, Germany"], "affiliations": [{"raw_affiliation_string":
+        "Technical University of Munich, Germany", "institution_ids": ["https://openalex.org/I62916508"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5004398345",
+        "display_name": "Georg Groh", "orcid": "https://orcid.org/0000-0002-5942-2297"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Georg
+        Groh", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5074504351", "display_name":
+        "Stephan G\u00fcnnemann", "orcid": null}, "institutions": [{"id": "https://openalex.org/I62916508",
+        "display_name": "Technical University of Munich", "ror": "https://ror.org/02kkvpp62",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Stephan
+        G\u00fcnnemann", "raw_affiliation_strings": ["Technical University of Munich,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Technical University
+        of Munich, Germany", "institution_ids": ["https://openalex.org/I62916508"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5059439673",
+        "display_name": "Eyke H\u00fcllermeier", "orcid": "https://orcid.org/0000-0002-9944-4108"},
+        "institutions": [{"id": "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Eyke H\u00fcllermeier",
+        "raw_affiliation_strings": ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t
+        M\u0171nchen, Germany", "institution_ids": ["https://openalex.org/I8204097"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5044900523",
+        "display_name": "Stephan Krusche", "orcid": "https://orcid.org/0000-0002-4552-644X"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Stephan
+        Krusche", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5090767423", "display_name":
+        "Gitta Kutyniok", "orcid": "https://orcid.org/0000-0001-9738-2487"}, "institutions":
+        [{"id": "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Gitta Kutyniok", "raw_affiliation_strings":
+        ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen, Germany"], "affiliations":
+        [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany", "institution_ids": ["https://openalex.org/I8204097"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5090477420", "display_name":
+        "Tilman Michaeli", "orcid": "https://orcid.org/0000-0002-5453-8581"}, "institutions":
+        [{"id": "https://openalex.org/I62916508", "display_name": "Technical University
+        of Munich", "ror": "https://ror.org/02kkvpp62", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I62916508"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Tilman Michaeli", "raw_affiliation_strings":
+        ["Technical University of Munich, Germany"], "affiliations": [{"raw_affiliation_string":
+        "Technical University of Munich, Germany", "institution_ids": ["https://openalex.org/I62916508"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5063270174",
+        "display_name": "Claudia Nerdel", "orcid": "https://orcid.org/0000-0003-1170-8875"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Claudia
+        Nerdel", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5030571651", "display_name":
+        "J\u00fcrgen Pfeffer", "orcid": null}, "institutions": [{"id": "https://openalex.org/I62916508",
+        "display_name": "Technical University of Munich", "ror": "https://ror.org/02kkvpp62",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "J\u00fcrgen
+        Pfeffer", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5023504178", "display_name":
+        "Oleksandra Poquet", "orcid": "https://orcid.org/0000-0001-9782-816X"}, "institutions":
+        [{"id": "https://openalex.org/I62916508", "display_name": "Technical University
+        of Munich", "ror": "https://ror.org/02kkvpp62", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I62916508"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Oleksandra Poquet",
+        "raw_affiliation_strings": ["Technical University of Munich, Germany"], "affiliations":
+        [{"raw_affiliation_string": "Technical University of Munich, Germany", "institution_ids":
+        ["https://openalex.org/I62916508"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5064948864", "display_name": "Michael Sailer",
+        "orcid": "https://orcid.org/0000-0001-6831-5429"}, "institutions": [{"id":
+        "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Michael Sailer", "raw_affiliation_strings":
+        ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen, Germany"], "affiliations":
+        [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany", "institution_ids": ["https://openalex.org/I8204097"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5062196262", "display_name":
+        "Albrecht Schmidt", "orcid": "https://orcid.org/0000-0003-3890-1990"}, "institutions":
+        [{"id": "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Albrecht Schmidt",
+        "raw_affiliation_strings": ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t
+        M\u0171nchen, Germany", "institution_ids": ["https://openalex.org/I8204097"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5045427635",
+        "display_name": "Tina Seidel", "orcid": "https://orcid.org/0000-0002-2578-1208"},
+        "institutions": [{"id": "https://openalex.org/I62916508", "display_name":
+        "Technical University of Munich", "ror": "https://ror.org/02kkvpp62", "country_code":
+        "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Tina Seidel",
+        "raw_affiliation_strings": ["Technical University of Munich, Germany"], "affiliations":
+        [{"raw_affiliation_string": "Technical University of Munich, Germany", "institution_ids":
+        ["https://openalex.org/I62916508"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5016857737", "display_name": "Matthias Stadler",
+        "orcid": "https://orcid.org/0000-0001-8241-8723"}, "institutions": [{"id":
+        "https://openalex.org/I8204097", "display_name": "Ludwig-Maximilians-Universit\u00e4t
+        M\u00fcnchen", "ror": "https://ror.org/05591te55", "country_code": "DE", "type":
+        "education", "lineage": ["https://openalex.org/I8204097"]}], "countries":
+        ["DE"], "is_corresponding": false, "raw_author_name": "Matthias Stadler",
+        "raw_affiliation_strings": ["Ludwig-Maximilians-Universit\u00e4t M\u0171nchen,
+        Germany"], "affiliations": [{"raw_affiliation_string": "Ludwig-Maximilians-Universit\u00e4t
+        M\u0171nchen, Germany", "institution_ids": ["https://openalex.org/I8204097"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5057374299",
+        "display_name": "J. Weller", "orcid": "https://orcid.org/0000-0002-8282-2010"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Jochen Weller", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5029469707", "display_name":
+        "Jochen K\u00fchn", "orcid": "https://orcid.org/0000-0002-6985-3218"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Jochen
+        Kuhn", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5024434748", "display_name":
+        "Gjergji Kasneci", "orcid": null}, "institutions": [{"id": "https://openalex.org/I62916508",
+        "display_name": "Technical University of Munich", "ror": "https://ror.org/02kkvpp62",
+        "country_code": "DE", "type": "education", "lineage": ["https://openalex.org/I62916508"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Gjergji
+        Kasneci", "raw_affiliation_strings": ["Technical University of Munich, Germany"],
+        "affiliations": [{"raw_affiliation_string": "Technical University of Munich,
+        Germany", "institution_ids": ["https://openalex.org/I62916508"]}]}]}, {"title":
+        "A guide to deep learning in healthcare", "publication_year": 2018, "cited_by_count":
+        4284, "doi": "https://doi.org/10.1038/s41591-018-0316-z", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5070015743", "display_name":
+        "Andre Esteva", "orcid": "https://orcid.org/0000-0003-1937-9682"}, "institutions":
+        [{"id": "https://openalex.org/I97018004", "display_name": "Stanford University",
+        "ror": "https://ror.org/00f54p054", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I97018004"]}], "countries": ["US"], "is_corresponding":
+        true, "raw_author_name": "Andre Esteva", "raw_affiliation_strings": ["Stanford
+        University, Stanford, CA, USA. andre.esteva@gmail.com", "Stanford University,
+        Stanford, CA, USA"], "affiliations": [{"raw_affiliation_string": "Stanford
+        University, Stanford, CA, USA. andre.esteva@gmail.com", "institution_ids":
+        []}, {"raw_affiliation_string": "Stanford University, Stanford, CA, USA",
+        "institution_ids": ["https://openalex.org/I97018004"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5055600161", "display_name":
+        "Alexandre Robicquet", "orcid": null}, "institutions": [{"id": "https://openalex.org/I97018004",
+        "display_name": "Stanford University", "ror": "https://ror.org/00f54p054",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I97018004"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Alexandre
+        Robicquet", "raw_affiliation_strings": ["Stanford University, Stanford, CA,
+        USA"], "affiliations": [{"raw_affiliation_string": "Stanford University, Stanford,
+        CA, USA", "institution_ids": ["https://openalex.org/I97018004"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5039641760", "display_name":
+        "Bharath Ramsundar", "orcid": "https://orcid.org/0000-0001-8450-4262"}, "institutions":
+        [{"id": "https://openalex.org/I97018004", "display_name": "Stanford University",
+        "ror": "https://ror.org/00f54p054", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I97018004"]}], "countries": ["US"], "is_corresponding":
+        false, "raw_author_name": "Bharath Ramsundar", "raw_affiliation_strings":
+        ["Stanford University, Stanford, CA, USA"], "affiliations": [{"raw_affiliation_string":
+        "Stanford University, Stanford, CA, USA", "institution_ids": ["https://openalex.org/I97018004"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5021338648",
+        "display_name": "Volodymyr Kuleshov", "orcid": "https://orcid.org/0000-0002-5150-3308"},
+        "institutions": [{"id": "https://openalex.org/I97018004", "display_name":
+        "Stanford University", "ror": "https://ror.org/00f54p054", "country_code":
+        "US", "type": "education", "lineage": ["https://openalex.org/I97018004"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Volodymyr
+        Kuleshov", "raw_affiliation_strings": ["Stanford University, Stanford, CA,
+        USA"], "affiliations": [{"raw_affiliation_string": "Stanford University, Stanford,
+        CA, USA", "institution_ids": ["https://openalex.org/I97018004"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5055476069", "display_name":
+        "Mark A. DePristo", "orcid": "https://orcid.org/0000-0001-9928-045X"}, "institutions":
+        [{"id": "https://openalex.org/I1291425158", "display_name": "Google (United
+        States)", "ror": "https://ror.org/00njsd438", "country_code": "US", "type":
+        "company", "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Mark DePristo",
+        "raw_affiliation_strings": ["Google Research, San Jose, CA, USA"], "affiliations":
+        [{"raw_affiliation_string": "Google Research, San Jose, CA, USA", "institution_ids":
+        ["https://openalex.org/I1291425158"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5070366042", "display_name": "Katherine Chou",
+        "orcid": "https://orcid.org/0000-0002-0318-7857"}, "institutions": [{"id":
+        "https://openalex.org/I1291425158", "display_name": "Google (United States)",
+        "ror": "https://ror.org/00njsd438", "country_code": "US", "type": "company",
+        "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Katherine
+        Chou", "raw_affiliation_strings": ["Google Research, San Jose, CA, USA"],
+        "affiliations": [{"raw_affiliation_string": "Google Research, San Jose, CA,
+        USA", "institution_ids": ["https://openalex.org/I1291425158"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5077034022", "display_name":
+        "Claire Cui", "orcid": "https://orcid.org/0000-0001-5422-6468"}, "institutions":
+        [{"id": "https://openalex.org/I1291425158", "display_name": "Google (United
+        States)", "ror": "https://ror.org/00njsd438", "country_code": "US", "type":
+        "company", "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Claire
+        Cui", "raw_affiliation_strings": ["Google Research, San Jose, CA, USA"], "affiliations":
+        [{"raw_affiliation_string": "Google Research, San Jose, CA, USA", "institution_ids":
+        ["https://openalex.org/I1291425158"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5068955381", "display_name": "Greg S. Corrado",
+        "orcid": "https://orcid.org/0000-0001-8817-0992"}, "institutions": [{"id":
+        "https://openalex.org/I1291425158", "display_name": "Google (United States)",
+        "ror": "https://ror.org/00njsd438", "country_code": "US", "type": "company",
+        "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Greg Corrado",
+        "raw_affiliation_strings": ["Google Research, San Jose, CA, USA"], "affiliations":
+        [{"raw_affiliation_string": "Google Research, San Jose, CA, USA", "institution_ids":
+        ["https://openalex.org/I1291425158"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5066710774", "display_name": "Sebastian Thrun",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I97018004",
+        "display_name": "Stanford University", "ror": "https://ror.org/00f54p054",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I97018004"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Sebastian
+        Thrun", "raw_affiliation_strings": ["Stanford University, Stanford, CA, USA"],
+        "affiliations": [{"raw_affiliation_string": "Stanford University, Stanford,
+        CA, USA", "institution_ids": ["https://openalex.org/I97018004"]}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5011889606", "display_name":
+        "Jeff Dean", "orcid": null}, "institutions": [{"id": "https://openalex.org/I1291425158",
+        "display_name": "Google (United States)", "ror": "https://ror.org/00njsd438",
+        "country_code": "US", "type": "company", "lineage": ["https://openalex.org/I1291425158",
+        "https://openalex.org/I4210128969"]}], "countries": ["US"], "is_corresponding":
+        false, "raw_author_name": "Jeff Dean", "raw_affiliation_strings": ["Google
+        Research, San Jose, CA, USA"], "affiliations": [{"raw_affiliation_string":
+        "Google Research, San Jose, CA, USA", "institution_ids": ["https://openalex.org/I1291425158"]}]}]},
+        {"title": "Machine Learning in Medicine", "publication_year": 2019, "cited_by_count":
+        3632, "doi": "https://doi.org/10.1056/nejmra1814259", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5022388476", "display_name":
+        "Alvin Rajkomar", "orcid": "https://orcid.org/0000-0001-5750-5016"}, "institutions":
+        [{"id": "https://openalex.org/I1291425158", "display_name": "Google (United
+        States)", "ror": "https://ror.org/00njsd438", "country_code": "US", "type":
+        "company", "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]}],
+        "countries": ["US"], "is_corresponding": true, "raw_author_name": "Alvin Rajkomar",
+        "raw_affiliation_strings": ["From Google, Mountain View, CA (A.R., J.D.);
+        and the Department of Biomedical Informatics, Harvard Medical School, Boston
+        (I.K.)", "Google, Mountain View, CA"], "affiliations": [{"raw_affiliation_string":
+        "From Google, Mountain View, CA (A.R., J.D.); and the Department of Biomedical
+        Informatics, Harvard Medical School, Boston (I.K.)", "institution_ids": []},
+        {"raw_affiliation_string": "Google, Mountain View, CA", "institution_ids":
+        ["https://openalex.org/I1291425158"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5043872671", "display_name": "Jay B. Dean",
+        "orcid": "https://orcid.org/0000-0003-1362-0500"}, "institutions": [{"id":
+        "https://openalex.org/I1291425158", "display_name": "Google (United States)",
+        "ror": "https://ror.org/00njsd438", "country_code": "US", "type": "company",
+        "lineage": ["https://openalex.org/I1291425158", "https://openalex.org/I4210128969"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Jeffrey
+        Dean", "raw_affiliation_strings": ["From Google, Mountain View, CA (A.R.,
+        J.D.); and the Department of Biomedical Informatics, Harvard Medical School,
+        Boston (I.K.)", "Google, Mountain View, CA"], "affiliations": [{"raw_affiliation_string":
+        "From Google, Mountain View, CA (A.R., J.D.); and the Department of Biomedical
+        Informatics, Harvard Medical School, Boston (I.K.)", "institution_ids": []},
+        {"raw_affiliation_string": "Google, Mountain View, CA", "institution_ids":
+        ["https://openalex.org/I1291425158"]}]}, {"author_position": "last", "author":
+        {"id": "https://openalex.org/A5088509061", "display_name": "Isaac S. Kohane",
+        "orcid": "https://orcid.org/0000-0003-2192-5160"}, "institutions": [{"id":
+        "https://openalex.org/I136199984", "display_name": "Harvard University", "ror":
+        "https://ror.org/03vek6s52", "country_code": "US", "type": "education", "lineage":
+        ["https://openalex.org/I136199984"]}], "countries": ["US"], "is_corresponding":
+        false, "raw_author_name": "Isaac Kohane", "raw_affiliation_strings": ["From
+        Google, Mountain View, CA (A.R., J.D.); and the Department of Biomedical Informatics,
+        Harvard Medical School, Boston (I.K.)", "Department of Biomedical Informatics,
+        Harvard Medical School, Boston"], "affiliations": [{"raw_affiliation_string":
+        "From Google, Mountain View, CA (A.R., J.D.); and the Department of Biomedical
+        Informatics, Harvard Medical School, Boston (I.K.)", "institution_ids": []},
+        {"raw_affiliation_string": "Department of Biomedical Informatics, Harvard
+        Medical School, Boston", "institution_ids": ["https://openalex.org/I136199984"]}]}]}],
+        "group_by": []}'
+  recorded_at: Fri, 27 Mar 2026 00:17:26 GMT
+recorded_with: VCR 6.4.0

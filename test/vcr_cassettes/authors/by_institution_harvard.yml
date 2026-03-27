@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/authors?cursor=*&filter=affiliations.institution.id:I136199984&per_page=5&select=display_name,works_count,cited_by_count,ids,summary_stats
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 22:27:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2994a5dece27f7-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=hHHwvfeasQxR7hktR0J2sMewZel56GCcrR52%2BZ5zX9I%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774564025"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=hHHwvfeasQxR7hktR0J2sMewZel56GCcrR52%2BZ5zX9I%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774564025"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9944'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9944'
+      X-Ratelimit-Reset:
+      - '5575'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 300217, "db_response_time_ms": 83, "page": null,
+        "per_page": 5, "next_cursor": "IlszNzY3NywgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL0E1MDI1NzYwNTQ4J10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"display_name": "Marina
+        Gritsenko", "works_count": 70099, "cited_by_count": 14090, "ids": {"openalex":
+        "https://openalex.org/A5070718545", "orcid": "https://orcid.org/0000-0001-9992-9829"},
+        "summary_stats": {"2yr_mean_citedness": 0.1892292490118577, "h_index": 54,
+        "i10_index": 114}}, {"display_name": "Vladislav Petyuk", "works_count": 69373,
+        "cited_by_count": 16093, "ids": {"openalex": "https://openalex.org/A5058811459",
+        "orcid": "https://orcid.org/0000-0003-4076-151X"}, "summary_stats": {"2yr_mean_citedness":
+        0.15586965056929722, "h_index": 55, "i10_index": 122}}, {"display_name": "Matthew
+        Monroe", "works_count": 64200, "cited_by_count": 16230, "ids": {"openalex":
+        "https://openalex.org/A5005196385", "orcid": "https://orcid.org/0000-0002-1210-7169"},
+        "summary_stats": {"2yr_mean_citedness": 18.736842105263158, "h_index": 59,
+        "i10_index": 155}}, {"display_name": "Richard Smith", "works_count": 47952,
+        "cited_by_count": 112488, "ids": {"openalex": "https://openalex.org/A5023982706",
+        "orcid": "https://orcid.org/0000-0002-2381-2349"}, "summary_stats": {"2yr_mean_citedness":
+        3.5396825396825395, "h_index": 160, "i10_index": 1173}}, {"display_name":
+        "Karl Weitz", "works_count": 37677, "cited_by_count": 5582, "ids": {"openalex":
+        "https://openalex.org/A5025760548", "orcid": "https://orcid.org/0000-0003-3453-1283"},
+        "summary_stats": {"2yr_mean_citedness": 4.095238095238095, "h_index": 35,
+        "i10_index": 70}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 22:27:05 GMT
+recorded_with: VCR 6.4.0
