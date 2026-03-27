@@ -1,0 +1,291 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=publication_year:%3C2027,cited_by_count:%3E0&per_page=10&select=title,publication_year,publication_date,cited_by_count,doi,authorships&sort=publication_date:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:52:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a125c1b7cd42a-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=We97rUUMoh4ppjvxGaKW5sOWO445uzxUoIPtLuL4Pg8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569174"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=We97rUUMoh4ppjvxGaKW5sOWO445uzxUoIPtLuL4Pg8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569174"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9879'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9879'
+      X-Ratelimit-Reset:
+      - '426'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 110455902, "db_response_time_ms": 311, "page": null,
+        "per_page": 10, "next_cursor": "IlsxNzc1MTc0NDAwMDAwLCAxMDAuMCwgNCwgJ2h0dHBzOi8vb3BlbmFsZXgub3JnL1c3MTMzNTU4Njg3J10i",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "A Detection
+        of Sulfur-Bearing Cyclic Hydrocarbons in Space", "publication_year": 2026,
+        "publication_date": "2026-12-31", "cited_by_count": 1, "doi": "https://doi.org/10.5281/zenodo.17598371",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5023636297",
+        "display_name": "Mitsunori Araki", "orcid": "https://orcid.org/0000-0003-4530-9741"},
+        "institutions": [], "countries": [], "is_corresponding": true, "raw_author_name":
+        "Araki, Mitsunori", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5121348658", "display_name":
+        "Miguel Sanz-Novo", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Sanz-Novo, Miguel", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5121319646",
+        "display_name": "Christian P. Endres", "orcid": null}, "institutions": [],
+        "countries": [], "is_corresponding": false, "raw_author_name": "Endres, Christian
+        P.", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5121359841", "display_name":
+        "Paola Caselli", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "Caselli, Paola", "raw_affiliation_strings": [],
+        "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5121301878",
+        "display_name": "V\u00edctor M. Rivilla", "orcid": null}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Rivilla,
+        V\u00edctor M.", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5083920844", "display_name":
+        "Izaskun Jim\u00e9nez-Serra", "orcid": "https://orcid.org/0000-0003-4493-8714"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Jim\u00e9nez-Serra, Izaskun", "raw_affiliation_strings": [], "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5010569729",
+        "display_name": "Laura Colzi", "orcid": "https://orcid.org/0000-0001-8064-6394"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Colzi, Laura", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5010508574", "display_name":
+        "Shaoshan Zeng", "orcid": "https://orcid.org/0000-0003-3721-374X"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Zeng,
+        Shaoshan", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5121309903", "display_name":
+        "Andr\u00e9s Meg\u00edas", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Meg\u00edas, Andr\u00e9s",
+        "raw_affiliation_strings": [], "affiliations": []}, {"author_position": "middle",
+        "author": {"id": "https://openalex.org/A5019275966", "display_name": "\u00c1lvaro
+        L\u00f3pez-Gallifa", "orcid": "https://orcid.org/0000-0001-6049-9366"}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "L\u00f3pez-Gallifa,
+        \u00c1lvaro", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5076733789", "display_name":
+        "Antonio Mart\u00ednez-Henares", "orcid": "https://orcid.org/0000-0001-5191-2075"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Mart\u00ednez-Henares, Antonio", "raw_affiliation_strings": [], "affiliations":
+        []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5121354375",
+        "display_name": "David San Andr\u00e9s", "orcid": null}, "institutions": [],
+        "countries": [], "is_corresponding": false, "raw_author_name": "San Andr\u00e9s,
+        David", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5121320986", "display_name":
+        "Sergio Mart\u00edn", "orcid": null}, "institutions": [], "countries": [],
+        "is_corresponding": false, "raw_author_name": "Mart\u00edn, Sergio", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "middle", "author": {"id": "https://openalex.org/A5121343399",
+        "display_name": "Miguel A. Requena-Torres", "orcid": null}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Requena-Torres,
+        Miguel A.", "raw_affiliation_strings": [], "affiliations": []}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5121321961", "display_name":
+        "Juan Garc\u00eda de la Concepci\u00f3n", "orcid": null}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Garc\u00eda
+        de la Concepci\u00f3n, Juan", "raw_affiliation_strings": [], "affiliations":
+        []}, {"author_position": "last", "author": {"id": "https://openalex.org/A5032927122",
+        "display_name": "Valerio Lattanzi", "orcid": "https://orcid.org/0000-0001-9819-1658"},
+        "institutions": [], "countries": [], "is_corresponding": false, "raw_author_name":
+        "Lattanzi, Valerio", "raw_affiliation_strings": [], "affiliations": []}]},
+        {"title": "HORIZON: Estimating Alias Analysis Precision Bounds and Their Impact
+        on Performance", "publication_year": 2026, "publication_date": "2026-12-20",
+        "cited_by_count": 1, "doi": "https://doi.org/10.5281/zenodo.17999887", "authorships":
+        [{"author_position": "first", "author": {"id": "https://openalex.org/A5046663336",
+        "display_name": "Khushboo Chitre", "orcid": "https://orcid.org/0000-0001-6950-1055"},
+        "institutions": [{"id": "https://openalex.org/I119939252", "display_name":
+        "Indraprastha Institute of Information Technology Delhi", "ror": "https://ror.org/03vfp4g33",
+        "country_code": "IN", "type": "education", "lineage": ["https://openalex.org/I119939252"]}],
+        "countries": ["IN"], "is_corresponding": true, "raw_author_name": "Chitre,
+        Khushboo", "raw_affiliation_strings": ["Indraprastha Institute of Information
+        Technology Delhi"], "affiliations": [{"raw_affiliation_string": "Indraprastha
+        Institute of Information Technology Delhi", "institution_ids": ["https://openalex.org/I119939252"]}]}]},
+        {"title": "Novel transcriptomic microglia taxonomy across mouse and human
+        pathologies", "publication_year": 2026, "publication_date": "2026-12-01",
+        "cited_by_count": 1, "doi": "https://doi.org/10.5281/zenodo.16938034", "authorships":
+        [{"author_position": "first", "author": {"id": "https://openalex.org/A5085388119",
+        "display_name": "Chintan Chhatbar", "orcid": "https://orcid.org/0000-0002-5824-5209"},
+        "institutions": [{"id": "https://openalex.org/I2801240073", "display_name":
+        "University Medical Center Freiburg", "ror": "https://ror.org/03vzbgh69",
+        "country_code": "DE", "type": "healthcare", "lineage": ["https://openalex.org/I2801240073"]}],
+        "countries": ["DE"], "is_corresponding": true, "raw_author_name": "Chhatbar,
+        Chintan", "raw_affiliation_strings": ["University Medical Center Freiburg"],
+        "affiliations": [{"raw_affiliation_string": "University Medical Center Freiburg",
+        "institution_ids": ["https://openalex.org/I2801240073"]}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5125502768", "display_name":
+        "Marco Prinz", "orcid": null}, "institutions": [{"id": "https://openalex.org/I2801240073",
+        "display_name": "University Medical Center Freiburg", "ror": "https://ror.org/03vzbgh69",
+        "country_code": "DE", "type": "healthcare", "lineage": ["https://openalex.org/I2801240073"]}],
+        "countries": ["DE"], "is_corresponding": false, "raw_author_name": "Prinz,
+        Marco", "raw_affiliation_strings": ["University Medical Center Freiburg"],
+        "affiliations": [{"raw_affiliation_string": "University Medical Center Freiburg",
+        "institution_ids": ["https://openalex.org/I2801240073"]}]}]}, {"title": "Short-chain
+        fatty acids mediate interactions between immune responses and commensal bacteria
+        in high altitude yaks", "publication_year": 2026, "publication_date": "2026-11-16",
+        "cited_by_count": 1, "doi": "https://doi.org/10.5281/zenodo.17622103", "authorships":
+        [{"author_position": "first", "author": {"id": null, "display_name": "Guo,
+        Na", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        true, "raw_author_name": "Guo, Na", "raw_affiliation_strings": [], "affiliations":
+        []}]}, {"title": "Corpus Approaches to Parallel Concordancing", "publication_year":
+        2026, "publication_date": "2026-10-15", "cited_by_count": 1, "doi": null,
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5062930338",
+        "display_name": "Laura M. Hartwell", "orcid": "https://orcid.org/0000-0002-8601-4176"},
+        "institutions": [{"id": "https://openalex.org/I134560555", "display_name":
+        "Universit\u00e9 Toulouse III - Paul Sabatier", "ror": "https://ror.org/02v6kpv12",
+        "country_code": "FR", "type": "education", "lineage": ["https://openalex.org/I134560555",
+        "https://openalex.org/I4405258862"]}], "countries": ["FR"], "is_corresponding":
+        true, "raw_author_name": "Hartwell, Laura M.", "raw_affiliation_strings":
+        ["LAIRDIL - LAboratoire Inter-universitaire de Recherche en DIdactique Lansad
+        (LAIRDIL\r\nIUT Toulouse III \r\n115 route de Narbonne\r\n31077 Toulouse Cedex
+        4\r\nFrance - France)"], "affiliations": [{"raw_affiliation_string": "LAIRDIL
+        - LAboratoire Inter-universitaire de Recherche en DIdactique Lansad (LAIRDIL\r\nIUT
+        Toulouse III \r\n115 route de Narbonne\r\n31077 Toulouse Cedex 4\r\nFrance
+        - France)", "institution_ids": ["https://openalex.org/I134560555"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5062862793", "display_name":
+        "C\u00e9cile Fr\u00e9rot", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210160287",
+        "display_name": "Laboratoire de Linguistique et Didactique des Langues Etrang\u00e8res
+        et Maternelles", "ror": "https://ror.org/05588ks88", "country_code": "FR",
+        "type": "facility", "lineage": ["https://openalex.org/I1294671590", "https://openalex.org/I4210139971",
+        "https://openalex.org/I4210150872", "https://openalex.org/I4210160287", "https://openalex.org/I899635006"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Fr\u00e9rot,
+        C\u00e9cile", "raw_affiliation_strings": ["LIDILEM - LInguistique et DIdactique
+        des Langues \u00c9trang\u00e8res et Maternelles (B\u00e2timent Stendhal -
+        CS40700 - 38058 Grenoble cedex 9 - France)"], "affiliations": [{"raw_affiliation_string":
+        "LIDILEM - LInguistique et DIdactique des Langues \u00c9trang\u00e8res et
+        Maternelles (B\u00e2timent Stendhal - CS40700 - 38058 Grenoble cedex 9 - France)",
+        "institution_ids": ["https://openalex.org/I4210160287"]}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5103053973", "display_name":
+        "Olivier Kraif", "orcid": "https://orcid.org/0000-0002-8935-7342"}, "institutions":
+        [{"id": "https://openalex.org/I4210160287", "display_name": "Laboratoire de
+        Linguistique et Didactique des Langues Etrang\u00e8res et Maternelles", "ror":
+        "https://ror.org/05588ks88", "country_code": "FR", "type": "facility", "lineage":
+        ["https://openalex.org/I1294671590", "https://openalex.org/I4210139971", "https://openalex.org/I4210150872",
+        "https://openalex.org/I4210160287", "https://openalex.org/I899635006"]}],
+        "countries": ["FR"], "is_corresponding": false, "raw_author_name": "Kraif,
+        Olivier", "raw_affiliation_strings": ["LIDILEM - LInguistique et DIdactique
+        des Langues \u00c9trang\u00e8res et Maternelles (B\u00e2timent Stendhal -
+        CS40700 - 38058 Grenoble cedex 9 - France)"], "affiliations": [{"raw_affiliation_string":
+        "LIDILEM - LInguistique et DIdactique des Langues \u00c9trang\u00e8res et
+        Maternelles (B\u00e2timent Stendhal - CS40700 - 38058 Grenoble cedex 9 - France)",
+        "institution_ids": ["https://openalex.org/I4210160287"]}]}]}, {"title": "Dual-Memory
+        Dissociation Under Partial Observability: An Identifiability-Governed Phase
+        Transition", "publication_year": 2026, "publication_date": "2026-09-03", "cited_by_count":
+        2, "doi": "https://doi.org/10.5281/zenodo.18929188", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5127133190", "display_name":
+        "Austin Ollar", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        true, "raw_author_name": "Austin Ollar", "raw_affiliation_strings": [], "affiliations":
+        []}]}, {"title": "Conformational dynamics governing G-protein recognition
+        and activation by Neurotensin Receptor 1", "publication_year": 2026, "publication_date":
+        "2026-06-27", "cited_by_count": 1, "doi": "https://doi.org/10.5281/zenodo.17731629",
+        "authorships": [{"author_position": "first", "author": {"id": null, "display_name":
+        "Kobayashi, Kazuhiro", "orcid": "https://orcid.org/0000-0002-3366-3586"},
+        "institutions": [], "countries": [], "is_corresponding": true, "raw_author_name":
+        "Kobayashi, Kazuhiro", "raw_affiliation_strings": [], "affiliations": []},
+        {"author_position": "middle", "author": {"id": null, "display_name": "kato,
+        hideaki", "orcid": null}, "institutions": [], "countries": [], "is_corresponding":
+        false, "raw_author_name": "kato, hideaki", "raw_affiliation_strings": [],
+        "affiliations": []}, {"author_position": "middle", "author": {"id": null,
+        "display_name": "Kawakami, Kouki", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Kawakami, Kouki", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "last", "author": {"id": null,
+        "display_name": "Fukuda, masahiro", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": false, "raw_author_name": "Fukuda, masahiro", "raw_affiliation_strings":
+        [], "affiliations": []}]}, {"title": "Data From \"Gaze cues and arrow cues
+        modulate accuracy of recall of verbal items in a working memory task \"",
+        "publication_year": 2026, "publication_date": "2026-06-18", "cited_by_count":
+        1, "doi": "https://doi.org/10.5281/zenodo.18294236", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5076207272", "display_name":
+        "Edward W. Legg", "orcid": "https://orcid.org/0000-0003-0353-7105"}, "institutions":
+        [{"id": "https://openalex.org/I154347574", "display_name": "University of
+        Rijeka", "ror": "https://ror.org/05r8dqr10", "country_code": "HR", "type":
+        "education", "lineage": ["https://openalex.org/I154347574"]}], "countries":
+        ["HR"], "is_corresponding": true, "raw_author_name": "Legg, Edward", "raw_affiliation_strings":
+        ["University of Rijeka"], "affiliations": [{"raw_affiliation_string": "University
+        of Rijeka", "institution_ids": ["https://openalex.org/I154347574"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5123259675", "display_name":
+        "Ljerka Ostoji\u0107", "orcid": null}, "institutions": [], "countries": [],
+        "is_corresponding": false, "raw_author_name": "Ostoji\u0107, Ljerka", "raw_affiliation_strings":
+        [], "affiliations": []}, {"author_position": "last", "author": {"id": "https://openalex.org/A5113000623",
+        "display_name": "Vinoprasath Shivakumar", "orcid": null}, "institutions":
+        [], "countries": [], "is_corresponding": false, "raw_author_name": "Shivakumar,
+        Vinoprasath", "raw_affiliation_strings": [], "affiliations": []}]}, {"title":
+        "Code release for \"The E3 ubiquitin ligase mechanism specifying targeted
+        microRNA degradation\"", "publication_year": 2026, "publication_date": "2026-05-18",
+        "cited_by_count": 1, "doi": "https://doi.org/10.5281/zenodo.18265217", "authorships":
+        [{"author_position": "first", "author": {"id": "https://openalex.org/A5030405980",
+        "display_name": "Lianne W. Blodgett", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I4210157710", "display_name": "Whitehead Institute for
+        Biomedical Research", "ror": "https://ror.org/04vqm6w82", "country_code":
+        "US", "type": "facility", "lineage": ["https://openalex.org/I4210157710",
+        "https://openalex.org/I63966007"]}, {"id": "https://openalex.org/I63966007",
+        "display_name": "Massachusetts Institute of Technology", "ror": "https://ror.org/042nb2s44",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I63966007"]}],
+        "countries": ["US"], "is_corresponding": true, "raw_author_name": "Blodgett,
+        Lianne", "raw_affiliation_strings": ["Massachusetts Institute of Technology",
+        "Whitehead Institute for Biomedical Research"], "affiliations": [{"raw_affiliation_string":
+        "Massachusetts Institute of Technology", "institution_ids": ["https://openalex.org/I63966007"]},
+        {"raw_affiliation_string": "Whitehead Institute for Biomedical Research",
+        "institution_ids": ["https://openalex.org/I4210157710"]}]}]}, {"title": "LACF
+        Constitutional ACT \u2014 Rolling Context Buffer with R*\u00b3 Ethical Auto-Injection
+        and Sentinelle R* Self-Updating Defense (22 sections, Gemini-validated)",
+        "publication_year": 2026, "publication_date": "2026-04-03", "cited_by_count":
+        4, "doi": "https://doi.org/10.5281/zenodo.18866290", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5123801786", "display_name":
+        "St\u00e9phane Ochej", "orcid": null}, "institutions": [], "countries": [],
+        "is_corresponding": true, "raw_author_name": "Ochej, Stephane", "raw_affiliation_strings":
+        [], "affiliations": []}]}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:52:55 GMT
+recorded_with: VCR 6.4.0

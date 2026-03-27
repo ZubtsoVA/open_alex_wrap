@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=is_oa:true&per_page=10&select=title,publication_year,cited_by_count,doi,open_access&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:53:04 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a1296d8e76111-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=OdWspNath0T%2BmyHiE%2BNmQymEOwSWm1tThC5PSKzpyGk%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569183"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=OdWspNath0T%2BmyHiE%2BNmQymEOwSWm1tThC5PSKzpyGk%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569183"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9850'
+      X-Ratelimit-Remaining-Usd:
+      - '0.985'
+      X-Ratelimit-Reset:
+      - '416'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 97393535, "db_response_time_ms": 190, "page": null,
+        "per_page": 10, "next_cursor": "Ils5NzA0OSwgMTAwLjAsIDk3MDQ5LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzIxNzk0MzgwMjUnXSI=",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "Radiation
+        Resistant Camera System for Monitoring Deuterium Plasma Discharges in the
+        Large Helical Device", "publication_year": 2020, "cited_by_count": 801217,
+        "doi": "https://doi.org/10.1585/pfr.15.2402039", "open_access": {"is_oa":
+        true, "oa_status": "diamond", "oa_url": "https://www.jstage.jst.go.jp/article/pfr/15/0/15_2402039/_pdf",
+        "any_repository_has_fulltext": false}}, {"title": "R: A Language and Environment
+        for Statistical Computing", "publication_year": 2000, "cited_by_count": 352818,
+        "doi": "https://doi.org/10.32614/r.manuals", "open_access": {"is_oa": true,
+        "oa_status": "gold", "oa_url": "https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf",
+        "any_repository_has_fulltext": true}}, {"title": "PROTEIN MEASUREMENT WITH
+        THE FOLIN PHENOL REAGENT", "publication_year": 1951, "cited_by_count": 317640,
+        "doi": "https://doi.org/10.1016/s0021-9258(19)52451-6", "open_access": {"is_oa":
+        true, "oa_status": "hybrid", "oa_url": "https://www.jbc.org/article/S0021-9258(19)52451-6/pdf",
+        "any_repository_has_fulltext": false}}, {"title": "Deep Residual Learning
+        for Image Recognition", "publication_year": 2016, "cited_by_count": 216704,
+        "doi": "https://doi.org/10.1109/cvpr.2016.90", "open_access": {"is_oa": true,
+        "oa_status": "green", "oa_url": "https://repositorio.unal.edu.co/handle/unal/81443",
+        "any_repository_has_fulltext": true}}, {"title": "Generalized Gradient Approximation
+        Made Simple", "publication_year": 1996, "cited_by_count": 205689, "doi": "https://doi.org/10.1103/physrevlett.77.3865",
+        "open_access": {"is_oa": true, "oa_status": "green", "oa_url": "http://www.landingpage.org",
+        "any_repository_has_fulltext": true}}, {"title": "Using thematic analysis
+        in psychology", "publication_year": 2006, "cited_by_count": 174046, "doi":
+        "https://doi.org/10.1191/1478088706qp063oa", "open_access": {"is_oa": true,
+        "oa_status": "hybrid", "oa_url": "https://www.tandfonline.com/doi/abs/10.1191/1478088706qp063oa",
+        "any_repository_has_fulltext": true}}, {"title": "Ya\u015fl\u0131 Kad\u0131nlarda
+        \u00dcreme Sa\u011fl\u0131\u011f\u0131", "publication_year": null, "cited_by_count":
+        169600, "doi": null, "open_access": {"is_oa": true, "oa_status": "green",
+        "oa_url": "https://dergipark.org.tr/tr/pub/jgon/issue/51866/675113", "any_repository_has_fulltext":
+        true}}, {"title": "Random Forests", "publication_year": 2001, "cited_by_count":
+        121070, "doi": "https://doi.org/10.1023/a:1010933404324", "open_access": {"is_oa":
+        true, "oa_status": "green", "oa_url": "https://www.ine.es/up/zEkXkJIZ", "any_repository_has_fulltext":
+        true}}, {"title": "Global Cancer Statistics 2020: GLOBOCAN Estimates of Incidence
+        and Mortality Worldwide for 36 Cancers in 185 Countries", "publication_year":
+        2021, "cited_by_count": 110497, "doi": "https://doi.org/10.3322/caac.21660",
+        "open_access": {"is_oa": true, "oa_status": "diamond", "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.3322/caac.21660",
+        "any_repository_has_fulltext": false}}, {"title": "Moderated estimation of
+        fold change and dispersion for RNA-seq data with DESeq2", "publication_year":
+        2014, "cited_by_count": 97049, "doi": "https://doi.org/10.1186/s13059-014-0550-8",
+        "open_access": {"is_oa": true, "oa_status": "gold", "oa_url": "https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-014-0550-8",
+        "any_repository_has_fulltext": true}}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:53:04 GMT
+recorded_with: VCR 6.4.0

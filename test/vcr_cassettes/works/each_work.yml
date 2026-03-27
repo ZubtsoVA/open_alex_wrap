@@ -1,0 +1,186 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=&per_page=5&select=title,publication_year,cited_by_count,doi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:53:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a12a35c688b0c-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Jk6F0aVg%2BMHmx11ltFeI7G3Uwjrc%2BrqvvzlCw6Ta4E0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569185"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=Jk6F0aVg%2BMHmx11ltFeI7G3Uwjrc%2BrqvvzlCw6Ta4E0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569185"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9846'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9846'
+      X-Ratelimit-Reset:
+      - '414'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 297070697, "db_response_time_ms": 205, "page": null,
+        "per_page": 5, "next_cursor": "IlsxMDAuMCwgMjE2NzA0LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzIxOTQ3NzU5OTEnXSI=",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "Radiation
+        Resistant Camera System for Monitoring Deuterium Plasma Discharges in the
+        Large Helical Device", "publication_year": 2020, "cited_by_count": 801217,
+        "doi": "https://doi.org/10.1585/pfr.15.2402039"}, {"title": "PROTEIN MEASUREMENT
+        WITH THE FOLIN PHENOL REAGENT", "publication_year": 1951, "cited_by_count":
+        317640, "doi": "https://doi.org/10.1016/s0021-9258(19)52451-6"}, {"title":
+        "Cleavage of Structural Proteins during the Assembly of the Head of Bacteriophage
+        T4", "publication_year": 1970, "cited_by_count": 251226, "doi": "https://doi.org/10.1038/227680a0"},
+        {"title": "A Rapid and Sensitive Method for the Quantitation of Microgram
+        Quantities of Protein Utilizing the Principle of Protein-Dye Binding", "publication_year":
+        1976, "cited_by_count": 225294, "doi": "https://doi.org/10.1006/abio.1976.9999"},
+        {"title": "Deep Residual Learning for Image Recognition", "publication_year":
+        2016, "cited_by_count": 216704, "doi": "https://doi.org/10.1109/cvpr.2016.90"}],
+        "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:53:06 GMT
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=IlsxMDAuMCwgMjE2NzA0LCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzIxOTQ3NzU5OTEnXSI=&filter=&per_page=5&select=title,publication_year,cited_by_count,doi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:53:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a12a71d15dbb0-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=B3Ytt4y24w5OqcvBDBe1lZmxJOl23OWLI7AOyl7Y5bE%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569186"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=B3Ytt4y24w5OqcvBDBe1lZmxJOl23OWLI7AOyl7Y5bE%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569186"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9845'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9845'
+      X-Ratelimit-Reset:
+      - '414'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 297070697, "db_response_time_ms": 150, "page": null,
+        "per_page": 5, "next_cursor": "IlsxMDAuMCwgMTI5OTgyLCAnaHR0cHM6Ly9vcGVuYWxleC5vcmcvVzIxNDQ2MzQzNDcnXSI=",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "A rapid
+        and sensitive method for the quantitation of microgram quantities of protein
+        utilizing the principle of protein-dye binding", "publication_year": 1976,
+        "cited_by_count": 209765, "doi": "https://doi.org/10.1016/0003-2697(76)90527-3"},
+        {"title": "Generalized Gradient Approximation Made Simple", "publication_year":
+        1996, "cited_by_count": 205689, "doi": "https://doi.org/10.1103/physrevlett.77.3865"},
+        {"title": "Analysis of Relative Gene Expression Data Using Real-Time Quantitative
+        PCR and the 2\u2212\u0394\u0394CT Method", "publication_year": 2001, "cited_by_count":
+        178572, "doi": "https://doi.org/10.1006/meth.2001.1262"}, {"title": "Using
+        thematic analysis in psychology", "publication_year": 2006, "cited_by_count":
+        174046, "doi": "https://doi.org/10.1191/1478088706qp063oa"}, {"title": "Molecular
+        Cloning: A Laboratory Manual", "publication_year": 1989, "cited_by_count":
+        129982, "doi": null}], "group_by": []}'
+  recorded_at: Thu, 26 Mar 2026 23:53:07 GMT
+recorded_with: VCR 6.4.0

@@ -1,0 +1,324 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openalex.org/works?cursor=*&filter=cited_by_count:%3E1000&per_page=10&select=title,publication_year,cited_by_count,doi,authorships&sort=cited_by_count:desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Mailto:
+      - "<OPENALEX_EMAIL>"
+      Apikey:
+      - "<OPENALEX_API_KEY>"
+      User-Agent:
+      - OpenAlexWrap/0.1.0 (mailto:<OPENALEX_EMAIL>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2026 23:52:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9e2a12614a9c3131-ARN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Cache-Control, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Onetime-Remaining,
+        X-RateLimit-Credits-Used, X-RateLimit-Credits-Required, X-RateLimit-Reset,
+        X-RateLimit-Limit-USD, X-RateLimit-Remaining-USD, X-RateLimit-Prepaid-Remaining-USD,
+        X-RateLimit-Cost-USD, X-RateLimit-Cost-Required-USD, Retry-After
+      Server:
+      - cloudflare
+      Via:
+      - 1.1 heroku-router
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Language, Accept-Encoding, Authorization, Content-Type
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Nel:
+      - '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+      Report-To:
+      - '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=3TOilVxonHeMNf%2Be%2FroyYy0BruOplQGWLi%2FvZhc%2B0k8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1774569175"}],"max_age":3600}'
+      Reporting-Endpoints:
+      - heroku-nel="https://nel.heroku.com/reports?s=3TOilVxonHeMNf%2Be%2FroyYy0BruOplQGWLi%2FvZhc%2B0k8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1774569175"
+      X-Ratelimit-Cost-Usd:
+      - '0.0001'
+      X-Ratelimit-Credits-Used:
+      - '1'
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Limit-Usd:
+      - '1'
+      X-Ratelimit-Onetime-Remaining:
+      - '0'
+      X-Ratelimit-Prepaid-Remaining-Usd:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '9878'
+      X-Ratelimit-Remaining-Usd:
+      - '0.9878'
+      X-Ratelimit-Reset:
+      - '425'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"count": 132812, "db_response_time_ms": 53, "page": null,
+        "per_page": 10, "next_cursor": "IlsxNzQwNDYsIDEwMC4wLCAxNzQwNDYsICdodHRwczovL29wZW5hbGV4Lm9yZy9XMTk3OTI5MDI2NCddIg==",
+        "groups_count": null, "cost_usd": 0.0001}, "results": [{"title": "Radiation
+        Resistant Camera System for Monitoring Deuterium Plasma Discharges in the
+        Large Helical Device", "publication_year": 2020, "cited_by_count": 801217,
+        "doi": "https://doi.org/10.1585/pfr.15.2402039", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5039600762", "display_name":
+        "M. Shoji", "orcid": "https://orcid.org/0000-0003-0655-7347"}, "institutions":
+        [{"id": "https://openalex.org/I199525922", "display_name": "National Institutes
+        of Natural Sciences", "ror": "https://ror.org/055n47h92", "country_code":
+        "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922"]}, {"id": "https://openalex.org/I4210108322",
+        "display_name": "National Institute for Fusion Science", "ror": "https://ror.org/01t3wyv61",
+        "country_code": "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922", "https://openalex.org/I4210108322"]}],
+        "countries": ["JP"], "is_corresponding": true, "raw_author_name": "Mamoru
+        SHOJI", "raw_affiliation_strings": ["National Institute for Fusion Science,
+        National Institutes of Natural Sciences"], "affiliations": [{"raw_affiliation_string":
+        "National Institute for Fusion Science, National Institutes of Natural Sciences",
+        "institution_ids": ["https://openalex.org/I4210108322", "https://openalex.org/I199525922"]}]},
+        {"author_position": "last", "author": {"id": null, "display_name": "LHD Experiment
+        Group", "orcid": null}, "institutions": [{"id": "https://openalex.org/I199525922",
+        "display_name": "National Institutes of Natural Sciences", "ror": "https://ror.org/055n47h92",
+        "country_code": "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922"]}, {"id": "https://openalex.org/I4210108322",
+        "display_name": "National Institute for Fusion Science", "ror": "https://ror.org/01t3wyv61",
+        "country_code": "JP", "type": "facility", "lineage": ["https://openalex.org/I1319490839",
+        "https://openalex.org/I199525922", "https://openalex.org/I4210108322"]}],
+        "countries": ["JP"], "is_corresponding": false, "raw_author_name": "LHD Experiment
+        Group", "raw_affiliation_strings": ["National Institute for Fusion Science,
+        National Institutes of Natural Sciences"], "affiliations": [{"raw_affiliation_string":
+        "National Institute for Fusion Science, National Institutes of Natural Sciences",
+        "institution_ids": ["https://openalex.org/I4210108322", "https://openalex.org/I199525922"]}]}]},
+        {"title": "R: A Language and Environment for Statistical Computing", "publication_year":
+        2000, "cited_by_count": 352818, "doi": "https://doi.org/10.32614/r.manuals",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5087294524",
+        "display_name": "R Core Team", "orcid": null}, "institutions": [], "countries":
+        [], "is_corresponding": true, "raw_author_name": "R Core Team", "raw_affiliation_strings":
+        [], "affiliations": []}]}, {"title": "PROTEIN MEASUREMENT WITH THE FOLIN PHENOL
+        REAGENT", "publication_year": 1951, "cited_by_count": 317640, "doi": "https://doi.org/10.1016/s0021-9258(19)52451-6",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5110127684",
+        "display_name": "OliverH. Lowry", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I204465549", "display_name": "Washington University
+        in St. Louis", "ror": "https://ror.org/01yc7t268", "country_code": "US", "type":
+        "education", "lineage": ["https://openalex.org/I204465549"]}], "countries":
+        ["US"], "is_corresponding": true, "raw_author_name": "OliverH. Lowry", "raw_affiliation_strings":
+        ["the Department of Pharmacology, Washington University School oj Medicine,
+        St. Louis, Missouri", "Washington University School of Medicine St. Louis,
+        Missouri"], "affiliations": [{"raw_affiliation_string": "the Department of
+        Pharmacology, Washington University School oj Medicine, St. Louis, Missouri",
+        "institution_ids": ["https://openalex.org/I204465549"]}, {"raw_affiliation_string":
+        "Washington University School of Medicine St. Louis, Missouri", "institution_ids":
+        ["https://openalex.org/I204465549"]}]}, {"author_position": "middle", "author":
+        {"id": "https://openalex.org/A5032482932", "display_name": "NiraJ. Rosebrough",
+        "orcid": null}, "institutions": [{"id": "https://openalex.org/I204465549",
+        "display_name": "Washington University in St. Louis", "ror": "https://ror.org/01yc7t268",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I204465549"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "NiraJ.
+        Rosebrough", "raw_affiliation_strings": ["the Department of Pharmacology,
+        Washington University School oj Medicine, St. Louis, Missouri", "Washington
+        University School of Medicine St. Louis, Missouri"], "affiliations": [{"raw_affiliation_string":
+        "the Department of Pharmacology, Washington University School oj Medicine,
+        St. Louis, Missouri", "institution_ids": ["https://openalex.org/I204465549"]},
+        {"raw_affiliation_string": "Washington University School of Medicine St. Louis,
+        Missouri", "institution_ids": ["https://openalex.org/I204465549"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5004071084", "display_name":
+        "A. Farr", "orcid": null}, "institutions": [{"id": "https://openalex.org/I204465549",
+        "display_name": "Washington University in St. Louis", "ror": "https://ror.org/01yc7t268",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I204465549"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "A. Lewis
+        Farr", "raw_affiliation_strings": ["the Department of Pharmacology, Washington
+        University School oj Medicine, St. Louis, Missouri", "Washington University
+        School of Medicine St. Louis, Missouri"], "affiliations": [{"raw_affiliation_string":
+        "the Department of Pharmacology, Washington University School oj Medicine,
+        St. Louis, Missouri", "institution_ids": ["https://openalex.org/I204465549"]},
+        {"raw_affiliation_string": "Washington University School of Medicine St. Louis,
+        Missouri", "institution_ids": ["https://openalex.org/I204465549"]}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5109894513", "display_name":
+        "RoseJ. Randall", "orcid": null}, "institutions": [{"id": "https://openalex.org/I204465549",
+        "display_name": "Washington University in St. Louis", "ror": "https://ror.org/01yc7t268",
+        "country_code": "US", "type": "education", "lineage": ["https://openalex.org/I204465549"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "RoseJ.
+        Randall", "raw_affiliation_strings": ["the Department of Pharmacology, Washington
+        University School oj Medicine, St. Louis, Missouri", "Washington University
+        School of Medicine St. Louis, Missouri"], "affiliations": [{"raw_affiliation_string":
+        "the Department of Pharmacology, Washington University School oj Medicine,
+        St. Louis, Missouri", "institution_ids": ["https://openalex.org/I204465549"]},
+        {"raw_affiliation_string": "Washington University School of Medicine St. Louis,
+        Missouri", "institution_ids": ["https://openalex.org/I204465549"]}]}]}, {"title":
+        "Cleavage of Structural Proteins during the Assembly of the Head of Bacteriophage
+        T4", "publication_year": 1970, "cited_by_count": 251226, "doi": "https://doi.org/10.1038/227680a0",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5030122660",
+        "display_name": "Ulrich K. Laemmli", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I170203145", "display_name": "MRC Laboratory of Molecular
+        Biology", "ror": "https://ror.org/00tw3jy02", "country_code": "GB", "type":
+        "facility", "lineage": ["https://openalex.org/I170203145", "https://openalex.org/I4210087105",
+        "https://openalex.org/I90344618"]}], "countries": ["GB"], "is_corresponding":
+        true, "raw_author_name": "U. K. LAEMMLI", "raw_affiliation_strings": ["MRC
+        Laboratory of Molecular Biology, Hills Road, Cambridge", "MRC Laboratory of
+        Molecular Biology, Cambridge,"], "affiliations": [{"raw_affiliation_string":
+        "MRC Laboratory of Molecular Biology, Hills Road, Cambridge", "institution_ids":
+        ["https://openalex.org/I170203145"]}, {"raw_affiliation_string": "MRC Laboratory
+        of Molecular Biology, Cambridge,", "institution_ids": ["https://openalex.org/I170203145"]}]}]},
+        {"title": "A Rapid and Sensitive Method for the Quantitation of Microgram
+        Quantities of Protein Utilizing the Principle of Protein-Dye Binding", "publication_year":
+        1976, "cited_by_count": 225294, "doi": "https://doi.org/10.1006/abio.1976.9999",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5047160510",
+        "display_name": "Mark A. Bradford", "orcid": "https://orcid.org/0000-0002-2022-8331"},
+        "institutions": [{"id": "https://openalex.org/I165733156", "display_name":
+        "University of Georgia", "ror": "https://ror.org/00te3t702", "country_code":
+        "US", "type": "education", "lineage": ["https://openalex.org/I165733156"]}],
+        "countries": ["US"], "is_corresponding": true, "raw_author_name": "M Bradford",
+        "raw_affiliation_strings": ["Reproduction Research Laboratories, Department
+        of Biochemistry, University of Georgia, Athens, Georgia 30602 USA"], "affiliations":
+        [{"raw_affiliation_string": "Reproduction Research Laboratories, Department
+        of Biochemistry, University of Georgia, Athens, Georgia 30602 USA", "institution_ids":
+        ["https://openalex.org/I165733156"]}]}]}, {"title": "Deep Residual Learning
+        for Image Recognition", "publication_year": 2016, "cited_by_count": 216704,
+        "doi": "https://doi.org/10.1109/cvpr.2016.90", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5100700361", "display_name":
+        "Kaiming He", "orcid": "https://orcid.org/0000-0001-7318-9658"}, "institutions":
+        [{"id": "https://openalex.org/I4210164937", "display_name": "Microsoft Research
+        (United Kingdom)", "ror": "https://ror.org/05k87vq12", "country_code": "GB",
+        "type": "company", "lineage": ["https://openalex.org/I1290206253", "https://openalex.org/I4210164937"]}],
+        "countries": ["GB"], "is_corresponding": true, "raw_author_name": "Kaiming
+        He", "raw_affiliation_strings": ["Microsoft Research"], "affiliations": [{"raw_affiliation_string":
+        "Microsoft Research", "institution_ids": ["https://openalex.org/I4210164937"]}]},
+        {"author_position": "middle", "author": {"id": "https://openalex.org/A5100362465",
+        "display_name": "Xiangyu Zhang", "orcid": "https://orcid.org/0000-0003-2138-4608"},
+        "institutions": [{"id": "https://openalex.org/I4210164937", "display_name":
+        "Microsoft Research (United Kingdom)", "ror": "https://ror.org/05k87vq12",
+        "country_code": "GB", "type": "company", "lineage": ["https://openalex.org/I1290206253",
+        "https://openalex.org/I4210164937"]}], "countries": ["GB"], "is_corresponding":
+        false, "raw_author_name": "Xiangyu Zhang", "raw_affiliation_strings": ["Microsoft
+        Research"], "affiliations": [{"raw_affiliation_string": "Microsoft Research",
+        "institution_ids": ["https://openalex.org/I4210164937"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5100824251", "display_name":
+        "Shaoqing Ren", "orcid": null}, "institutions": [{"id": "https://openalex.org/I4210164937",
+        "display_name": "Microsoft Research (United Kingdom)", "ror": "https://ror.org/05k87vq12",
+        "country_code": "GB", "type": "company", "lineage": ["https://openalex.org/I1290206253",
+        "https://openalex.org/I4210164937"]}], "countries": ["GB"], "is_corresponding":
+        false, "raw_author_name": "Shaoqing Ren", "raw_affiliation_strings": ["Microsoft
+        Research"], "affiliations": [{"raw_affiliation_string": "Microsoft Research",
+        "institution_ids": ["https://openalex.org/I4210164937"]}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5100785015", "display_name":
+        "Jian Sun", "orcid": "https://orcid.org/0000-0002-6178-4166"}, "institutions":
+        [{"id": "https://openalex.org/I4210164937", "display_name": "Microsoft Research
+        (United Kingdom)", "ror": "https://ror.org/05k87vq12", "country_code": "GB",
+        "type": "company", "lineage": ["https://openalex.org/I1290206253", "https://openalex.org/I4210164937"]}],
+        "countries": ["GB"], "is_corresponding": false, "raw_author_name": "Jian Sun",
+        "raw_affiliation_strings": ["Microsoft Research"], "affiliations": [{"raw_affiliation_string":
+        "Microsoft Research", "institution_ids": ["https://openalex.org/I4210164937"]}]}]},
+        {"title": "A rapid and sensitive method for the quantitation of microgram
+        quantities of protein utilizing the principle of protein-dye binding", "publication_year":
+        1976, "cited_by_count": 209765, "doi": "https://doi.org/10.1016/0003-2697(76)90527-3",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5021181975",
+        "display_name": "Marion M. Bradford", "orcid": null}, "institutions": [{"id":
+        "https://openalex.org/I165733156", "display_name": "University of Georgia",
+        "ror": "https://ror.org/00te3t702", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I165733156"]}], "countries": ["US"], "is_corresponding":
+        true, "raw_author_name": "Marion M. Bradford", "raw_affiliation_strings":
+        ["Reproduction Research Laboratories, Department of Biochemistry, University
+        of Georgia, Athens, Georgia 30602 USA"], "affiliations": [{"raw_affiliation_string":
+        "Reproduction Research Laboratories, Department of Biochemistry, University
+        of Georgia, Athens, Georgia 30602 USA", "institution_ids": ["https://openalex.org/I165733156"]}]}]},
+        {"title": "Generalized Gradient Approximation Made Simple", "publication_year":
+        1996, "cited_by_count": 205689, "doi": "https://doi.org/10.1103/physrevlett.77.3865",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5014987686",
+        "display_name": "John P. Perdew", "orcid": "https://orcid.org/0000-0003-4237-824X"},
+        "institutions": [{"id": "https://openalex.org/I114832834", "display_name":
+        "Tulane University", "ror": "https://ror.org/04vmvtb21", "country_code": "US",
+        "type": "education", "lineage": ["https://openalex.org/I114832834"]}], "countries":
+        ["US"], "is_corresponding": true, "raw_author_name": "John P. Perdew", "raw_affiliation_strings":
+        ["Department of Physics and Quantum Theory Group, Tulane University, New Orleans,
+        Louisiana 70118"], "affiliations": [{"raw_affiliation_string": "Department
+        of Physics and Quantum Theory Group, Tulane University, New Orleans, Louisiana
+        70118", "institution_ids": ["https://openalex.org/I114832834"]}]}, {"author_position":
+        "middle", "author": {"id": "https://openalex.org/A5082307304", "display_name":
+        "Kieron Burke", "orcid": "https://orcid.org/0000-0002-6159-0054"}, "institutions":
+        [{"id": "https://openalex.org/I114832834", "display_name": "Tulane University",
+        "ror": "https://ror.org/04vmvtb21", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I114832834"]}], "countries": ["US"], "is_corresponding":
+        false, "raw_author_name": "Kieron Burke", "raw_affiliation_strings": ["Department
+        of Physics and Quantum Theory Group, Tulane University, New Orleans, Louisiana
+        70118"], "affiliations": [{"raw_affiliation_string": "Department of Physics
+        and Quantum Theory Group, Tulane University, New Orleans, Louisiana 70118",
+        "institution_ids": ["https://openalex.org/I114832834"]}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5053648717", "display_name":
+        "Matthias Ernzerhof", "orcid": "https://orcid.org/0000-0001-5679-8902"}, "institutions":
+        [{"id": "https://openalex.org/I114832834", "display_name": "Tulane University",
+        "ror": "https://ror.org/04vmvtb21", "country_code": "US", "type": "education",
+        "lineage": ["https://openalex.org/I114832834"]}], "countries": ["US"], "is_corresponding":
+        false, "raw_author_name": "Matthias Ernzerhof", "raw_affiliation_strings":
+        ["Department of Physics and Quantum Theory Group, Tulane University, New Orleans,
+        Louisiana 70118"], "affiliations": [{"raw_affiliation_string": "Department
+        of Physics and Quantum Theory Group, Tulane University, New Orleans, Louisiana
+        70118", "institution_ids": ["https://openalex.org/I114832834"]}]}]}, {"title":
+        "Analysis of Relative Gene Expression Data Using Real-Time Quantitative PCR
+        and the 2\u2212\u0394\u0394CT Method", "publication_year": 2001, "cited_by_count":
+        178572, "doi": "https://doi.org/10.1006/meth.2001.1262", "authorships": [{"author_position":
+        "first", "author": {"id": "https://openalex.org/A5055590197", "display_name":
+        "Kenneth J. Livak", "orcid": "https://orcid.org/0000-0001-9105-5856"}, "institutions":
+        [], "countries": [], "is_corresponding": true, "raw_author_name": "Kenneth
+        J. Livak", "raw_affiliation_strings": ["Applied Biosystems, Foster City, California
+        94404, USA", "Applied Biosystems, Foster City, California 94404 USA"], "affiliations":
+        [{"raw_affiliation_string": "Applied Biosystems, Foster City, California 94404,
+        USA", "institution_ids": []}, {"raw_affiliation_string": "Applied Biosystems,
+        Foster City, California 94404 USA", "institution_ids": []}]}, {"author_position":
+        "last", "author": {"id": "https://openalex.org/A5001854674", "display_name":
+        "Thomas D. Schmittgen", "orcid": "https://orcid.org/0000-0002-2812-8546"},
+        "institutions": [{"id": "https://openalex.org/I72951846", "display_name":
+        "Washington State University", "ror": "https://ror.org/05dk0ce17", "country_code":
+        "US", "type": "education", "lineage": ["https://openalex.org/I72951846"]}],
+        "countries": ["US"], "is_corresponding": false, "raw_author_name": "Thomas
+        D. Schmittgen", "raw_affiliation_strings": ["Department of Pharmaceutical
+        Sciences, College of Pharmacy, Washington State University, Pullman, Washington,
+        99164-6534", "Department of Pharmaceutical Sciences, College of Pharmacy,
+        Washington State University, Pullman, Washington 99164\u20106534"], "affiliations":
+        [{"raw_affiliation_string": "Department of Pharmaceutical Sciences, College
+        of Pharmacy, Washington State University, Pullman, Washington, 99164-6534",
+        "institution_ids": ["https://openalex.org/I72951846"]}, {"raw_affiliation_string":
+        "Department of Pharmaceutical Sciences, College of Pharmacy, Washington State
+        University, Pullman, Washington 99164\u20106534", "institution_ids": ["https://openalex.org/I72951846"]}]}]},
+        {"title": "Using thematic analysis in psychology", "publication_year": 2006,
+        "cited_by_count": 174046, "doi": "https://doi.org/10.1191/1478088706qp063oa",
+        "authorships": [{"author_position": "first", "author": {"id": "https://openalex.org/A5054729605",
+        "display_name": "Virginia Braun", "orcid": "https://orcid.org/0000-0002-3435-091X"},
+        "institutions": [{"id": "https://openalex.org/I154130895", "display_name":
+        "University of Auckland", "ror": "https://ror.org/03b94tp07", "country_code":
+        "NZ", "type": "education", "lineage": ["https://openalex.org/I154130895"]}],
+        "countries": ["NZ"], "is_corresponding": true, "raw_author_name": "Virginia
+        Braun", "raw_affiliation_strings": ["University of Auckland", "University
+        of AUCKLAND"], "affiliations": [{"raw_affiliation_string": "University of
+        Auckland", "institution_ids": ["https://openalex.org/I154130895"]}, {"raw_affiliation_string":
+        "University of AUCKLAND", "institution_ids": ["https://openalex.org/I154130895"]}]},
+        {"author_position": "last", "author": {"id": "https://openalex.org/A5045921227",
+        "display_name": "Victoria Clarke", "orcid": "https://orcid.org/0000-0001-9405-7363"},
+        "institutions": [{"id": "https://openalex.org/I178535277", "display_name":
+        "University of the West of England", "ror": "https://ror.org/02nwg5t34", "country_code":
+        "GB", "type": "education", "lineage": ["https://openalex.org/I178535277"]}],
+        "countries": ["GB"], "is_corresponding": false, "raw_author_name": "Victoria
+        Clarke", "raw_affiliation_strings": ["University of the West of England"],
+        "affiliations": [{"raw_affiliation_string": "University of the West of England",
+        "institution_ids": ["https://openalex.org/I178535277"]}]}]}], "group_by":
+        []}'
+  recorded_at: Thu, 26 Mar 2026 23:52:56 GMT
+recorded_with: VCR 6.4.0
